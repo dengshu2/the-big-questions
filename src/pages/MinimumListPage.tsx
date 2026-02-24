@@ -88,7 +88,7 @@ function MinimumListContent() {
   const totalThinkers = groups.reduce((sum, g) => sum + g.thinkers.length, 0)
 
   return (
-    <div className="minimum-page">
+    <div className="minimum-page page-enter">
       <nav className="breadcrumb">
         <Link to="/">首页</Link>
         <span className="breadcrumb-sep">/</span>

@@ -1,7 +1,7 @@
 # 项目进度 · PROGRESS
 
 > **给下一个 AI 或协作者的交接文档**
-> 最后更新：2026-02-24（Docker 部署完成）
+> 最后更新：2026-02-24（P3 打磨阶段完成）
 
 ## 项目概述
 
@@ -41,6 +41,7 @@ book_title_zh, book_title_en, is_coauthored, book_order, is_minimum_list
 5. **渐进式构建** — 模块一个个来，不急于一次性完成
 6. **数据加载策略** — 运行时 fetch CSV（919 条数据量小，无需构建时预处理）
 7. **React 19 模式** — 使用 `use()` hook + Suspense 处理异步数据加载
+8. **滚动吸附布局** — 首页 Hero 占满首屏 + scroll-snap，卡片网格为完整第二屏
 
 ## 项目结构
 
@@ -59,14 +60,14 @@ the-big-questions/
 │   │   ├── hooks.ts             # React hooks（useCanonData, useBigQuestions 等）
 │   │   └── index.ts             # 统一导出
 │   ├── pages/                   # 页面组件
-│   │   ├── QuestionPage.tsx     # 大问题详情页
+│   │   ├── QuestionPage.tsx     # 大问题详情页（含扁平化、自动展开、上下翻页）
 │   │   ├── QuestionPage.css     # 详情页样式
 │   │   ├── MinimumListPage.tsx  # 必读书单页（/minimum）
 │   │   └── MinimumListPage.css  # 必读书单样式
 │   ├── index.css                # 设计系统（CSS 变量、Reset、动画）
-│   ├── App.css                  # 首页样式（含搜索栏、搜索结果）
-│   ├── App.tsx                  # 首页（Hero + 搜索 + 卡片网格）
-│   ├── router.tsx               # 路由配置（/, /question/:id, /minimum）
+│   ├── App.css                  # 首页样式（Hero 全屏 + 滚动指示 + 卡片网格）
+│   ├── App.tsx                  # 首页（Hero + 滚动吸附 + 卡片网格）
+│   ├── router.tsx               # 路由配置 + ScrollToTop（/, /question/:id, /minimum）
 │   └── main.tsx                 # 入口（含 ErrorBoundary）
 ├── index.html                   # HTML 入口（含 SEO、字体）
 ├── Dockerfile                   # 多阶段构建（node → nginx）
@@ -103,8 +104,7 @@ the-big-questions/
   - [x] 思想家卡片（姓名中英文、生卒年、国籍、著作数量）
   - [x] 书籍列表（含「必读」「合著」标签）
 
-- [x] **P2 搜索与最小书单**（2026-02-24）
-  - [x] 全局搜索（首页搜索栏，按书名/作者名实时筛选，结果按大问题分组）
+- [x] **P2 必读书单**（2026-02-24）
   - [x] 必读书单独立页面（`/minimum`，按大问题分组展示，含思想家信息）
   - [x] 顶部固定导航栏（全局共享，含「必读书单」入口）
   - [x] 错误边界（`ErrorBoundary`，CSV 加载失败时显示友好提示而非白屏）
@@ -116,12 +116,24 @@ the-big-questions/
   - [x] `.dockerignore` 优化构建上下文
   - [x] 构建验证通过，容器运行正常
 
+- [x] **P3 打磨**（2026-02-24）
+  - [x] **首页 Hero 全屏 + 滚动吸附**：Hero 占满首屏 100vh，弹跳箭头引导滚动，卡片网格为干净的第二屏
+  - [x] **卡片信息增强**：每张卡片展示 4 位代表性思想家名字（如"庄子、孔子、老子、墨子 +9"）
+  - [x] **详情页扁平化**：单 Section 问题（如 Q0 元典）跳过 Section 层级，直接展示学科
+  - [x] **自动展开**：进入详情页后第一个学科自动展开，无需额外点击
+  - [x] **折叠预览**：未展开学科显示思想家名字预览（如"苏格拉底、柏拉图..."）
+  - [x] **上下翻页导航**：详情页底部的"← 上一个 / 下一个 →"快捷导航
+  - [x] **路由滚动修复**：添加 ScrollToTop 组件，切换页面自动回到顶部
+  - [x] **页面进入动画**：所有页面统一 fadeInUp 进入动画
+  - [x] **移除搜索功能**：简化首页，移除不必要的搜索栏和热门标签
+
 ## 下一步 🚧
 
-### P3 — 打磨
+### P4 — 进阶功能（待定）
 - [ ] 多维筛选（国籍、年代范围、学科）
-- [ ] 页面转场动画
 - [ ] 性能优化（虚拟列表等）
+- [ ] 思想家时间线可视化
+- [ ] 侧边栏目录（长详情页快速跳转）
 
 ---
 

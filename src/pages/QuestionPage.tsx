@@ -1,14 +1,32 @@
-import { Suspense, useState, useRef, useEffect } from 'react'
+import { Suspense, useState, useRef, useEffect, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { useBigQuestion } from '../data'
+import { useBigQuestion, useBigQuestions } from '../data'
 import type { Section, Discipline, Thinker } from '../data/types'
 import { SiteNav } from '../components/SiteNav'
 import './QuestionPage.css'
+
+const ACCENT_COLORS = [
+  'var(--color-accent-gold)',
+  'var(--color-accent-blue)',
+  'var(--color-accent-emerald)',
+  'var(--color-accent-purple)',
+  'var(--color-accent-rose)',
+]
 
 function QuestionContent() {
   const { id } = useParams<{ id: string }>()
   const questionId = parseInt(id || '1', 10)
   const question = useBigQuestion(questionId)
+  const allQuestions = useBigQuestions()
+
+  // Find prev/next questions
+  const { prev, next } = useMemo(() => {
+    const idx = allQuestions.findIndex(q => q.id === questionId)
+    return {
+      prev: idx > 0 ? allQuestions[idx - 1] : null,
+      next: idx < allQuestions.length - 1 ? allQuestions[idx + 1] : null,
+    }
+  }, [allQuestions, questionId])
 
   if (!question) {
     return (
@@ -21,8 +39,11 @@ function QuestionContent() {
     )
   }
 
+  // If only 1 section, flatten: skip section layer
+  const isSingleSection = question.sections.length === 1
+
   return (
-    <div className="question-page">
+    <div className="question-page page-enter">
       <nav className="breadcrumb">
         <Link to="/">首页</Link>
         <span className="breadcrumb-sep">/</span>
@@ -30,18 +51,52 @@ function QuestionContent() {
       </nav>
 
       <header className="question-header">
-        <span className="question-badge">Q{question.id}</span>
+        <span className="question-badge" style={{ '--badge-accent': ACCENT_COLORS[question.id % ACCENT_COLORS.length] } as React.CSSProperties}>
+          Q{question.id}
+        </span>
         <h1 className="question-title">{question.name}</h1>
         <p className="question-stats">
           {question.stats.sectionCount} 个章节 · {question.stats.thinkerCount} 位思想家 · {question.stats.bookCount} 部著作
         </p>
       </header>
 
-      <div className="sections-container">
-        {question.sections.map((section) => (
-          <SectionCard key={section.id} section={section} />
-        ))}
-      </div>
+      {isSingleSection ? (
+        // Flattened: show section name as subtitle, directly show disciplines
+        <div className="sections-container flattened">
+          <div className="flattened-section-name">{question.sections[0].name}</div>
+          <div className="disciplines-direct">
+            {question.sections[0].disciplines.map((discipline, idx) => (
+              <DisciplineCard
+                key={discipline.id}
+                discipline={discipline}
+                defaultExpanded={idx === 0}
+              />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="sections-container">
+          {question.sections.map((section) => (
+            <SectionCard key={section.id} section={section} />
+          ))}
+        </div>
+      )}
+
+      {/* Prev/Next Navigation */}
+      <nav className="question-nav">
+        {prev ? (
+          <Link to={`/question/${prev.id}`} className="question-nav-link prev">
+            <span className="question-nav-direction">← 上一个</span>
+            <span className="question-nav-title">Q{prev.id} · {prev.name}</span>
+          </Link>
+        ) : <div />}
+        {next ? (
+          <Link to={`/question/${next.id}`} className="question-nav-link next">
+            <span className="question-nav-direction">下一个 →</span>
+            <span className="question-nav-title">Q{next.id} · {next.name}</span>
+          </Link>
+        ) : <div />}
+      </nav>
     </div>
   )
 }
@@ -70,8 +125,12 @@ function SectionCard({ section }: { section: Section }) {
 
       <Collapsible expanded={expanded}>
         <div className="section-content">
-          {section.disciplines.map((discipline) => (
-            <DisciplineCard key={discipline.id} discipline={discipline} />
+          {section.disciplines.map((discipline, idx) => (
+            <DisciplineCard
+              key={discipline.id}
+              discipline={discipline}
+              defaultExpanded={idx === 0 && expanded}
+            />
           ))}
         </div>
       </Collapsible>
@@ -79,12 +138,16 @@ function SectionCard({ section }: { section: Section }) {
   )
 }
 
-function DisciplineCard({ discipline }: { discipline: Discipline }) {
-  const [expanded, setExpanded] = useState(false)
+function DisciplineCard({ discipline, defaultExpanded = false }: { discipline: Discipline; defaultExpanded?: boolean }) {
+  const [expanded, setExpanded] = useState(defaultExpanded)
   const bookCount = discipline.thinkers.reduce((sum, t) => sum + t.books.length, 0)
 
+  // Top 3 thinker names for preview
+  const previewThinkers = discipline.thinkers.slice(0, 3).map(t => t.nameZh)
+  const remainThinkers = discipline.thinkers.length - 3
+
   return (
-    <div className="discipline-card">
+    <div className={`discipline-card ${expanded ? 'is-expanded' : ''}`}>
       <button className="discipline-header" onClick={() => setExpanded(!expanded)}>
         <div className="discipline-header-left">
           <span className={`discipline-chevron ${expanded ? 'expanded' : ''}`}>
@@ -92,9 +155,17 @@ function DisciplineCard({ discipline }: { discipline: Discipline }) {
           </span>
           <h3 className="discipline-title">{discipline.name}</h3>
         </div>
-        <span className="discipline-meta">
-          {discipline.thinkers.length} 位思想家 · {bookCount} 部著作
-        </span>
+        <div className="discipline-header-right">
+          {!expanded && (
+            <span className="discipline-preview">
+              {previewThinkers.join('、')}
+              {remainThinkers > 0 && ` 等${discipline.thinkers.length}人`}
+            </span>
+          )}
+          <span className="discipline-meta">
+            {discipline.thinkers.length} 位思想家 · {bookCount} 部著作
+          </span>
+        </div>
       </button>
 
       <Collapsible expanded={expanded}>
@@ -113,7 +184,7 @@ function ThinkerCard({ thinker }: { thinker: Thinker }) {
   const lifespan = formatLifespan(thinker.birthYear, thinker.deathYear)
 
   return (
-    <div className="thinker-card">
+    <div className={`thinker-card ${expanded ? 'is-expanded' : ''}`}>
       <button className="thinker-header" onClick={() => setExpanded(!expanded)}>
         <div className="thinker-info">
           <span className="thinker-name">{thinker.nameZh}</span>
