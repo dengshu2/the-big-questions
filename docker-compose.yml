@@ -1,0 +1,13 @@
+services:
+  the-big-questions:
+    build: .
+    container_name: the-big-questions
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3003:80"   # 仅本地访问，由 NPM 反代
+    networks:
+      - npm-network
+
+networks:
+  npm-network:
+    external: true             # 使用已有的 npm-network

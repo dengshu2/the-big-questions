@@ -1,7 +1,7 @@
 # 项目进度 · PROGRESS
 
 > **给下一个 AI 或协作者的交接文档**
-> 最后更新：2026-02-24（P2 搜索 + 最小书单 + 错误边界完成）
+> 最后更新：2026-02-24（Docker 部署完成）
 
 ## 项目概述
 
@@ -69,6 +69,10 @@ the-big-questions/
 │   ├── router.tsx               # 路由配置（/, /question/:id, /minimum）
 │   └── main.tsx                 # 入口（含 ErrorBoundary）
 ├── index.html                   # HTML 入口（含 SEO、字体）
+├── Dockerfile                   # 多阶段构建（node → nginx）
+├── docker-compose.yml           # Docker Compose 编排
+├── nginx.conf                   # Nginx 配置（SPA 路由 + 缓存）
+├── .dockerignore                # Docker 构建排除
 ├── package.json
 ├── vite.config.ts
 └── README.md
@@ -104,6 +108,13 @@ the-big-questions/
   - [x] 必读书单独立页面（`/minimum`，按大问题分组展示，含思想家信息）
   - [x] 顶部固定导航栏（全局共享，含「必读书单」入口）
   - [x] 错误边界（`ErrorBoundary`，CSV 加载失败时显示友好提示而非白屏）
+
+- [x] **Docker 部署**（2026-02-24）
+  - [x] 多阶段 Dockerfile（node:20-alpine 构建 → nginx:alpine 托管）
+  - [x] Nginx 配置（SPA 路由兜底 + 静态资源缓存 + gzip）
+  - [x] Docker Compose 编排（连入 `npm-network`，适配 Nginx Proxy Manager）
+  - [x] `.dockerignore` 优化构建上下文
+  - [x] 构建验证通过，容器运行正常
 
 ## 下一步 🚧
 
