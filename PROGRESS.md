@@ -1,7 +1,7 @@
 # 项目进度 · PROGRESS
 
 > **给下一个 AI 或协作者的交接文档**
-> 最后更新：2026-02-24（P1 详情页完成）
+> 最后更新：2026-02-24（P2 搜索 + 最小书单 + 错误边界完成）
 
 ## 项目概述
 
@@ -48,6 +48,10 @@ book_title_zh, book_title_en, is_coauthored, book_order, is_minimum_list
 the-big-questions/
 ├── public/database/canon.csv    # 原始数据（919 条记录）
 ├── src/
+│   ├── components/              # 共享组件
+│   │   ├── ErrorBoundary.tsx    # 错误边界（包裹 RouterProvider）
+│   │   ├── SiteNav.tsx          # 顶部固定导航栏
+│   │   └── SiteNav.css          # 导航栏样式
 │   ├── data/                    # 数据层
 │   │   ├── types.ts             # 类型定义（CanonRow, BigQuestion, Book 等）
 │   │   ├── parser.ts            # CSV fetch + 解析
@@ -56,12 +60,14 @@ the-big-questions/
 │   │   └── index.ts             # 统一导出
 │   ├── pages/                   # 页面组件
 │   │   ├── QuestionPage.tsx     # 大问题详情页
-│   │   └── QuestionPage.css     # 详情页样式
+│   │   ├── QuestionPage.css     # 详情页样式
+│   │   ├── MinimumListPage.tsx  # 必读书单页（/minimum）
+│   │   └── MinimumListPage.css  # 必读书单样式
 │   ├── index.css                # 设计系统（CSS 变量、Reset、动画）
-│   ├── App.css                  # 首页样式
-│   ├── App.tsx                  # 首页组件（Hero + 卡片网格，真实数据驱动）
-│   ├── router.tsx               # 路由配置
-│   └── main.tsx                 # 入口
+│   ├── App.css                  # 首页样式（含搜索栏、搜索结果）
+│   ├── App.tsx                  # 首页（Hero + 搜索 + 卡片网格）
+│   ├── router.tsx               # 路由配置（/, /question/:id, /minimum）
+│   └── main.tsx                 # 入口（含 ErrorBoundary）
 ├── index.html                   # HTML 入口（含 SEO、字体）
 ├── package.json
 ├── vite.config.ts
@@ -93,14 +99,16 @@ the-big-questions/
   - [x] 思想家卡片（姓名中英文、生卒年、国籍、著作数量）
   - [x] 书籍列表（含「必读」「合著」标签）
 
+- [x] **P2 搜索与最小书单**（2026-02-24）
+  - [x] 全局搜索（首页搜索栏，按书名/作者名实时筛选，结果按大问题分组）
+  - [x] 必读书单独立页面（`/minimum`，按大问题分组展示，含思想家信息）
+  - [x] 顶部固定导航栏（全局共享，含「必读书单」入口）
+  - [x] 错误边界（`ErrorBoundary`，CSV 加载失败时显示友好提示而非白屏）
+
 ## 下一步 🚧
 
-### P2 — 搜索与过滤
-- [ ] 全局搜索（按书名、作者名、学科）
-- [ ] 多维筛选（国籍、年代范围、学科、是否最小书单）
-
 ### P3 — 打磨
-- [ ] 最小书单视图（`is_minimum_list = 是`）
+- [ ] 多维筛选（国籍、年代范围、学科）
 - [ ] 页面转场动画
 - [ ] 性能优化（虚拟列表等）
 
