@@ -1,7 +1,7 @@
 # 项目进度 · PROGRESS
 
 > **给下一个 AI 或协作者的交接文档**
-> 最后更新：2026-02-24
+> 最后更新：2026-02-24（P0 数据层完成）
 
 ## 项目概述
 
@@ -39,16 +39,24 @@ book_title_zh, book_title_en, is_coauthored, book_order, is_minimum_list
 3. **字体** — Noto Serif SC（中文衬线）+ Inter（西文无衬线），Google Fonts 加载
 4. **CSS 变量系统** — 定义在 `src/index.css`，所有颜色/间距/圆角/阴影/动画统一管理
 5. **渐进式构建** — 模块一个个来，不急于一次性完成
+6. **数据加载策略** — 运行时 fetch CSV（919 条数据量小，无需构建时预处理）
+7. **React 19 模式** — 使用 `use()` hook + Suspense 处理异步数据加载
 
 ## 项目结构
 
 ```
 the-big-questions/
-├── public/database/canon.csv    # 原始数据
+├── public/database/canon.csv    # 原始数据（919 条记录）
 ├── src/
+│   ├── data/                    # 数据层
+│   │   ├── types.ts             # 类型定义（CanonRow, BigQuestion, Book 等）
+│   │   ├── parser.ts            # CSV fetch + 解析
+│   │   ├── aggregator.ts        # 扁平数据 → 层级结构聚合
+│   │   ├── hooks.ts             # React hooks（useCanonData, useBigQuestions 等）
+│   │   └── index.ts             # 统一导出
 │   ├── index.css                # 设计系统（CSS 变量、Reset、动画）
 │   ├── App.css                  # 首页样式
-│   ├── App.tsx                  # 首页组件（Hero + 卡片网格）
+│   ├── App.tsx                  # 首页组件（Hero + 卡片网格，真实数据驱动）
 │   └── main.tsx                 # 入口
 ├── index.html                   # HTML 入口（含 SEO、字体）
 ├── package.json
@@ -63,20 +71,21 @@ the-big-questions/
 - [x] 暗色知识主题设计系统（`src/index.css`）
 - [x] 首页占位：Hero 区域 + 11 个大问题卡片网格（`src/App.tsx`）
 - [x] GitHub 仓库创建并推送
+- [x] **P0 数据层**（2026-02-24）
+  - [x] CSV 运行时 fetch + 解析（`src/data/parser.ts`）
+  - [x] TypeScript 类型定义（`src/data/types.ts`）
+  - [x] 数据聚合函数（`src/data/aggregator.ts`）
+  - [x] React hooks：`useCanonData()`、`useBigQuestions()`、`useFilteredBooks()` 等
+  - [x] 首页卡片改用真实数据驱动 + Suspense 加载状态
 
 ## 下一步 🚧
 
 按优先级排序，每次会话做一个模块：
 
-### P0 — 数据层
-- [ ] CSV 解析：构建时将 `canon.csv` 转为 JSON 或运行时 fetch + 解析
-- [ ] TypeScript 类型定义：`BigQuestion`、`Section`、`Discipline`、`Thinker`、`Book`
-- [ ] 数据聚合函数：按大问题/章节/学科/思想家分组
-- [ ] React hooks：`useCanonData()`、`useFilteredBooks()` 等
-
-### P0 — 首页导航
-- [ ] 11 个大问题卡片导航（替换当前硬编码数据，用真实数据驱动）
-- [ ] 路由设置（React Router）
+### P0 — 路由与导航
+- [ ] 安装 React Router
+- [ ] 路由配置：首页 `/`、大问题详情页 `/question/:id`
+- [ ] 卡片点击跳转
 
 ### P1 — 大问题详情页
 - [ ] 章节 → 学科 → 思想家 → 书籍的层级展开
