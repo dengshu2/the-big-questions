@@ -2,6 +2,7 @@ import { Suspense, useState, useRef, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useBigQuestion } from '../data'
 import type { Section, Discipline, Thinker } from '../data/types'
+import { SiteNav } from '../components/SiteNav'
 import './QuestionPage.css'
 
 function QuestionContent() {
@@ -208,8 +209,11 @@ function LoadingFallback() {
 
 export default function QuestionPage() {
   return (
-    <Suspense fallback={<LoadingFallback />}>
-      <QuestionContent />
-    </Suspense>
+    <>
+      <SiteNav />
+      <Suspense fallback={<LoadingFallback />}>
+        <QuestionContent />
+      </Suspense>
+    </>
   )
 }
