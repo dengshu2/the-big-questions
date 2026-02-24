@@ -152,6 +152,12 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <p>大问题 · The Big Questions — 人类文明经典元典导览</p>
+        <p className="footer-source">
+          书单数据整理自
+          <a href="https://book.douban.com/subject/36359767/" target="_blank" rel="noopener noreferrer">
+            《聪明的阅读者》
+          </a>
+        </p>
       </footer>
     </div>
   )

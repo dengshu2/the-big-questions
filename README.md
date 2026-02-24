@@ -4,6 +4,8 @@
 
 ## 数据来源
 
+书单数据整理自[《聪明的阅读者》](https://book.douban.com/subject/36359767/)一书。
+
 `public/database/canon.csv` — 920 条经典著作记录，涵盖：
 
 | 维度 | 数量 |

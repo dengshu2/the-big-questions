@@ -548,9 +548,15 @@
     margin-left: var(--space-7);
   }
 
+  .discipline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
   .discipline-header-right {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: var(--space-1);
   }
 
@@ -562,6 +568,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-2);
+  }
+
+  .thinker-info {
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-2);
+  }
+
+  .thinker-name-en {
+    white-space: normal;
+    word-break: break-word;
   }
 
   .thinker-meta {
@@ -578,6 +594,7 @@
   }
 
   .question-nav-link.next {
+    margin-left: 0;
     text-align: left;
   }
 }
