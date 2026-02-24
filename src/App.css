@@ -141,6 +141,7 @@
 }
 
 .question-card {
+  display: block;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -149,6 +150,8 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .question-card::before {

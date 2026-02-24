@@ -1,4 +1,5 @@
 import { Suspense } from 'react'
+import { Link } from 'react-router-dom'
 import { useBigQuestions, type BigQuestion } from './data'
 import './App.css'
 
@@ -20,7 +21,8 @@ function QuestionCard({ question }: { question: BigQuestion }) {
     question.sections.length > 0 ? question.sections[0].name : question.name
 
   return (
-    <div
+    <Link
+      to={`/question/${question.id}`}
       className="question-card"
       style={{ '--card-accent': getAccentColor(question.id) } as React.CSSProperties}
     >
@@ -31,7 +33,7 @@ function QuestionCard({ question }: { question: BigQuestion }) {
         <span>{question.stats.bookCount} 部著作</span>
         <span>{question.stats.thinkerCount} 位思想家</span>
       </div>
-    </div>
+    </Link>
   )
 }
 

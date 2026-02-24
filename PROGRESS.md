@@ -1,7 +1,7 @@
 # 项目进度 · PROGRESS
 
 > **给下一个 AI 或协作者的交接文档**
-> 最后更新：2026-02-24（P0 数据层完成）
+> 最后更新：2026-02-24（P1 详情页完成）
 
 ## 项目概述
 
@@ -54,9 +54,13 @@ the-big-questions/
 │   │   ├── aggregator.ts        # 扁平数据 → 层级结构聚合
 │   │   ├── hooks.ts             # React hooks（useCanonData, useBigQuestions 等）
 │   │   └── index.ts             # 统一导出
+│   ├── pages/                   # 页面组件
+│   │   ├── QuestionPage.tsx     # 大问题详情页
+│   │   └── QuestionPage.css     # 详情页样式
 │   ├── index.css                # 设计系统（CSS 变量、Reset、动画）
 │   ├── App.css                  # 首页样式
 │   ├── App.tsx                  # 首页组件（Hero + 卡片网格，真实数据驱动）
+│   ├── router.tsx               # 路由配置
 │   └── main.tsx                 # 入口
 ├── index.html                   # HTML 入口（含 SEO、字体）
 ├── package.json
@@ -77,26 +81,19 @@ the-big-questions/
   - [x] 数据聚合函数（`src/data/aggregator.ts`）
   - [x] React hooks：`useCanonData()`、`useBigQuestions()`、`useFilteredBooks()` 等
   - [x] 首页卡片改用真实数据驱动 + Suspense 加载状态
+- [x] **P0 路由与导航**（2026-02-24）
+  - [x] 安装 React Router（`react-router-dom`）
+  - [x] 路由配置（`src/router.tsx`）：`/` 首页、`/question/:id` 详情页
+  - [x] 大问题详情页基础组件（`src/pages/QuestionPage.tsx`）
+  - [x] 首页卡片点击跳转详情页
+- [x] **P1 大问题详情页**（2026-02-24）
+  - [x] 章节 → 学科 → 思想家 → 书籍的可折叠层级展开
+  - [x] 面包屑导航
+  - [x] 平滑展开/折叠动画（Collapsible 组件）
+  - [x] 思想家卡片（姓名中英文、生卒年、国籍、著作数量）
+  - [x] 书籍列表（含「必读」「合著」标签）
 
 ## 下一步 🚧
-
-按优先级排序，每次会话做一个模块：
-
-### P0 — 路由与导航
-- [ ] 安装 React Router
-- [ ] 路由配置：首页 `/`、大问题详情页 `/question/:id`
-- [ ] 卡片点击跳转
-
-### P1 — 大问题详情页
-- [ ] 章节 → 学科 → 思想家 → 书籍的层级展开
-- [ ] 面包屑导航
-
-### P1 — 思想家卡片
-- [ ] 思想家信息卡（姓名中英文、生卒年、国籍、著作列表）
-- [ ] 思想家列表与筛选
-
-### P2 — 时间线
-- [ ] 按年代展示思想家和著作的交互式时间轴
 
 ### P2 — 搜索与过滤
 - [ ] 全局搜索（按书名、作者名、学科）
@@ -105,7 +102,6 @@ the-big-questions/
 ### P3 — 打磨
 - [ ] 最小书单视图（`is_minimum_list = 是`）
 - [ ] 页面转场动画
-- [ ] 卡片悬停微交互
 - [ ] 性能优化（虚拟列表等）
 
 ---
