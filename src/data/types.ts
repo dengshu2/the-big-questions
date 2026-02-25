@@ -17,6 +17,7 @@ export interface CanonRow {
   is_coauthored: boolean // "是"/"否" → true/false
   book_order: number // 同一思想家的书籍排序
   is_minimum_list: boolean // "是"/"否" → true/false
+  wikipedia_url: string // 维基百科链接，可能为空
 }
 
 // ==================== 聚合后的层级类型 ====================
@@ -39,6 +40,7 @@ export interface Thinker {
   birthYear: string
   deathYear: string
   nationality: string
+  wikipediaUrl: string
   books: Book[]
 }
 

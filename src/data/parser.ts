@@ -28,6 +28,7 @@ function parseCSVText(text: string): CanonRow[] {
       is_coauthored: values[12] === '是',
       book_order: parseInt(values[13], 10),
       is_minimum_list: values[14] === '是',
+      wikipedia_url: values[15] || '',
     }
   })
 }

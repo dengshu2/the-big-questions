@@ -19,6 +19,7 @@ interface ThinkerGroup {
   nationality: string
   birthYear: string
   deathYear: string
+  wikipediaUrl: string
   books: { titleZh: string; titleEn: string; isCoauthored: boolean }[]
 }
 
@@ -46,6 +47,7 @@ function groupByQuestionAndThinker(rows: CanonRow[]): QuestionGroup[] {
         nationality: row.nationality,
         birthYear: row.birth_year,
         deathYear: row.death_year,
+        wikipediaUrl: row.wikipedia_url,
         books: [],
       })
     }
@@ -67,6 +69,14 @@ function groupByQuestionAndThinker(rows: CanonRow[]): QuestionGroup[] {
         bookCount: thinkers.reduce((sum, t) => sum + t.books.length, 0),
       }
     })
+}
+
+function WikiIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.06 14.54L8.41 9.4h1.52l1.58 4.56 1.56-4.56h.7l1.56 4.56L16.91 9.4h1.52l-2.53 7.14h-.7L13.6 12l-1.58 4.54h-.7z" />
+    </svg>
+  )
 }
 
 function formatLifespan(birth: string, death: string): string {
@@ -133,6 +143,17 @@ function MinimumListContent() {
                     <div className="minimum-thinker-header">
                       <div className="minimum-thinker-info">
                         <span className="minimum-thinker-name">{thinker.nameZh}</span>
+                        {thinker.wikipediaUrl && (
+                          <a
+                            href={thinker.wikipediaUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="thinker-wiki-link"
+                            title="查看维基百科"
+                          >
+                            <WikiIcon />
+                          </a>
+                        )}
                         {thinker.nameEn && (
                           <span className="minimum-thinker-name-en">{thinker.nameEn}</span>
                         )}

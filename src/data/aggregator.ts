@@ -29,6 +29,7 @@ interface ThinkerBuilder {
   birthYear: string
   deathYear: string
   nationality: string
+  wikipediaUrl: string
   books: Book[]
 }
 
@@ -101,6 +102,7 @@ export function aggregateCanonData(rows: CanonRow[]): CanonData {
         birthYear: row.birth_year,
         deathYear: row.death_year,
         nationality: row.nationality,
+        wikipediaUrl: row.wikipedia_url,
         books: [],
       })
     }
