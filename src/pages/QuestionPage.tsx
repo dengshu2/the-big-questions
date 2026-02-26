@@ -276,6 +276,16 @@ function ThinkerCard({ thinker, slugMap }: { thinker: Thinker; slugMap: Map<stri
               <div className="book-badges">
                 {book.isMinimumList && <span className="badge badge-gold">必读</span>}
                 {book.isCoauthored && <span className="badge badge-blue">合著</span>}
+                <a
+                  href={`https://search.douban.com/book/subject_search?search_text=${encodeURIComponent(book.titleZh)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="book-douban-link"
+                  title="在豆瓣搜索"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <DoubanIcon />
+                </a>
               </div>
             </div>
           ))}
@@ -323,6 +333,14 @@ function WikiIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.06 14.54L8.41 9.4h1.52l1.58 4.56 1.56-4.56h.7l1.56 4.56L16.91 9.4h1.52l-2.53 7.14h-.7L13.6 12l-1.58 4.54h-.7z" />
+    </svg>
+  )
+}
+
+function DoubanIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 6h20v2H2V6zm2.5 4h15v1.5h-15V10zM7 13h10v4.5c0 .83-.67 1.5-1.5 1.5h-7c-.83 0-1.5-.67-1.5-1.5V13zm2 1.5v2.5h6v-2.5H9zM4 21h16v1H4v-1zM3 3h18v1H3V3z" />
     </svg>
   )
 }

@@ -79,6 +79,14 @@ function WikiIcon() {
   )
 }
 
+function DoubanIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 6h20v2H2V6zm2.5 4h15v1.5h-15V10zM7 13h10v4.5c0 .83-.67 1.5-1.5 1.5h-7c-.83 0-1.5-.67-1.5-1.5V13zm2 1.5v2.5h6v-2.5H9zM4 21h16v1H4v-1zM3 3h18v1H3V3z" />
+    </svg>
+  )
+}
+
 function formatLifespan(birth: string, death: string): string {
   if (!birth && !death) return ''
   if (birth && !death) return birth
@@ -172,9 +180,20 @@ function MinimumListContent() {
                               <span className="minimum-book-title-en">{book.titleEn}</span>
                             )}
                           </div>
-                          {book.isCoauthored && (
-                            <span className="badge badge-blue">合著</span>
-                          )}
+                          <div className="minimum-book-actions">
+                            {book.isCoauthored && (
+                              <span className="badge badge-blue">合著</span>
+                            )}
+                            <a
+                              href={`https://search.douban.com/book/subject_search?search_text=${encodeURIComponent(book.titleZh)}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="book-douban-link"
+                              title="在豆瓣搜索"
+                            >
+                              <DoubanIcon />
+                            </a>
+                          </div>
                         </div>
                       ))}
                     </div>
