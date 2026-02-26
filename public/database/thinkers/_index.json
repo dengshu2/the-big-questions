@@ -1,55 +1,187 @@
 {
-    "prompt_file": "_prompt.md",
-    "thinkers": {
-        "francis-bacon": {
-            "nameZh": "弗朗西斯·培根",
-            "nameEn": "Francis Bacon",
-            "file": "francis-bacon.md"
-        },
-        "plato": {
-            "nameZh": "柏拉图",
-            "nameEn": "Plato",
-            "file": "plato.md"
-        },
-        "immanuel-kant": {
-            "nameZh": "伊曼努尔·康德",
-            "nameEn": "Immanuel Kant",
-            "file": "immanuel-kant.md"
-        },
-        "charles-darwin": {
-            "nameZh": "查尔斯·达尔文",
-            "nameEn": "Charles Darwin",
-            "file": "charles-darwin.md"
-        },
-        "sima-qian": {
-            "nameZh": "司马迁",
-            "nameEn": "Sima Qian",
-            "file": "sima-qian.md"
-        },
-        "karl-marx": {
-            "nameZh": "卡尔·马克思",
-            "nameEn": "Karl Marx",
-            "file": "karl-marx.md"
-        },
-        "adam-smith": {
-            "nameZh": "亚当·斯密",
-            "nameEn": "Adam Smith",
-            "file": "adam-smith.md"
-        },
-        "michel-foucault": {
-            "nameZh": "米歇尔·福柯",
-            "nameEn": "Michel Foucault",
-            "file": "michel-foucault.md"
-        },
-        "peter-drucker": {
-            "nameZh": "彼得·德鲁克",
-            "nameEn": "Peter Drucker",
-            "file": "peter-drucker.md"
-        },
-        "jean-piaget": {
-            "nameZh": "让·皮亚杰",
-            "nameEn": "Jean Piaget",
-            "file": "jean-piaget.md"
-        }
+  "prompt_file": "_prompt.md",
+  "thinkers": {
+    "aaron-beck": {
+      "nameZh": "阿伦·贝克"
+    },
+    "adam-smith": {
+      "nameZh": "亚当·斯密",
+      "nameEn": "Adam Smith",
+      "file": "adam-smith.md"
+    },
+    "antoine-de-saint-exupery": {
+      "nameZh": "安东尼·德·圣-埃克苏佩里"
+    },
+    "benjamin-graham": {
+      "nameZh": "本杰明·格雷厄姆"
+    },
+    "carl-sagan": {
+      "nameZh": "卡尔·萨根"
+    },
+    "carl-von-clausewitz": {
+      "nameZh": "卡尔·冯·克劳塞维茨"
+    },
+    "charles-darwin": {
+      "nameZh": "查尔斯·达尔文",
+      "nameEn": "Charles Darwin",
+      "file": "charles-darwin.md"
+    },
+    "christopher-alexander": {
+      "nameZh": "克里斯托弗·亚历山大"
+    },
+    "daniel-kahneman": {
+      "nameZh": "丹尼尔·卡尼曼"
+    },
+    "david-buss": {
+      "nameZh": "戴维·巴斯"
+    },
+    "david-hume": {
+      "nameZh": "大卫·休谟"
+    },
+    "david-mcclelland": {
+      "nameZh": "大卫·麦克利兰"
+    },
+    "edward-gibbon": {
+      "nameZh": "爱德华·吉本"
+    },
+    "emile-durkheim": {
+      "nameZh": "埃米尔·涂尔干"
+    },
+    "fernand-braudel": {
+      "nameZh": "费尔南·布罗代尔"
+    },
+    "francis-bacon": {
+      "nameZh": "弗朗西斯·培根",
+      "nameEn": "Francis Bacon",
+      "file": "francis-bacon.md"
+    },
+    "friedrich-hegel": {
+      "nameZh": "弗里德里希·黑格尔"
+    },
+    "genrich-altshuller": {
+      "nameZh": "根里奇·阿奇舒勒"
+    },
+    "george-kelly": {
+      "nameZh": "乔治·凯利"
+    },
+    "george-polya": {
+      "nameZh": "乔治·波利亚"
+    },
+    "george-zipf": {
+      "nameZh": "乔治·齐夫"
+    },
+    "gerald-prince": {
+      "nameZh": "杰拉德·普林斯"
+    },
+    "herbert-simon": {
+      "nameZh": "赫伯特·西蒙"
+    },
+    "immanuel-kant": {
+      "nameZh": "伊曼努尔·康德",
+      "nameEn": "Immanuel Kant",
+      "file": "immanuel-kant.md"
+    },
+    "irvin-yalom": {
+      "nameZh": "欧文·亚隆"
+    },
+    "isaac-newton": {
+      "nameZh": "艾萨克·牛顿"
+    },
+    "james-george-frazer": {
+      "nameZh": "詹姆斯·乔治·弗雷泽"
+    },
+    "jean-henri-fabre": {
+      "nameZh": "让-亨利·法布尔"
+    },
+    "jean-piaget": {
+      "nameZh": "让·皮亚杰",
+      "nameEn": "Jean Piaget",
+      "file": "jean-piaget.md"
+    },
+    "john-stuart-mill": {
+      "nameZh": "约翰·穆勒"
+    },
+    "john-yudkin": {
+      "nameZh": "约翰·尤德金"
+    },
+    "karl-jaspers": {
+      "nameZh": "卡尔·雅斯贝尔斯"
+    },
+    "karl-marx": {
+      "nameZh": "卡尔·马克思",
+      "nameEn": "Karl Marx",
+      "file": "karl-marx.md"
+    },
+    "lewis-thomas": {
+      "nameZh": "刘易斯·托马斯"
+    },
+    "liang-qichao": {
+      "nameZh": "梁启超"
+    },
+    "ludwig-von-mises": {
+      "nameZh": "路德维希·冯·米塞斯"
+    },
+    "michel-foucault": {
+      "nameZh": "米歇尔·福柯",
+      "nameEn": "Michel Foucault",
+      "file": "michel-foucault.md"
+    },
+    "paul-graham": {
+      "nameZh": "保罗·格雷厄姆"
+    },
+    "paul-watzlawick": {
+      "nameZh": "保罗·瓦茨拉维克"
+    },
+    "peter-abrahams": {
+      "nameZh": "彼得·亚伯拉罕斯"
+    },
+    "peter-drucker": {
+      "nameZh": "彼得·德鲁克",
+      "nameEn": "Peter Drucker",
+      "file": "peter-drucker.md"
+    },
+    "philip-kotler": {
+      "nameZh": "菲利普·科特勒"
+    },
+    "pierre-bourdieu": {
+      "nameZh": "皮埃尔·布迪厄"
+    },
+    "plato": {
+      "nameZh": "柏拉图",
+      "nameEn": "Plato",
+      "file": "plato.md"
+    },
+    "qian-mu": {
+      "nameZh": "钱穆"
+    },
+    "rene-descartes": {
+      "nameZh": "勒内·笛卡尔"
+    },
+    "richard-dawkins": {
+      "nameZh": "理查德·道金斯"
+    },
+    "ruth-benedict": {
+      "nameZh": "鲁思·本尼迪克特"
+    },
+    "salvador-minuchin": {
+      "nameZh": "萨尔瓦多·米纽庆"
+    },
+    "sima-qian": {
+      "nameZh": "司马迁",
+      "nameEn": "Sima Qian",
+      "file": "sima-qian.md"
+    },
+    "steven-pinker": {
+      "nameZh": "史蒂芬·平克"
+    },
+    "usha-goswami": {
+      "nameZh": "乌莎·戈斯瓦米"
+    },
+    "warren-buffett": {
+      "nameZh": "沃伦·巴菲特"
+    },
+    "yu-yingshi": {
+      "nameZh": "余英时"
     }
+  }
 }
