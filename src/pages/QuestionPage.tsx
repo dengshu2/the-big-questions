@@ -5,6 +5,45 @@ import type { Section, Discipline, Thinker } from '../data/types'
 import { SiteNav } from '../components/SiteNav'
 import './QuestionPage.css'
 
+// 思想家介绍的 slug 映射（从 _index.json 中加载）
+interface ThinkerIndex {
+  thinkers: Record<string, { nameZh: string; nameEn: string; file: string }>
+}
+
+let _thinkerSlugMap: Map<string, string> | null = null
+let _thinkerIndexPromise: Promise<Map<string, string>> | null = null
+
+function loadThinkerSlugMap(): Promise<Map<string, string>> {
+  if (_thinkerSlugMap) return Promise.resolve(_thinkerSlugMap)
+  if (!_thinkerIndexPromise) {
+    _thinkerIndexPromise = fetch('/database/thinkers/_index.json')
+      .then((r) => r.json())
+      .then((data: ThinkerIndex) => {
+        const map = new Map<string, string>()
+        for (const [slug, meta] of Object.entries(data.thinkers)) {
+          map.set(meta.nameZh, slug)
+        }
+        _thinkerSlugMap = map
+        return map
+      })
+      .catch(() => {
+        _thinkerIndexPromise = null
+        return new Map<string, string>()
+      })
+  }
+  return _thinkerIndexPromise
+}
+
+function useThinkerSlugMap() {
+  const [slugMap, setSlugMap] = useState<Map<string, string>>(
+    () => _thinkerSlugMap || new Map()
+  )
+  useEffect(() => {
+    loadThinkerSlugMap().then(setSlugMap)
+  }, [])
+  return slugMap
+}
+
 const ACCENT_COLORS = [
   'var(--color-accent-gold)',
   'var(--color-accent-blue)',
@@ -18,6 +57,7 @@ function QuestionContent() {
   const questionId = parseInt(id || '1', 10)
   const question = useBigQuestion(questionId)
   const allQuestions = useBigQuestions()
+  const slugMap = useThinkerSlugMap()
 
   // Find prev/next questions
   const { prev, next } = useMemo(() => {
@@ -70,6 +110,7 @@ function QuestionContent() {
                 key={discipline.id}
                 discipline={discipline}
                 defaultExpanded={idx === 0}
+                slugMap={slugMap}
               />
             ))}
           </div>
@@ -77,7 +118,7 @@ function QuestionContent() {
       ) : (
         <div className="sections-container">
           {question.sections.map((section) => (
-            <SectionCard key={section.id} section={section} />
+            <SectionCard key={section.id} section={section} slugMap={slugMap} />
           ))}
         </div>
       )}
@@ -101,7 +142,7 @@ function QuestionContent() {
   )
 }
 
-function SectionCard({ section }: { section: Section }) {
+function SectionCard({ section, slugMap }: { section: Section; slugMap: Map<string, string> }) {
   const [expanded, setExpanded] = useState(true)
   const totalBooks = section.disciplines.reduce(
     (sum, d) => sum + d.thinkers.reduce((s, t) => s + t.books.length, 0),
@@ -130,6 +171,7 @@ function SectionCard({ section }: { section: Section }) {
               key={discipline.id}
               discipline={discipline}
               defaultExpanded={idx === 0 && expanded}
+              slugMap={slugMap}
             />
           ))}
         </div>
@@ -138,7 +180,7 @@ function SectionCard({ section }: { section: Section }) {
   )
 }
 
-function DisciplineCard({ discipline, defaultExpanded = false }: { discipline: Discipline; defaultExpanded?: boolean }) {
+function DisciplineCard({ discipline, defaultExpanded = false, slugMap }: { discipline: Discipline; defaultExpanded?: boolean; slugMap: Map<string, string> }) {
   const [expanded, setExpanded] = useState(defaultExpanded)
   const bookCount = discipline.thinkers.reduce((sum, t) => sum + t.books.length, 0)
 
@@ -171,7 +213,7 @@ function DisciplineCard({ discipline, defaultExpanded = false }: { discipline: D
       <Collapsible expanded={expanded}>
         <div className="discipline-content">
           {discipline.thinkers.map((thinker) => (
-            <ThinkerCard key={thinker.id} thinker={thinker} />
+            <ThinkerCard key={thinker.id} thinker={thinker} slugMap={slugMap} />
           ))}
         </div>
       </Collapsible>
@@ -179,15 +221,26 @@ function DisciplineCard({ discipline, defaultExpanded = false }: { discipline: D
   )
 }
 
-function ThinkerCard({ thinker }: { thinker: Thinker }) {
+function ThinkerCard({ thinker, slugMap }: { thinker: Thinker; slugMap: Map<string, string> }) {
   const [expanded, setExpanded] = useState(false)
   const lifespan = formatLifespan(thinker.birthYear, thinker.deathYear)
+  const thinkerSlug = slugMap.get(thinker.nameZh)
 
   return (
     <div className={`thinker-card ${expanded ? 'is-expanded' : ''}`}>
       <button className="thinker-header" onClick={() => setExpanded(!expanded)}>
         <div className="thinker-info">
           <span className="thinker-name">{thinker.nameZh}</span>
+          {thinkerSlug && (
+            <Link
+              to={`/thinker/${thinkerSlug}`}
+              className="thinker-intro-link"
+              title="查看思想家介绍"
+              onClick={(e) => e.stopPropagation()}
+            >
+              📖
+            </Link>
+          )}
           {thinker.wikipediaUrl && (
             <a
               href={thinker.wikipediaUrl}

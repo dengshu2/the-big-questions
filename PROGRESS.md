@@ -1,7 +1,7 @@
 # 项目进度 · PROGRESS
 
 > **给下一个 AI 或协作者的交接文档**
-> 最后更新：2026-02-24（P3 打磨阶段完成）
+> 最后更新：2026-02-26（P4 思想家介绍系统）
 
 ## 项目概述
 
@@ -16,21 +16,40 @@
 | 构建工具 | Vite 7.x | |
 | 框架 | React 19 + TypeScript | 组件化开发、类型安全 |
 | 样式 | Vanilla CSS | 自定义设计系统，暗色知识主题 |
-| 数据源 | `public/database/canon.csv` | 920 行、15 列 |
+| 数据源 | `public/database/canon.csv` | 920 行、16 列（含 wikipedia_url） |
+| Markdown 渲染 | `react-markdown` | 用于思想家介绍页的 Markdown 内容 |
 | 仓库 | [GitHub](https://github.com/dengshu2/the-big-questions) | public |
 
 ## 数据结构
 
-`canon.csv` 的 15 个字段：
+`canon.csv` 的 16 个字段：
 
 ```
 big_question_id, big_question_name, section_id, section_name,
 discipline, thinker_name_zh, thinker_name_en,
 birth_year, death_year, nationality,
-book_title_zh, book_title_en, is_coauthored, book_order, is_minimum_list
+book_title_zh, book_title_en, is_coauthored, book_order, is_minimum_list,
+wikipedia_url
 ```
 
 层级关系：`大问题 (11) → 章节 (~50) → 学科 (~100) → 思想家 (~300) → 书籍 (~920)`
+
+### 思想家介绍数据
+
+独立于 `canon.csv`，存放在 `public/database/thinkers/` 目录下：
+
+| 文件 | 说明 |
+|------|------|
+| `_index.json` | 思想家索引，映射 slug → `{nameZh, nameEn, file}` |
+| `_prompt.md` | 阅读框架/Prompt 模板，前端展示用 |
+| `{slug}.md` | 各思想家的 Markdown 介绍文件 |
+
+**Markdown 介绍文件结构**（遵循 `_prompt.md` 模板）：
+1. 此人是谁（生平背景）
+2. 核心贡献的来源（逻辑链条）
+3. 必读著作（最多 3 本）
+4. 现代人必须知道的 3 个核心概念（原始含义 + 未解决的问题 + 现代应用）
+5. 历史局限与反对者
 
 ## 设计决策
 
@@ -42,38 +61,56 @@ book_title_zh, book_title_en, is_coauthored, book_order, is_minimum_list
 6. **数据加载策略** — 运行时 fetch CSV（919 条数据量小，无需构建时预处理）
 7. **React 19 模式** — 使用 `use()` hook + Suspense 处理异步数据加载
 8. **滚动吸附布局** — 首页 Hero 占满首屏 + scroll-snap，卡片网格为完整第二屏
+9. **思想家介绍按需加载** — Markdown 文件用户点到谁才 fetch 谁，索引文件模块级缓存
+10. **CSS 命名空间隔离** — ThinkerPage 的类名使用 `thinker-detail-` 前缀，避免与 QuestionPage 的全局 CSS 冲突
 
 ## 项目结构
 
 ```
 the-big-questions/
-├── public/database/canon.csv    # 原始数据（919 条记录）
+├── public/database/
+│   ├── canon.csv                   # 原始数据（919 条记录，16 列）
+│   └── thinkers/                   # 思想家介绍系统
+│       ├── _index.json             # 思想家索引（slug → 元数据映射）
+│       ├── _prompt.md              # 阅读框架 / Prompt 模板
+│       ├── francis-bacon.md        # 弗朗西斯·培根
+│       ├── plato.md                # 柏拉图
+│       ├── immanuel-kant.md        # 伊曼努尔·康德
+│       ├── charles-darwin.md       # 查尔斯·达尔文
+│       ├── sima-qian.md            # 司马迁
+│       ├── karl-marx.md            # 卡尔·马克思
+│       ├── adam-smith.md           # 亚当·斯密
+│       ├── michel-foucault.md      # 米歇尔·福柯
+│       ├── peter-drucker.md        # 彼得·德鲁克
+│       └── jean-piaget.md          # 让·皮亚杰
 ├── src/
-│   ├── components/              # 共享组件
-│   │   ├── ErrorBoundary.tsx    # 错误边界（包裹 RouterProvider）
-│   │   ├── SiteNav.tsx          # 顶部固定导航栏
-│   │   └── SiteNav.css          # 导航栏样式
-│   ├── data/                    # 数据层
-│   │   ├── types.ts             # 类型定义（CanonRow, BigQuestion, Book 等）
-│   │   ├── parser.ts            # CSV fetch + 解析
-│   │   ├── aggregator.ts        # 扁平数据 → 层级结构聚合
-│   │   ├── hooks.ts             # React hooks（useCanonData, useBigQuestions 等）
-│   │   └── index.ts             # 统一导出
-│   ├── pages/                   # 页面组件
-│   │   ├── QuestionPage.tsx     # 大问题详情页（含扁平化、自动展开、上下翻页）
-│   │   ├── QuestionPage.css     # 详情页样式
-│   │   ├── MinimumListPage.tsx  # 必读书单页（/minimum）
-│   │   └── MinimumListPage.css  # 必读书单样式
-│   ├── index.css                # 设计系统（CSS 变量、Reset、动画）
-│   ├── App.css                  # 首页样式（Hero 全屏 + 滚动指示 + 卡片网格）
-│   ├── App.tsx                  # 首页（Hero + 滚动吸附 + 卡片网格）
-│   ├── router.tsx               # 路由配置 + ScrollToTop（/, /question/:id, /minimum）
-│   └── main.tsx                 # 入口（含 ErrorBoundary）
-├── index.html                   # HTML 入口（含 SEO、字体）
-├── Dockerfile                   # 多阶段构建（node → nginx）
-├── docker-compose.yml           # Docker Compose 编排
-├── nginx.conf                   # Nginx 配置（SPA 路由 + 缓存）
-├── .dockerignore                # Docker 构建排除
+│   ├── components/                 # 共享组件
+│   │   ├── ErrorBoundary.tsx       # 错误边界（包裹 RouterProvider）
+│   │   ├── SiteNav.tsx             # 顶部固定导航栏
+│   │   └── SiteNav.css             # 导航栏样式
+│   ├── data/                       # 数据层
+│   │   ├── types.ts                # 类型定义（CanonRow, BigQuestion, Book 等）
+│   │   ├── parser.ts               # CSV fetch + 解析
+│   │   ├── aggregator.ts           # 扁平数据 → 层级结构聚合
+│   │   ├── hooks.ts                # React hooks（useCanonData, useBigQuestions 等）
+│   │   └── index.ts                # 统一导出
+│   ├── pages/                      # 页面组件
+│   │   ├── QuestionPage.tsx        # 大问题详情页（含思想家介绍链接 📖）
+│   │   ├── QuestionPage.css        # 详情页样式
+│   │   ├── MinimumListPage.tsx     # 必读书单页（/minimum）
+│   │   ├── MinimumListPage.css     # 必读书单样式
+│   │   ├── ThinkerPage.tsx         # 思想家介绍页（/thinker/:slug）
+│   │   └── ThinkerPage.css         # 思想家介绍页样式
+│   ├── index.css                   # 设计系统（CSS 变量、Reset、动画）
+│   ├── App.css                     # 首页样式（Hero 全屏 + 滚动指示 + 卡片网格）
+│   ├── App.tsx                     # 首页（Hero + 滚动吸附 + 卡片网格）
+│   ├── router.tsx                  # 路由配置（/, /question/:id, /minimum, /thinker/:slug）
+│   └── main.tsx                    # 入口（含 ErrorBoundary）
+├── index.html                      # HTML 入口（含 SEO、字体）
+├── Dockerfile                      # 多阶段构建（node → nginx）
+├── docker-compose.yml              # Docker Compose 编排
+├── nginx.conf                      # Nginx 配置（SPA 路由 + 缓存）
+├── .dockerignore                   # Docker 构建排除
 ├── package.json
 ├── vite.config.ts
 └── README.md
@@ -127,9 +164,34 @@ the-big-questions/
   - [x] **页面进入动画**：所有页面统一 fadeInUp 进入动画
   - [x] **移除搜索功能**：简化首页，移除不必要的搜索栏和热门标签
 
+- [x] **P3.5 维基百科链接**（2026-02-25）
+  - [x] `canon.csv` 新增 `wikipedia_url` 列（第 16 列）
+  - [x] 数据层更新：`CanonRow` 和 `Thinker` 类型新增 `wikipediaUrl` 字段
+  - [x] QuestionPage 思想家卡片支持维基百科外链图标
+
+- [x] **P4 思想家介绍系统**（2026-02-26）
+  - [x] **阅读框架模板**：`_prompt.md` —— 5 步评估思想家的标准化提问结构
+  - [x] **首批 10 位核心思想家介绍**（覆盖 Q1~Q7）：
+    - 培根、柏拉图、康德、达尔文、司马迁、马克思、亚当·斯密、福柯、德鲁克、皮亚杰
+  - [x] **索引系统**：`_index.json`（slug → 元数据映射，支持按需加载）
+  - [x] **ThinkerPage 详情页**（`/thinker/:slug`）：
+    - react-markdown 渲染 Markdown 内容
+    - 可折叠「阅读框架」面板（展示 Prompt 模板）
+    - 面包屑导航 + 加载状态 + 404 处理
+    - 自定义 Markdown 组件（h1→h2 降级、strong 样式强化）
+  - [x] **QuestionPage 联动**：有介绍的思想家展示 📖 图标，点击跳转 ThinkerPage
+    - 索引数据模块级缓存（`useThinkerSlugMap` hook，一次加载全局复用）
+  - [x] **CSS 命名冲突修复**：ThinkerPage 使用 `thinker-detail-` 前缀避免全局样式污染
+  - [x] **路由注册**：`/thinker/:slug` 路由已添加到 `router.tsx`
+
 ## 下一步 🚧
 
-### P4 — 进阶功能（待定）
+### P4.1 — 扩展思想家介绍
+- [ ] 按大问题批次生成剩余 ~290 位思想家的 Markdown 介绍
+- [ ] 考虑添加思想家元数据到介绍页（生卒年、国籍、代表作等，来自 canon.csv ）
+- [ ] 思想家页面：上一位 / 下一位导航
+
+### P5 — 进阶功能（待定）
 - [ ] 多维筛选（国籍、年代范围、学科）
 - [ ] 性能优化（虚拟列表等）
 - [ ] 思想家时间线可视化
@@ -138,3 +200,4 @@ the-big-questions/
 ---
 
 *每次完成一个模块后，请更新本文件的 checklist。*
+

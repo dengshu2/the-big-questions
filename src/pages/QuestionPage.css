@@ -323,6 +323,23 @@
   white-space: nowrap;
 }
 
+.thinker-intro-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  opacity: 0.5;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.thinker-intro-link:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
 .thinker-wiki-link {
   display: inline-flex;
   align-items: center;

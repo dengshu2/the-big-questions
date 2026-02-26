@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import App from './App'
 import QuestionPage from './pages/QuestionPage'
 import MinimumListPage from './pages/MinimumListPage'
+import ThinkerPage from './pages/ThinkerPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: '/minimum',
         element: <MinimumListPage />,
+      },
+      {
+        path: '/thinker/:slug',
+        element: <ThinkerPage />,
       },
     ],
   },
