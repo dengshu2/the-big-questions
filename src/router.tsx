@@ -4,6 +4,7 @@ import App from './App'
 import QuestionPage from './pages/QuestionPage'
 import MinimumListPage from './pages/MinimumListPage'
 import ThinkerPage from './pages/ThinkerPage'
+import ThinkerListPage from './pages/ThinkerListPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: '/minimum',
         element: <MinimumListPage />,
+      },
+      {
+        path: '/thinkers',
+        element: <ThinkerListPage />,
       },
       {
         path: '/thinker/:slug',

@@ -9,6 +9,9 @@ export function SiteNav() {
         <span>The Big Questions</span>
       </Link>
       <div className="site-nav-links">
+        <Link to="/thinkers" className="site-nav-link">
+          思想家
+        </Link>
         <Link to="/minimum" className="site-nav-link">
           必读书单
         </Link>
