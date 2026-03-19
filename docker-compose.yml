@@ -1,6 +1,9 @@
 services:
   the-big-questions:
-    build: .
+    build:
+      context: .
+      args:
+        VITE_UMAMI_WEBSITE_ID: ${VITE_UMAMI_WEBSITE_ID}
     container_name: the-big-questions
     restart: unless-stopped
     ports:

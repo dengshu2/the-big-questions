@@ -8,6 +8,8 @@ RUN npm ci
 
 # 复制源码并构建
 COPY . .
+
+ARG VITE_UMAMI_WEBSITE_ID
 RUN npm run build
 
 # ---- Stage 2: Production ----
