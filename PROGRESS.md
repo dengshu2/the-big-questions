@@ -149,7 +149,7 @@ the-big-questions/
 - [x] **Docker 部署**（2026-02-24）
   - [x] 多阶段 Dockerfile（node:20-alpine 构建 → nginx:alpine 托管）
   - [x] Nginx 配置（SPA 路由兜底 + 静态资源缓存 + gzip）
-  - [x] Docker Compose 编排（连入 `npm-network`，适配 Nginx Proxy Manager）
+  - [x] Docker Compose 编排（连入共享反向代理网络；现使用 `proxy-network` + Caddy）
   - [x] `.dockerignore` 优化构建上下文
   - [x] 构建验证通过，容器运行正常
 

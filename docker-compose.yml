@@ -9,8 +9,8 @@ services:
     ports:
       - "127.0.0.1:3003:80"   # 仅本地访问，由 NPM 反代
     networks:
-      - npm-network
+      - proxy-network
 
 networks:
-  npm-network:
-    external: true             # 使用已有的 npm-network
+  proxy-network:
+    external: true             # 使用共享的 proxy-network
