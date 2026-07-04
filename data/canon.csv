@@ -642,9 +642,9 @@ big_question_id,big_question_name,section_id,section_name,discipline,thinker_slu
 7,如何理解家庭,7.4,改善家庭,黄金时代,virginia-satir,维吉尼亚·萨提亚,Virginia Satir,1916,1916,1988,1988,美国,false,false,萨提亚治疗实录,,false,3,false,https://zh.wikipedia.org/wiki/维琴尼亚·萨提尔
 7,如何理解家庭,7.4,改善家庭,黄金时代,mara-selvini-palazzoli,玛拉·塞尔维尼·帕拉佐利,Mara Selvini Palazzoli,1916,1916,1999,1999,意大利,false,false,悖论与反悖论,Paradox and Counterparadox,false,1,false,https://en.wikipedia.org/wiki/Mara_Selvini_Palazzoli
 7,如何理解家庭,7.4,改善家庭,黄金时代,mara-selvini-palazzoli,玛拉·塞尔维尼·帕拉佐利,Mara Selvini Palazzoli,1916,1916,1999,1999,意大利,false,false,家庭游戏,Family Games,false,2,false,https://en.wikipedia.org/wiki/Mara_Selvini_Palazzoli
-7,如何理解家庭,7.4,改善家庭,黄金时代,steve-de-shazer,史蒂夫·德·沙泽尔,Steve de Shazer,1904,1904,2005,2005,美国,false,false,超越奇迹,,false,1,false,https://en.wikipedia.org/wiki/Steve_de_Shazer
-7,如何理解家庭,7.4,改善家庭,黄金时代,steve-de-shazer,史蒂夫·德·沙泽尔,Steve de Shazer,1904,1904,2005,2005,美国,false,false,短期治疗中解决方法的关键因素,Keys to Solution in Brief Therapy,false,2,false,https://en.wikipedia.org/wiki/Steve_de_Shazer
-7,如何理解家庭,7.4,改善家庭,黄金时代,steve-de-shazer,史蒂夫·德·沙泽尔,Steve de Shazer,1904,1904,2005,2005,美国,false,false,线索：短期治疗中解决方法的探究,Clues: Investigating Solutions in Brief Therapy,false,3,false,https://en.wikipedia.org/wiki/Steve_de_Shazer
+7,如何理解家庭,7.4,改善家庭,黄金时代,steve-de-shazer,史蒂夫·德·沙泽尔,Steve de Shazer,1940,1940,2005,2005,美国,false,false,超越奇迹,,false,1,false,https://en.wikipedia.org/wiki/Steve_de_Shazer
+7,如何理解家庭,7.4,改善家庭,黄金时代,steve-de-shazer,史蒂夫·德·沙泽尔,Steve de Shazer,1940,1940,2005,2005,美国,false,false,短期治疗中解决方法的关键因素,Keys to Solution in Brief Therapy,false,2,false,https://en.wikipedia.org/wiki/Steve_de_Shazer
+7,如何理解家庭,7.4,改善家庭,黄金时代,steve-de-shazer,史蒂夫·德·沙泽尔,Steve de Shazer,1940,1940,2005,2005,美国,false,false,线索：短期治疗中解决方法的探究,Clues: Investigating Solutions in Brief Therapy,false,3,false,https://en.wikipedia.org/wiki/Steve_de_Shazer
 7,如何理解家庭,7.4,改善家庭,其他流派,sue-johnson,苏·约翰逊,Sue Johnson,1947,1947,,,加拿大,false,false,依恋与亲密关系,,false,1,false,https://en.wikipedia.org/wiki/Sue_Johnson
 7,如何理解家庭,7.4,改善家庭,其他流派,sue-johnson,苏·约翰逊,Sue Johnson,1947,1947,,,加拿大,false,false,依恋与情绪聚焦治疗,,false,2,false,https://en.wikipedia.org/wiki/Sue_Johnson
 7,如何理解家庭,7.4,改善家庭,其他流派,sue-johnson,苏·约翰逊,Sue Johnson,1947,1947,,,加拿大,false,false,爱的感觉,Love Sense,false,3,false,https://en.wikipedia.org/wiki/Sue_Johnson
@@ -778,9 +778,9 @@ big_question_id,big_question_name,section_id,section_name,discipline,thinker_slu
 8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,song-wei-ba-jiao,松尾芭蕉,,1644,1644,1694,1694,日本,false,false,芭蕉全集,,false,1,false,https://zh.wikipedia.org/wiki/松尾芭蕉
 8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,charles-baudelaire,夏尔·波德莱尔,Charles Baudelaire,1821,1821,1867,1867,法国,false,false,恶之花,,false,1,false,https://zh.wikipedia.org/wiki/夏尔·波德莱尔
 8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,emily-dickinson,艾米莉·狄金森,Emily Dickinson,1830,1830,1886,1886,美国,false,false,狄金森诗全集,,false,1,false,https://zh.wikipedia.org/wiki/艾米莉·狄金森
-8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rabindranath-tagore,泰戈尔,Rabindranath Tagore,1851,1851,1964,1964,印度,false,false,吉檀迦利,,false,1,false,https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔
-8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rabindranath-tagore,泰戈尔,Rabindranath Tagore,1851,1851,1964,1964,印度,false,false,飞鸟集,,false,2,false,https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔
-8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rabindranath-tagore,泰戈尔,Rabindranath Tagore,1851,1851,1964,1964,印度,false,false,新月集,,false,3,false,https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔
+8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rabindranath-tagore,泰戈尔,Rabindranath Tagore,1861,1861,1941,1941,印度,false,false,吉檀迦利,,false,1,false,https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔
+8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rabindranath-tagore,泰戈尔,Rabindranath Tagore,1861,1861,1941,1941,印度,false,false,飞鸟集,,false,2,false,https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔
+8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rabindranath-tagore,泰戈尔,Rabindranath Tagore,1861,1861,1941,1941,印度,false,false,新月集,,false,3,false,https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔
 8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,rainer-maria-rilke,莱内·马利亚·里尔克,Rainer Maria Rilke,1875,1875,1926,1926,奥地利,false,false,里尔克全集,,false,1,false,https://zh.wikipedia.org/wiki/莱纳·玛利亚·里尔克
 8,如何理解人性,8.5,人性的文学理解,十二诗神（世界）,edith-sodergran,伊迪特·索德格朗,Edith Södergran,1892,1892,1923,1923,芬兰,false,false,我必须徒步穿越太阳系,,false,1,false,https://en.wikipedia.org/wiki/Edith_Södergran
 8,如何理解人性,8.5,人性的文学理解,文学评论,virginia-woolf,弗吉尼亚·伍尔夫,Virginia Woolf,1882,1882,1941,1941,英国,false,false,普通读者,,false,1,false,https://zh.wikipedia.org/wiki/弗吉尼亚·吴尔夫
@@ -904,10 +904,10 @@ big_question_id,big_question_name,section_id,section_name,discipline,thinker_slu
 10,如何理解信仰,10.5,新道学,心灵哲学,daniel-c-dennett,丹尼尔·丹尼特,Daniel C. Dennett,1942,1942,2024,2024,美国,false,false,意向立场,,false,1,false,https://zh.wikipedia.org/wiki/丹尼尔·丹尼特
 10,如何理解信仰,10.5,新道学,心灵哲学,daniel-c-dennett,丹尼尔·丹尼特,Daniel C. Dennett,1942,1942,2024,2024,美国,false,false,意识的解释,,false,2,false,https://zh.wikipedia.org/wiki/丹尼尔·丹尼特
 10,如何理解信仰,10.5,新道学,心灵哲学,daniel-c-dennett,丹尼尔·丹尼特,Daniel C. Dennett,1942,1942,2024,2024,美国,false,false,自由的进化,,false,3,false,https://zh.wikipedia.org/wiki/丹尼尔·丹尼特
-10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,美国,false,false,预测算法,,false,1,false,https://en.wikipedia.org/wiki/Andy_Clark
-10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,美国,false,false,心体,,false,2,false,https://en.wikipedia.org/wiki/Andy_Clark
-10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,美国,false,false,体验机器,,false,3,false,https://en.wikipedia.org/wiki/Andy_Clark
-10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,美国,false,false,放大心灵,,false,4,false,https://en.wikipedia.org/wiki/Andy_Clark
+10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,英国,false,false,预测算法,,false,1,false,https://en.wikipedia.org/wiki/Andy_Clark
+10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,英国,false,false,心体,,false,2,false,https://en.wikipedia.org/wiki/Andy_Clark
+10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,英国,false,false,体验机器,,false,3,false,https://en.wikipedia.org/wiki/Andy_Clark
+10,如何理解信仰,10.5,新道学,心灵哲学,andy-clark,安迪·克拉克,Andy Clark,1957,1957,,,英国,false,false,放大心灵,,false,4,false,https://en.wikipedia.org/wiki/Andy_Clark
 10,如何理解信仰,10.5,新道学,本土心理学,li-yi-yuan,李亦园,,1931,1931,2017,2017,中国,false,false,宗教与神话,,false,1,false,https://zh.wikipedia.org/wiki/李亦园
 10,如何理解信仰,10.5,新道学,本土心理学,li-yi-yuan,李亦园,,1931,1931,2017,2017,中国,false,false,文化的图像,,false,2,false,https://zh.wikipedia.org/wiki/李亦园
 10,如何理解信仰,10.5,新道学,本土心理学,li-yi-yuan,李亦园,,1931,1931,2017,2017,中国,false,false,李亦园自选集,,false,3,false,https://zh.wikipedia.org/wiki/李亦园

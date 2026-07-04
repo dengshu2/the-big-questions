@@ -73,6 +73,7 @@ export default function ThinkerPage() {
               {status === 'read' && <span className="tk-lit-star" title="已点亮">✦</span>}
             </h1>
             {thinker.nameEn && <p className="tk-name-en">{thinker.nameEn}</p>}
+            <p className="tk-line">{thinker.line}</p>
             <p className="tk-meta">
               {formatYears(thinker)} · {thinker.nationality || '国籍不详'}
             </p>
@@ -105,6 +106,12 @@ export default function ThinkerPage() {
             </button>
           </div>
         </header>
+
+        {thinker.brief && (
+          <section className="tk-brief">
+            <p>{thinker.brief}</p>
+          </section>
+        )}
 
         <section className="tk-books">
           <h2 className="tk-h2">著作 · {thinker.books.length}</h2>

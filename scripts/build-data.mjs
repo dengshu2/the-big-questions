@@ -25,6 +25,7 @@ function readCsv(file) {
 
 const rows = readCsv('canon.csv')
 const dialogueRows = readCsv('dialogues.csv')
+const blurbs = JSON.parse(readFileSync(join(DATA, 'blurbs.json'), 'utf8'))
 
 // ---------- 聚合思想家 ----------
 const thinkers = new Map()
@@ -87,6 +88,17 @@ for (const f of essayFiles) {
   if (!thinkers.has(slug)) fail(`data/thinkers/${f}: slug 不存在于 canon.csv`)
   thinkers.get(slug).hasEssay = true
 }
+
+// 星签（一句话定位）与简志（150~250 字）校验并挂载
+for (const [slug, b] of Object.entries(blurbs)) {
+  if (!thinkers.has(slug)) fail(`blurbs.json: slug ${slug} 不存在于 canon.csv`)
+  if (!b.line || b.line.length < 6 || b.line.length > 45) fail(`blurbs.json: ${slug} 的 line 长度越界`)
+  if (b.brief && (b.brief.length < 100 || b.brief.length > 300)) fail(`blurbs.json: ${slug} 的 brief 长度越界`)
+  thinkers.get(slug).line = b.line
+  if (b.brief) thinkers.get(slug).brief = b.brief
+}
+const noLine = [...thinkers.keys()].filter((s) => !blurbs[s]?.line)
+if (noLine.length) fail(`缺星签: ${noLine.slice(0, 5).join(', ')} 等 ${noLine.length} 位`)
 
 const seenPairs = new Set()
 for (const [i, d] of dialogueRows.entries()) {
@@ -233,6 +245,7 @@ const meta = {
   bookCount: rows.length,
   questionCount: questionMeta.size,
   essayCount: essayFiles.length,
+  briefCount: [...thinkers.values()].filter((t) => t.brief).length,
   dialogueCount: dialogueRows.length,
   minimumCount: [...thinkers.values()].filter((t) => t.magnitude === 1).length,
   doubleStars: [...thinkers.values()].filter((t) => t.questions.length > 1).map((t) => t.slug),

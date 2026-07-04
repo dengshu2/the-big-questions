@@ -32,10 +32,31 @@
   letter-spacing: 0.04em;
 }
 
-.tk-meta {
+.tk-line {
   margin-top: 10px;
-  font-size: 14px;
+  font-family: var(--serif);
+  font-size: 16px;
   color: var(--ink-soft);
+}
+
+.tk-meta {
+  margin-top: 6px;
+  font-size: 13.5px;
+  color: var(--ink-faint);
+}
+
+.tk-brief {
+  margin-top: 32px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--gold);
+  background: var(--paper-card);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.tk-brief p {
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--ink);
 }
 
 .tk-qs {

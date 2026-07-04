@@ -125,7 +125,7 @@ export default function LibraryPage() {
                   />
                   <span className="lib-name">
                     <b>{t.nameZh}</b>
-                    {t.nameEn && <small>{t.nameEn}</small>}
+                    <small>{t.line}</small>
                   </span>
                   <span className="lib-years">{formatYears(t)}</span>
                   <span className="lib-nation">{t.nationality || '—'}</span>

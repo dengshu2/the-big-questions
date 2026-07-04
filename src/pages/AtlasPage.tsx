@@ -271,6 +271,7 @@ export default function AtlasPage() {
               {hoverThinker.nameZh}
               {hoverThinker.hasEssay && <span className="atlas-tip-essay">有志</span>}
             </p>
+            <p className="atlas-tip-line">{hoverThinker.line}</p>
             <p className="atlas-tip-meta">
               {formatYears(hoverThinker)} · {hoverThinker.nationality || '—'} · 著作 {hoverThinker.books.length}
             </p>

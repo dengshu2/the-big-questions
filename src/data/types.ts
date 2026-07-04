@@ -38,6 +38,10 @@ export interface Thinker {
   hasEssay: boolean
   dialogues: Dialogue[]
   magnitude: 1 | 2 | 3 | 4
+  /** 星签：一句话定位 */
+  line: string
+  /** 简志：150~250 字介绍（二等星） */
+  brief?: string
 }
 
 export interface Discipline {
@@ -110,6 +114,7 @@ export interface Meta {
   bookCount: number
   questionCount: number
   essayCount: number
+  briefCount: number
   dialogueCount: number
   minimumCount: number
   doubleStars: string[]
