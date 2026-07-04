@@ -111,6 +111,10 @@
   font-weight: 600;
   text-anchor: middle;
   letter-spacing: 0.12em;
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 5px;
+  stroke-linejoin: round;
 }
 
 .atlas-const-label:hover .atlas-const-name {
@@ -197,6 +201,10 @@
   fill: var(--ink-soft);
   text-anchor: middle;
   pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 2.5px;
+  stroke-linejoin: round;
 }
 
 .atlas-star-name.mag1 {

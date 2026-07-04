@@ -156,6 +156,54 @@ for (const [qid, meta] of [...questionMeta.entries()].sort((a, b) => a[0] - b[0]
       if (d > max) { s.x = cx + (dx / d) * max; s.y = cy + (dy / d) * max }
     }
   }
+  // 一等星星名在天球常显：按文本框做矩形避让，防止星名互相叠压
+  const mag1 = stars.filter((s) => thinkers.get(s.slug).magnitude === 1)
+  const labelHalfW = (slug) => thinkers.get(slug).nameZh.length * 6.6 / 2 + 8
+  for (let iter = 0; iter < 80; iter++) {
+    let moved = false
+    for (let i = 0; i < mag1.length; i++) for (let j = i + 1; j < mag1.length; j++) {
+      const a = mag1[i], b = mag1[j]
+      const needX = labelHalfW(a.slug) + labelHalfW(b.slug)
+      const needY = 26
+      let dx = b.x - a.x
+      const dy = b.y - a.y
+      const ox = needX - Math.abs(dx), oy = needY - Math.abs(dy)
+      if (ox > 0 && oy > 0) {
+        moved = true
+        if (dx === 0) dx = 1
+        if (ox / needX < oy / needY) {
+          const push = (ox / 2) * Math.sign(dx)
+          a.x -= push; b.x += push
+        } else {
+          const push = (oy / 2) * Math.sign(dy || 1)
+          a.y -= push; b.y += push
+        }
+      }
+    }
+    if (!moved) break
+  }
+  // 标签避让后补一轮点避让并收回界内
+  for (let iter = 0; iter < 60; iter++) {
+    for (let i = 0; i < stars.length; i++) for (let j = i + 1; j < stars.length; j++) {
+      const a = stars[i], b = stars[j]
+      const min = a.r + b.r + 9
+      let dx = b.x - a.x, dy = b.y - a.y
+      let d = Math.hypot(dx, dy)
+      if (d < min) {
+        if (d < 0.01) { dx = 1; dy = 0; d = 1 }
+        const aFixed = thinkers.get(a.slug).magnitude === 1
+        const bFixed = thinkers.get(b.slug).magnitude === 1
+        const push = (min - d) / d
+        if (aFixed && !bFixed) { b.x += dx * push; b.y += dy * push }
+        else if (bFixed && !aFixed) { a.x -= dx * push; a.y -= dy * push }
+        else { a.x -= dx * push / 2; a.y -= dy * push / 2; b.x += dx * push / 2; b.y += dy * push / 2 }
+      }
+    }
+    for (const s of stars) {
+      const dx = s.x - cx, dy = s.y - cy, d = Math.hypot(dx, dy), max = R * 1.02
+      if (d > max) { s.x = cx + (dx / d) * max; s.y = cy + (dy / d) * max }
+    }
+  }
   // 座形连线：最亮 ≤8 颗按年代连成折线
   const bright = members
     .sort((a, b) => a.magnitude - b.magnitude || b.books.length - a.books.length)

@@ -5,10 +5,9 @@ import { useProgress } from '../data/progress'
 import { SiteNav } from '../components/SiteNav'
 import './ConstellationPage.css'
 
-// 放大星座视图：沿用天球 L0 的星位（保持座形连续），放大 + 避让后全员星名常显
+// 放大星座视图：沿用天球 L0 的星位（保持座形连续），
+// 按"星点 + 星名 + 年份"的文本框做矩形避让，保证星名互不叠压
 const VIEW_W = 1360
-const VIEW_H = 880
-const MARGIN = 110
 const EN_R: Record<number, number> = { 1: 15, 2: 11.5, 3: 9, 4: 7.5 }
 
 interface EnStar {
@@ -17,60 +16,85 @@ interface EnStar {
   y: number
   r: number
   double: boolean
-  labelUp: boolean
+  hw: number // 文本框半宽（按星名字数）
 }
 
 function useEnlarged(qid: number) {
   return useMemo(() => {
     const c = atlas.constellations.find((k) => k.id === qid)
     if (!c) return null
-    const s = Math.min((VIEW_W - MARGIN * 2) / (2 * c.R), (VIEW_H - MARGIN * 2) / (2 * c.R))
-    const stars: EnStar[] = c.stars.map((st, i) => ({
-      slug: st.slug,
-      x: (st.x - c.cx) * s + VIEW_W / 2,
-      y: (st.y - c.cy) * s + VIEW_H / 2,
-      r: EN_R[getThinker(st.slug)!.magnitude],
-      double: st.double,
-      labelUp: i % 2 === 0,
-    }))
-    // 二次避让：放大后为星名留出空间
-    const gap = c.stars.length > 60 ? 30 : 40
-    for (let iter = 0; iter < 80; iter++) {
+    const H = Math.max(720, Math.min(1180, 540 + c.stars.length * 8))
+    const MX = 120
+    const MY = 90
+    const xs = c.stars.map((s) => s.x)
+    const ys = c.stars.map((s) => s.y)
+    const midX = (Math.min(...xs) + Math.max(...xs)) / 2
+    const midY = (Math.min(...ys) + Math.max(...ys)) / 2
+    const scale = Math.min(
+      (VIEW_W - MX * 2) / Math.max(60, Math.max(...xs) - Math.min(...xs)),
+      (H - MY * 2) / Math.max(60, Math.max(...ys) - Math.min(...ys)),
+    )
+    const stars: EnStar[] = c.stars.map((st) => {
+      const t = getThinker(st.slug)!
+      const chars = t.nameZh.length + (t.magnitude === 1 ? 1.5 : 0)
+      return {
+        slug: st.slug,
+        x: (st.x - midX) * scale + VIEW_W / 2,
+        y: (st.y - midY) * scale + H / 2,
+        r: EN_R[t.magnitude],
+        double: st.double,
+        hw: Math.max(42, (chars * (t.magnitude === 1 ? 16 : 14.5)) / 2 + 9),
+      }
+    })
+    // 矩形避让：盒宽 = 星名宽度，盒高 = 星点 + 名 + 年的纵向占位
+    const NEED_Y = 66
+    for (let iter = 0; iter < 160; iter++) {
+      let moved = false
       for (let i = 0; i < stars.length; i++) {
         for (let j = i + 1; j < stars.length; j++) {
           const a = stars[i], b = stars[j]
-          const min = a.r + b.r + gap
-          let dx = b.x - a.x, dy = b.y - a.y
-          let d = Math.hypot(dx, dy)
-          if (d < min) {
-            if (d < 0.01) { dx = 1; dy = 0; d = 1 }
-            const push = (min - d) / 2 / d
-            a.x -= dx * push; a.y -= dy * push
-            b.x += dx * push; b.y += dy * push
+          const needX = a.hw + b.hw
+          let dx = b.x - a.x
+          const dy = b.y - a.y
+          const ox = needX - Math.abs(dx)
+          const oy = NEED_Y - Math.abs(dy)
+          if (ox > 0 && oy > 0) {
+            moved = true
+            if (dx === 0) dx = 1
+            if (ox / needX < oy / NEED_Y) {
+              const push = (ox / 2) * Math.sign(dx)
+              a.x -= push
+              b.x += push
+            } else {
+              const push = (oy / 2) * Math.sign(dy || 1)
+              a.y -= push
+              b.y += push
+            }
           }
         }
       }
       for (const st of stars) {
-        st.x = Math.min(VIEW_W - MARGIN, Math.max(MARGIN, st.x))
-        st.y = Math.min(VIEW_H - 90, Math.max(96, st.y))
+        st.x = Math.min(VIEW_W - MX, Math.max(MX, st.x))
+        st.y = Math.min(H - MY, Math.max(MY, st.y))
       }
+      if (!moved) break
     }
     const pos = new Map(stars.map((st) => [st.slug, st]))
     const lines = c.lines
       .map(([f, t]) => [pos.get(f), pos.get(t)])
       .filter((p): p is [EnStar, EnStar] => !!p[0] && !!p[1])
-    return { stars, pos, lines }
+    return { stars, pos, lines, H }
   }, [qid])
 }
 
 /** 弧线控制点：中点向远离画面中心的方向外推 */
-function arcPath(a: EnStar, b: EnStar) {
+function arcPath(a: EnStar, b: EnStar, H: number) {
   const mx = (a.x + b.x) / 2
   const my = (a.y + b.y) / 2
   const d = Math.hypot(b.x - a.x, b.y - a.y)
   let nx = -(b.y - a.y) / (d || 1)
   let ny = (b.x - a.x) / (d || 1)
-  if ((mx - VIEW_W / 2) * nx + (my - VIEW_H / 2) * ny < 0) {
+  if ((mx - VIEW_W / 2) * nx + (my - H / 2) * ny < 0) {
     nx = -nx
     ny = -ny
   }
@@ -139,13 +163,13 @@ export default function ConstellationPage() {
           <div className="l1-frame">
             <svg
               className="l1-svg"
-              viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+              viewBox={`0 0 ${VIEW_W} ${enlarged.H}`}
               role="img"
               aria-label={`${question.name}星座放大图：思想家星位与对话弧线`}
             >
               <g className="l1-graticule" aria-hidden="true">
-                <path d={`M -40 ${VIEW_H * 0.32} Q ${VIEW_W / 2} ${VIEW_H * 0.32 - 60} ${VIEW_W + 40} ${VIEW_H * 0.32}`} />
-                <path d={`M -40 ${VIEW_H * 0.72} Q ${VIEW_W / 2} ${VIEW_H * 0.72 - 60} ${VIEW_W + 40} ${VIEW_H * 0.72}`} />
+                <path d={`M -40 ${enlarged.H * 0.32} Q ${VIEW_W / 2} ${enlarged.H * 0.32 - 60} ${VIEW_W + 40} ${enlarged.H * 0.32}`} />
+                <path d={`M -40 ${enlarged.H * 0.72} Q ${VIEW_W / 2} ${enlarged.H * 0.72 - 60} ${VIEW_W + 40} ${enlarged.H * 0.72}`} />
               </g>
 
               {enlarged.lines.map(([a, b], i) => (
@@ -156,7 +180,7 @@ export default function ConstellationPage() {
                 const a = enlarged.pos.get(arc.from)
                 const b = enlarged.pos.get(arc.to)
                 if (!a || !b) return null
-                const d = arcPath(a, b)
+                const d = arcPath(a, b, enlarged.H)
                 const active = activeArc === arc
                 return (
                   <g key={i}>
@@ -174,8 +198,8 @@ export default function ConstellationPage() {
               {enlarged.stars.map((s) => {
                 const t = getThinker(s.slug)!
                 const lit = statusOf(s.slug) === 'read'
-                const labelY = s.labelUp ? s.y - s.r - 24 : s.y + s.r + 20
-                const yearY = s.labelUp ? labelY - 16 : labelY + 15
+                const labelY = s.y + s.r + 19
+                const yearY = labelY + 15
                 return (
                   <g key={s.slug} className="l1-star-g">
                     <Link to={`/thinker/${s.slug}`}>
