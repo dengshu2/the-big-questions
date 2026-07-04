@@ -1,0 +1,401 @@
+.const-page {
+  max-width: 1280px;
+}
+
+.const-head {
+  margin: 20px 0 8px;
+}
+
+.const-title {
+  font-size: 40px;
+  margin: 6px 0 6px;
+  color: var(--qc);
+}
+
+.const-stats {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.const-h2 {
+  font-size: 22px;
+  margin: 0 0 18px;
+}
+
+/* ---------- 对话星图 ---------- */
+
+.l1-section {
+  margin-top: 28px;
+}
+
+.l1-note {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 46px;
+  padding: 10px 16px;
+  border: 1px solid var(--hairline);
+  border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--paper-card);
+  font-size: 13.5px;
+}
+
+.l1-note a {
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
+.l1-note a:hover {
+  color: var(--cinnabar);
+}
+
+.l1-note-arrow {
+  color: var(--ink-faint);
+}
+
+.l1-note-text {
+  color: var(--ink-soft);
+}
+
+.l1-note-hint {
+  color: var(--ink-faint);
+  font-size: 12.5px;
+}
+
+.arc-tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 4px;
+  color: var(--paper-card);
+}
+
+.arc-tag.ext {
+  background: var(--arc-extends);
+}
+
+.arc-tag.ref {
+  background: var(--arc-refutes);
+}
+
+.arc-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  vertical-align: 3px;
+  margin: 0 3px;
+}
+
+.arc-swatch.ext {
+  background: var(--arc-extends);
+}
+
+.arc-swatch.ref {
+  background: var(--arc-refutes);
+}
+
+.l1-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--hairline);
+  border-radius: 0 0 var(--radius) var(--radius);
+  background:
+    radial-gradient(ellipse at 40% 20%, color-mix(in srgb, var(--qc) 4%, transparent), transparent 60%),
+    var(--paper-card);
+}
+
+.l1-svg {
+  display: block;
+}
+
+.l1-base {
+  stroke: var(--hairline);
+  stroke-width: 1.5;
+}
+
+.l1-tick {
+  stroke: var(--ink-faint);
+  stroke-width: 1;
+}
+
+.l1-tick-label {
+  font-size: 12px;
+  fill: var(--ink-faint);
+  text-anchor: middle;
+  font-family: var(--sans);
+}
+
+.l1-drop {
+  stroke: var(--hairline);
+  stroke-width: 1;
+  opacity: 0.7;
+}
+
+.l1-arc {
+  fill: none;
+  stroke-width: 1.6;
+  opacity: 0.6;
+  transition: opacity 0.15s, stroke-width 0.15s;
+  pointer-events: none;
+}
+
+.l1-arc.extends {
+  stroke: var(--arc-extends);
+}
+
+.l1-arc.refutes {
+  stroke: var(--arc-refutes);
+}
+
+.l1-arc.active {
+  opacity: 1;
+  stroke-width: 2.6;
+}
+
+.l1-arc-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 14;
+  cursor: pointer;
+}
+
+.l1-star {
+  fill: var(--ink);
+}
+
+.l1-star.mag1 {
+  fill: var(--ink);
+  stroke: var(--gold);
+  stroke-width: 2;
+}
+
+.l1-star.lit {
+  fill: var(--gold);
+}
+
+.l1-star-g:hover .l1-star {
+  fill: var(--cinnabar);
+}
+
+.l1-halo {
+  fill: var(--gold);
+  opacity: 0.25;
+}
+
+.l1-double {
+  fill: none;
+  stroke: var(--cinnabar);
+  stroke-width: 1;
+}
+
+.l1-name {
+  font-family: var(--serif);
+  font-size: 12.5px;
+  fill: var(--ink);
+  text-anchor: middle;
+}
+
+/* ---------- 移动端纵向 ---------- */
+
+.l1-mobile {
+  display: none;
+}
+
+/* ---------- 星区 ---------- */
+
+.const-sections {
+  margin-top: 56px;
+}
+
+.const-sec {
+  padding: 18px 0 6px;
+  border-top: 1px solid var(--hairline);
+}
+
+.const-sec-name {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.const-sec-id {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--qc);
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.const-disc {
+  display: flex;
+  gap: 16px;
+  padding: 7px 0;
+  font-size: 14px;
+  align-items: baseline;
+}
+
+.const-disc-name {
+  flex: 0 0 150px;
+  color: var(--ink-faint);
+  font-size: 13px;
+  text-align: right;
+}
+
+.const-disc-thinkers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.const-thinker {
+  font-family: var(--serif);
+  white-space: nowrap;
+}
+
+.const-thinker:hover {
+  color: var(--cinnabar);
+}
+
+.const-thinker.lit {
+  color: var(--gold-deep);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 4px;
+}
+
+/* ---------- 一等星书目 ---------- */
+
+.const-minimum {
+  margin-top: 56px;
+}
+
+.const-min-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.const-min-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 2px;
+  border-bottom: 1px solid var(--hairline-soft);
+  font-size: 15px;
+}
+
+.const-min-thinker {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
+.const-min-thinker:hover {
+  color: var(--cinnabar);
+}
+
+.const-min-title {
+  font-family: var(--serif);
+}
+
+.const-min-en {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+.const-pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+/* ---------- 响应式 ---------- */
+
+@media (max-width: 899px) {
+  .l1-section {
+    display: none;
+  }
+
+  .l1-mobile {
+    display: block;
+    margin-top: 24px;
+    border-left: 2px solid var(--hairline);
+    padding-left: 0;
+  }
+
+  .l1m-row {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0 12px 0;
+    position: relative;
+    align-items: baseline;
+  }
+
+  .l1m-year {
+    flex: 0 0 64px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .l1m-dot {
+    flex: 0 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--ink);
+    margin-left: -6px;
+    position: relative;
+    top: 2px;
+  }
+
+  .l1m-dot.mag1 {
+    box-shadow: 0 0 0 2px var(--gold);
+  }
+
+  .l1m-dot.lit {
+    background: var(--gold);
+  }
+
+  .l1m-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .l1m-body b {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    font-weight: 600;
+  }
+
+  .l1m-body small {
+    font-size: 12px;
+    color: var(--ink-faint);
+  }
+
+  .l1m-talk.ext {
+    color: var(--arc-extends);
+  }
+
+  .l1m-talk.ref {
+    color: var(--arc-refutes);
+  }
+
+  .const-disc {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .const-disc-name {
+    text-align: left;
+    flex-basis: auto;
+  }
+
+  .const-title {
+    font-size: 30px;
+  }
+}

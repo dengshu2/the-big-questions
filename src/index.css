@@ -1,214 +1,225 @@
-/* ============================================
-   The Big Questions — Design System
-   ============================================ */
+/* ============================================================
+   大问题 · 纸上星图 — 设计系统
+   古典天文图集：米白纸面 / 墨色星点 / 烫金座形线 / 衬线标注
+   ============================================================ */
 
-/* --- CSS Custom Properties --- */
 :root {
-  /* Color Palette — Deep Knowledge Theme */
-  --color-bg-primary: #0a0e17;
-  --color-bg-secondary: #111827;
-  --color-bg-tertiary: #1a2235;
-  --color-bg-card: #1e293b;
-  --color-bg-card-hover: #253349;
-  --color-bg-glass: rgba(30, 41, 59, 0.7);
+  /* 纸面 */
+  --paper: #faf6ee;
+  --paper-deep: #f2ecdd;
+  --paper-card: #fffdf8;
 
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
-  --color-text-accent: #e2e8f0;
+  /* 墨色 */
+  --ink: #241f19;
+  --ink-soft: #5c554a;
+  --ink-faint: #8a8375;
+  --hairline: #e4dcc9;
+  --hairline-soft: #ece5d4;
 
-  /* Accent Colors */
-  --color-accent-gold: #f59e0b;
-  --color-accent-gold-soft: rgba(245, 158, 11, 0.15);
-  --color-accent-blue: #3b82f6;
-  --color-accent-blue-soft: rgba(59, 130, 246, 0.15);
-  --color-accent-emerald: #10b981;
-  --color-accent-emerald-soft: rgba(16, 185, 129, 0.15);
-  --color-accent-purple: #8b5cf6;
-  --color-accent-purple-soft: rgba(139, 92, 246, 0.15);
-  --color-accent-rose: #f43f5e;
-  --color-accent-rose-soft: rgba(244, 63, 94, 0.15);
+  /* 天体 */
+  --gold: #c9a227;        /* 星光 / 座形线 / 点亮态 */
+  --gold-deep: #8c6e1b;   /* 金色文字 */
+  --cinnabar: #b0431f;    /* 朱砂：双星环 / 强调 */
+  --arc-extends: #2e7d5b; /* 呼应弧 */
+  --arc-refutes: #a63d2f; /* 反驳弧 */
 
-  /* Borders */
-  --color-border: rgba(148, 163, 184, 0.1);
-  --color-border-hover: rgba(148, 163, 184, 0.2);
+  /* 11 星座色 */
+  --q0: #8c6e1b;
+  --q1: #33568c;
+  --q2: #1f6e5a;
+  --q3: #8a5a24;
+  --q4: #5e4b8b;
+  --q5: #a63d2f;
+  --q6: #55702d;
+  --q7: #a04e78;
+  --q8: #8b2e48;
+  --q9: #22708a;
+  --q10: #3a3f6b;
 
-  /* Typography */
-  --font-serif: 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  /* 字体 */
+  --serif: 'Noto Serif SC', 'Songti SC', serif;
+  --sans: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
-  --text-6xl: 3.75rem;
+  /* 布局 */
+  --radius: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 2px rgba(60, 48, 20, 0.05), 0 4px 16px rgba(60, 48, 20, 0.06);
+  --shadow-float: 0 2px 8px rgba(60, 48, 20, 0.1), 0 12px 32px rgba(60, 48, 20, 0.12);
+  --nav-height: 60px;
+  --page-max: 1120px;
 
-  --leading-tight: 1.25;
-  --leading-normal: 1.6;
-  --leading-relaxed: 1.75;
-
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
-  --space-24: 6rem;
-
-  /* Border Radius */
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
-  --radius-full: 9999px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
-  --shadow-glow-gold: 0 0 20px rgba(245, 158, 11, 0.15);
-  --shadow-glow-blue: 0 0 20px rgba(59, 130, 246, 0.15);
-
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
-  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
-
-  /* Layout */
-  --max-width: 1200px;
-  --max-width-narrow: 800px;
-  --header-height: 64px;
+  color-scheme: light;
 }
 
-/* --- Reset & Base --- */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
-  line-height: var(--leading-normal);
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Subtle background texture */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(245, 158, 11, 0.03) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(139, 92, 246, 0.03) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+  color: var(--ink);
 }
 
-#root {
-  position: relative;
-  z-index: 1;
+p {
+  margin: 0;
 }
 
 a {
-  color: var(--color-accent-blue);
+  color: inherit;
   text-decoration: none;
-  transition: color var(--transition-fast);
 }
 
-a:hover {
-  color: var(--color-accent-gold);
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
-img {
-  max-width: 100%;
+img,
+svg {
   display: block;
+  max-width: 100%;
 }
 
-/* --- Typography Utilities --- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  line-height: var(--leading-tight);
-  color: var(--color-text-primary);
-}
-
-/* --- Scrollbar --- */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-bg-secondary);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-text-muted);
-  border-radius: var(--radius-full);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-secondary);
-}
-
-/* --- Selection --- */
 ::selection {
-  background-color: rgba(245, 158, 11, 0.3);
-  color: var(--color-text-primary);
+  background: color-mix(in srgb, var(--gold) 30%, transparent);
 }
 
-/* --- Animations --- */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* ---------- 通用元素 ---------- */
+
+.page {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 40px) 24px 96px;
+  animation: page-enter 0.45s ease both;
 }
 
-@keyframes fadeInUp {
+@keyframes page-enter {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+/* 图幅眉标：小号大写间距文字 */
+.plate-label {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
 }
 
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
+.rule {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 0;
+}
+
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+
+.crumbs a:hover {
+  color: var(--cinnabar);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: var(--paper-card);
+  color: var(--ink-soft);
+  font-size: 13px;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.btn:hover {
+  border-color: var(--ink-faint);
+  color: var(--ink);
+}
+
+.btn.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.btn.lit {
+  background: color-mix(in srgb, var(--gold) 16%, var(--paper-card));
+  border-color: var(--gold);
+  color: var(--gold-deep);
+}
+
+.mag-1 {
+  color: var(--gold-deep);
+}
+
+/* 星座色工具类 */
+.q-color-0 { color: var(--q0); }
+.q-color-1 { color: var(--q1); }
+.q-color-2 { color: var(--q2); }
+.q-color-3 { color: var(--q3); }
+.q-color-4 { color: var(--q4); }
+.q-color-5 { color: var(--q5); }
+.q-color-6 { color: var(--q6); }
+.q-color-7 { color: var(--q7); }
+.q-color-8 { color: var(--q8); }
+.q-color-9 { color: var(--q9); }
+.q-color-10 { color: var(--q10); }
+
+.q-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: color-mix(in srgb, currentColor 11%, var(--paper-card));
+}
+
+@media (pointer: fine) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--hairline);
+    border-radius: 5px;
+    border: 2px solid var(--paper);
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }

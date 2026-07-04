@@ -1,0 +1,209 @@
+.lib-page {
+  max-width: 980px;
+}
+
+.lib-head {
+  margin: 20px 0 24px;
+}
+
+.lib-head h1 {
+  font-size: 36px;
+  margin: 6px 0 8px;
+}
+
+.lib-sub {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.lib-tools {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lib-search {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px 18px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: var(--paper-card);
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.lib-search:focus {
+  border-color: var(--gold);
+}
+
+.lib-sorts {
+  display: flex;
+  gap: 6px;
+}
+
+.lib-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.lib-count {
+  margin: 18px 0 6px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+.lib-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lib-row {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 11px 6px;
+  border-bottom: 1px solid var(--hairline-soft);
+  font-size: 14px;
+  transition: background 0.12s;
+}
+
+.lib-row:hover {
+  background: var(--paper-card);
+}
+
+.lib-dot {
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ink);
+  position: relative;
+  top: -1px;
+}
+
+.lib-dot.mag1 {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold) 55%, transparent);
+}
+
+.lib-dot.lit {
+  background: var(--gold);
+}
+
+.lib-name {
+  flex: 1 1 220px;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.lib-name b {
+  font-family: var(--serif);
+  font-size: 15.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lib-name small {
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lib-years {
+  flex: 0 0 150px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.lib-nation {
+  flex: 0 0 70px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.lib-books {
+  flex: 0 0 48px;
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  text-align: right;
+}
+
+.lib-qs {
+  flex: 0 0 130px;
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  font-size: 11px;
+}
+
+.lib-qs i {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.lib-essay {
+  color: var(--gold-deep);
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  padding: 0 3px;
+  font-size: 10px;
+}
+
+.lib-footer {
+  margin-top: 56px;
+  padding: 22px 26px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-lg);
+  background: var(--paper-card);
+}
+
+.lib-footer h2 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.lib-footer p {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.lib-footer-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lib-import-msg {
+  font-size: 12.5px;
+  color: var(--gold-deep);
+}
+
+@media (max-width: 720px) {
+  .lib-years,
+  .lib-nation,
+  .lib-books {
+    display: none;
+  }
+
+  .lib-qs {
+    flex-basis: auto;
+  }
+
+  .lib-head h1 {
+    font-size: 30px;
+  }
+}

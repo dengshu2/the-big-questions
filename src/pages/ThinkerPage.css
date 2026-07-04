@@ -1,364 +1,221 @@
-/* ==================== 思想家详情页 ==================== */
-
 .thinker-page {
-    min-height: 100vh;
-    background: var(--color-bg);
-    padding-top: 4.5rem;
-    /* 为固定导航栏留空 */
+  max-width: 820px;
 }
 
-.thinker-container {
-    max-width: 52rem;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 4rem;
+.tk-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--hairline);
 }
 
-/* 面包屑 */
-.thinker-breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
+.tk-name {
+  font-size: 40px;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.thinker-breadcrumb a {
-    color: var(--color-accent-blue);
-    text-decoration: none;
-    transition: color 0.2s;
+.tk-lit-star {
+  color: var(--gold);
+  font-size: 24px;
 }
 
-.thinker-breadcrumb a:hover {
-    color: var(--color-accent-gold);
+.tk-name-en {
+  font-size: 15px;
+  color: var(--ink-faint);
+  margin-top: 2px;
+  letter-spacing: 0.04em;
 }
 
-.thinker-breadcrumb .sep {
-    opacity: 0.4;
+.tk-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--ink-soft);
 }
 
-.thinker-breadcrumb .current {
-    color: var(--color-text-secondary);
+.tk-qs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
 }
 
-/* ==================== 阅读框架面板 ==================== */
-
-.framework-panel {
-    margin-bottom: 2rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.02);
+.tk-wiki {
+  color: var(--ink-soft);
 }
 
-.framework-toggle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 1.25rem;
-    background: none;
-    border: none;
-    color: var(--color-text-secondary);
-    font-size: 0.9375rem;
-    font-family: var(--font-sans);
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+.tk-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-top: 26px;
 }
 
-.framework-toggle:hover {
-    background: rgba(255, 255, 255, 0.04);
-    color: var(--color-text-primary);
+.tk-h2 {
+  font-size: 21px;
+  margin-bottom: 16px;
 }
 
-.framework-icon {
-    font-size: 1.125rem;
+.tk-books,
+.tk-dialogues,
+.tk-essay {
+  margin-top: 44px;
 }
 
-.framework-chevron {
-    margin-left: auto;
-    font-size: 0.75rem;
-    transition: transform 0.3s ease;
+.tk-book-list,
+.tk-dlg-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.framework-chevron.open {
-    transform: rotate(180deg);
+.tk-book-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 2px;
+  border-bottom: 1px solid var(--hairline-soft);
+  font-size: 15px;
 }
 
-.framework-content {
-    padding: 0 1.25rem 1.25rem;
-    border-top: 1px solid var(--color-border);
-    animation: fadeIn 0.3s ease;
+.tk-book-title {
+  font-family: var(--serif);
+  font-weight: 600;
 }
 
-.framework-content h1 {
-    font-size: 1.125rem;
-    color: var(--color-accent-gold);
-    margin-top: 1.25rem;
-    margin-bottom: 0.75rem;
+.tk-book-title:hover {
+  color: var(--cinnabar);
 }
 
-.framework-content h2 {
-    font-size: 1rem;
-    color: var(--color-text-primary);
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+.tk-book-en {
+  font-size: 12.5px;
+  color: var(--ink-faint);
 }
 
-.framework-content h3 {
-    font-size: 0.9375rem;
-    color: var(--color-text-secondary);
-    margin-top: 0.75rem;
-    margin-bottom: 0.375rem;
+.tk-badge {
+  font-size: 11px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--hairline);
+  color: var(--ink-faint);
 }
 
-.framework-content p {
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
-    margin-bottom: 0.5rem;
+.tk-badge.gold {
+  border-color: var(--gold);
+  color: var(--gold-deep);
+  background: color-mix(in srgb, var(--gold) 10%, transparent);
 }
 
-.framework-content ul,
-.framework-content li {
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
+.tk-book-disc {
+  margin-left: auto;
+  font-size: 12px;
 }
 
-.framework-content li {
-    margin-bottom: 0.25rem;
+.tk-dlg-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  padding: 11px 2px;
+  border-bottom: 1px solid var(--hairline-soft);
+  font-size: 14.5px;
 }
 
-.framework-content blockquote {
-    border-left: 3px solid var(--color-accent-emerald);
-    padding-left: 1rem;
-    margin: 1rem 0;
-    color: var(--color-text-secondary);
-    font-style: italic;
+.tk-dlg-who a {
+  font-family: var(--serif);
+  font-weight: 600;
 }
 
-.framework-content hr {
-    border: none;
-    border-top: 1px solid var(--color-border);
-    margin: 1.25rem 0;
+.tk-dlg-who a:hover {
+  color: var(--cinnabar);
 }
 
-/* ==================== 思想家头部 ==================== */
-
-.thinker-detail-header {
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-border);
+.tk-dlg-note {
+  color: var(--ink-soft);
+  font-size: 13.5px;
 }
 
-.thinker-detail-name-zh {
-    font-family: var(--font-serif);
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin: 0 0 0.375rem;
-    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-rose));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* 星志 Markdown */
+.tk-md {
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: var(--ink);
 }
 
-.thinker-detail-name-en {
-    font-family: var(--font-sans);
-    font-size: 1.125rem;
-    font-weight: 400;
-    color: var(--color-text-muted);
-    margin: 0;
-    letter-spacing: 0.02em;
+.tk-md h2 {
+  font-size: 22px;
+  margin: 40px 0 14px;
+  padding-left: 12px;
+  border-left: 3px solid var(--gold);
 }
 
-/* ==================== 正文 ==================== */
-
-.thinker-article {
-    line-height: 1.85;
-    color: var(--color-text-secondary);
+.tk-md h3 {
+  font-size: 17px;
+  margin: 28px 0 10px;
 }
 
-.thinker-section-title {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-accent-gold);
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+.tk-md p {
+  margin: 0 0 14px;
 }
 
-.thinker-section-title:first-child {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
+.tk-md ul,
+.tk-md ol {
+  padding-left: 24px;
+  margin: 0 0 14px;
 }
 
-.thinker-subsection-title {
-    font-family: var(--font-serif);
-    font-size: 1.1875rem;
-    font-weight: 600;
-    color: var(--color-accent-blue);
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
+.tk-md li {
+  margin-bottom: 6px;
 }
 
-.thinker-article p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+.tk-md strong {
+  color: var(--cinnabar);
+  font-weight: 600;
 }
 
-.thinker-emphasis {
-    color: var(--color-text-primary);
-    font-weight: 600;
+.tk-md blockquote {
+  margin: 16px 0;
+  padding: 10px 18px;
+  border-left: 3px solid var(--hairline);
+  background: var(--paper-card);
+  color: var(--ink-soft);
+  font-family: var(--serif);
 }
 
-.thinker-article ul,
-.thinker-article ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
+.tk-essay-loading,
+.tk-essay-fail {
+  color: var(--ink-faint);
+  font-size: 14px;
 }
 
-.thinker-article li {
-    margin-bottom: 0.5rem;
+.tk-pager {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
 }
-
-/* blockquote */
-.thinker-article blockquote {
-    border-left: 3px solid var(--color-accent-emerald);
-    padding: 0.75rem 1.25rem;
-    margin: 1.5rem 0;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    color: var(--color-text-secondary);
-    font-style: italic;
-}
-
-/* code */
-.thinker-article code {
-    background: rgba(255, 255, 255, 0.06);
-    padding: 0.15rem 0.4rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.875em;
-    color: var(--color-accent-rose);
-}
-
-/* ==================== 加载 / 未找到 ==================== */
-
-.thinker-loading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 4rem 0;
-    color: var(--color-text-muted);
-}
-
-.loading-pulse {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: var(--color-accent-gold);
-    opacity: 0.2;
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 0.2;
-    }
-
-    50% {
-        transform: scale(1.2);
-        opacity: 0.4;
-    }
-}
-
-.thinker-not-found {
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.thinker-not-found h1 {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    color: var(--color-text-primary);
-    margin-bottom: 0.75rem;
-}
-
-.thinker-not-found p {
-    color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
-}
-
-/* ==================== 底部 ==================== */
-
-.thinker-footer {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
-    text-align: center;
-}
-
-.back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    color: var(--color-accent-blue);
-    text-decoration: none;
-    font-size: 0.9375rem;
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-md);
-    transition: background 0.2s, color 0.2s;
-}
-
-.back-link:hover {
-    background: rgba(255, 255, 255, 0.04);
-    color: var(--color-accent-gold);
-}
-
-/* ==================== 响应式 ==================== */
 
 @media (max-width: 640px) {
-    .thinker-container {
-        padding: 1.25rem 1rem 3rem;
-    }
+  .tk-head {
+    flex-direction: column;
+  }
 
-    .thinker-detail-name-zh {
-        font-size: 1.75rem;
-    }
+  .tk-actions {
+    flex-direction: row;
+    padding-top: 0;
+  }
 
-    .thinker-detail-name-en {
-        font-size: 1rem;
-    }
+  .tk-name {
+    font-size: 30px;
+  }
 
-    .thinker-section-title {
-        font-size: 1.25rem;
-        margin-top: 2.5rem;
-    }
-
-    .thinker-subsection-title {
-        font-size: 1.0625rem;
-    }
-}
-
-/* ==================== 动画 ==================== */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-0.5rem);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  .tk-book-disc {
+    margin-left: 0;
+  }
 }

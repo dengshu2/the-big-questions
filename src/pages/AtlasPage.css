@@ -1,0 +1,279 @@
+.atlas-wrap {
+  position: fixed;
+  inset: var(--nav-height) 0 0 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 35%, color-mix(in srgb, var(--gold) 4%, transparent), transparent 62%),
+    var(--paper);
+}
+
+.atlas-wrap.mobile {
+  position: static;
+  min-height: 100dvh;
+  padding: calc(var(--nav-height) + 16px) 0 48px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+.atlas-svg {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.atlas-svg:active {
+  cursor: grabbing;
+}
+
+.mobile .atlas-svg {
+  height: auto;
+  aspect-ratio: 1600 / 1100;
+  cursor: default;
+}
+
+/* ---------- 天球元素 ---------- */
+
+.atlas-graticule path {
+  fill: none;
+  stroke: var(--hairline-soft);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.atlas-field-star {
+  fill: var(--ink-faint);
+  opacity: 0.32;
+}
+
+.atlas-line {
+  stroke: var(--gold);
+  stroke-width: 1.2;
+  opacity: 0.55;
+  vector-effect: non-scaling-stroke;
+}
+
+.atlas-double-link {
+  stroke: var(--gold);
+  stroke-width: 1;
+  stroke-dasharray: 5 5;
+  opacity: 0.38;
+  vector-effect: non-scaling-stroke;
+}
+
+.atlas-const-name {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 600;
+  text-anchor: middle;
+  cursor: pointer;
+  letter-spacing: 0.12em;
+}
+
+.atlas-const-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.atlas-star-g {
+  cursor: pointer;
+}
+
+.atlas-star {
+  fill: var(--ink);
+  transition: fill 0.2s;
+}
+
+.atlas-star.lit {
+  fill: var(--gold);
+}
+
+.atlas-star-g:hover .atlas-star {
+  fill: var(--cinnabar);
+}
+
+.atlas-star-halo {
+  fill: var(--gold);
+  opacity: 0.28;
+}
+
+.atlas-star-double {
+  fill: none;
+  stroke: var(--cinnabar);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.atlas-star-want {
+  fill: none;
+  stroke: var(--gold-deep);
+  stroke-width: 1;
+  stroke-dasharray: 2.5 2.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.atlas-star-name {
+  font-family: var(--serif);
+  font-size: 10.5px;
+  fill: var(--ink-soft);
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+/* ---------- 覆盖层 ---------- */
+
+.atlas-head {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  pointer-events: none;
+}
+
+.mobile .atlas-head {
+  position: static;
+  padding: 0 20px 12px;
+}
+
+.atlas-head h1 {
+  font-size: 34px;
+  margin: 6px 0 4px;
+}
+
+.atlas-head-sub {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.atlas-head-lit {
+  color: var(--gold-deep);
+}
+
+.atlas-legend {
+  position: absolute;
+  left: 32px;
+  bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--ink-faint);
+  align-items: flex-start;
+}
+
+.atlas-legend .lg {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+
+.lg-mag1 {
+  background: var(--ink);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+.lg-double {
+  background: var(--ink);
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--cinnabar);
+  width: 8px;
+  height: 8px;
+}
+
+.lg-lit {
+  background: var(--gold);
+  box-shadow: 0 0 6px 1px color-mix(in srgb, var(--gold) 55%, transparent);
+}
+
+.atlas-legend-hint {
+  margin-top: 4px;
+}
+
+.atlas-chips {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 8px;
+  padding: 12px 32px 14px;
+  overflow-x: auto;
+  background: linear-gradient(transparent, color-mix(in srgb, var(--paper) 92%, transparent) 40%);
+  scrollbar-width: none;
+}
+
+.atlas-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile .atlas-chips {
+  position: static;
+  flex-wrap: wrap;
+  padding: 16px 20px 0;
+  background: none;
+}
+
+.atlas-chip {
+  white-space: nowrap;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  transition: transform 0.15s;
+}
+
+.atlas-chip:hover {
+  transform: translateY(-1px);
+}
+
+.atlas-chip b {
+  font-weight: 500;
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+/* ---------- 悬浮卡 ---------- */
+
+.atlas-tip {
+  position: fixed;
+  z-index: 50;
+  max-width: 260px;
+  padding: 10px 14px;
+  background: var(--paper-card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-float);
+  pointer-events: none;
+}
+
+.atlas-tip-name {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.atlas-tip-essay {
+  font-size: 10px;
+  color: var(--gold-deep);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 0 4px;
+  font-family: var(--sans);
+  font-weight: 400;
+}
+
+.atlas-tip-meta {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.atlas-tip-qs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11.5px;
+  margin-top: 4px;
+}

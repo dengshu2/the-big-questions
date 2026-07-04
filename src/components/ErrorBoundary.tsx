@@ -22,42 +22,30 @@ export class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          minHeight: '100vh',
-          gap: '1.5rem',
-          color: 'var(--color-text-secondary)',
-          textAlign: 'center',
-          padding: '2rem',
-        }}>
-          <div style={{ fontSize: '3rem' }}>⚠</div>
-          <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', color: 'var(--color-text-primary)' }}>
-            数据加载失败
-          </h1>
-          <p style={{ fontSize: '0.875rem', maxWidth: '400px', lineHeight: '1.75' }}>
-            无法加载典籍数据，请检查网络连接后刷新页面。
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minHeight: '100vh',
+            gap: '1.25rem',
+            color: 'var(--ink-soft)',
+            textAlign: 'center',
+            padding: '2rem',
+          }}
+        >
+          <div style={{ fontSize: '2.5rem', color: 'var(--gold)' }}>✦</div>
+          <h1 style={{ fontSize: '1.4rem' }}>星图暂时无法展开</h1>
+          <p style={{ fontSize: '0.875rem', maxWidth: 420, lineHeight: 1.75 }}>
+            页面出现了意外错误，请刷新重试。
             {this.state.error && (
-              <span style={{ display: 'block', marginTop: '0.5rem', color: 'var(--color-text-muted)', fontFamily: 'var(--font-mono)', fontSize: '0.75rem' }}>
+              <span style={{ display: 'block', marginTop: '0.5rem', color: 'var(--ink-faint)', fontSize: '0.75rem' }}>
                 {this.state.error.message}
               </span>
             )}
           </p>
-          <button
-            onClick={() => window.location.reload()}
-            style={{
-              padding: '0.625rem 1.5rem',
-              background: 'var(--color-accent-gold)',
-              color: 'var(--color-bg-primary)',
-              border: 'none',
-              borderRadius: 'var(--radius-full)',
-              cursor: 'pointer',
-              fontWeight: 600,
-              fontSize: '0.875rem',
-            }}
-          >
+          <button className="btn" onClick={() => window.location.reload()}>
             刷新页面
           </button>
         </div>

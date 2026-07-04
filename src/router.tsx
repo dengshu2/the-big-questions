@@ -1,43 +1,33 @@
-import { createBrowserRouter, Outlet, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
-import App from './App'
-import QuestionPage from './pages/QuestionPage'
-import MinimumListPage from './pages/MinimumListPage'
-import ThinkerPage from './pages/ThinkerPage'
-import ThinkerListPage from './pages/ThinkerListPage'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { lazy, Suspense } from 'react'
+import AtlasPage from './pages/AtlasPage'
+import ConstellationPage from './pages/ConstellationPage'
+import MinimumPage from './pages/MinimumPage'
+import LibraryPage from './pages/LibraryPage'
+import { QuestionRedirect, ScrollToTop } from './components/routing'
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
-  return <Outlet />
-}
+// 恒星页携带 react-markdown，单独分包按需加载
+const ThinkerPage = lazy(() => import('./pages/ThinkerPage'))
 
 export const router = createBrowserRouter([
   {
     element: <ScrollToTop />,
     children: [
-      {
-        path: '/',
-        element: <App />,
-      },
-      {
-        path: '/question/:id',
-        element: <QuestionPage />,
-      },
-      {
-        path: '/minimum',
-        element: <MinimumListPage />,
-      },
-      {
-        path: '/thinkers',
-        element: <ThinkerListPage />,
-      },
+      { path: '/', element: <AtlasPage /> },
+      { path: '/constellation/:id', element: <ConstellationPage /> },
       {
         path: '/thinker/:slug',
-        element: <ThinkerPage />,
+        element: (
+          <Suspense fallback={null}>
+            <ThinkerPage />
+          </Suspense>
+        ),
       },
+      { path: '/minimum', element: <MinimumPage /> },
+      { path: '/library', element: <LibraryPage /> },
+      { path: '/question/:id', element: <QuestionRedirect /> },
+      { path: '/thinkers', element: <Navigate to="/library" replace /> },
+      { path: '*', element: <Navigate to="/" replace /> },
     ],
   },
 ])
