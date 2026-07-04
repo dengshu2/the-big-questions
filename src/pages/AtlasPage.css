@@ -194,10 +194,36 @@
 
 .atlas-star-name {
   font-family: var(--serif);
-  font-size: 10.5px;
   fill: var(--ink-soft);
   text-anchor: middle;
   pointer-events: none;
+}
+
+.atlas-star-name.mag1 {
+  fill: var(--ink);
+  font-weight: 600;
+}
+
+/* 星座整体感应区与悬停聚焦 */
+.atlas-hull {
+  fill: transparent;
+  cursor: pointer;
+}
+
+.atlas-const {
+  transition: opacity 0.25s ease;
+}
+
+.atlas-svg.dimming .atlas-const {
+  opacity: 0.35;
+}
+
+.atlas-svg.dimming .atlas-const.hovered {
+  opacity: 1;
+}
+
+.atlas-const.hovered .atlas-line {
+  opacity: 0.85;
 }
 
 /* ---------- 覆盖层 ---------- */

@@ -45,6 +45,7 @@ export default function AtlasPage() {
   const { statusOf, readCount } = useProgress()
   const [t, setT] = useState<Transform>({ x: 0, y: 0, k: 1 })
   const [hover, setHover] = useState<{ slug: string; sx: number; sy: number } | null>(null)
+  const [hoverConst, setHoverConst] = useState<number | null>(null)
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches)
   const wrapRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
@@ -125,7 +126,7 @@ export default function AtlasPage() {
   const sky = (
     <svg
       ref={svgRef}
-      className="atlas-svg"
+      className={hoverConst === null ? 'atlas-svg' : 'atlas-svg dimming'}
       viewBox={`0 0 ${SKY_W} ${SKY_H}`}
       preserveAspectRatio="xMidYMid meet"
       onPointerDown={onPointerDown}
@@ -169,7 +170,21 @@ export default function AtlasPage() {
           const pos = new Map(c.stars.map((s) => [s.slug, s]))
           const q = questions.find((x) => x.id === c.id)
           return (
-            <g key={c.id}>
+            <g
+              key={c.id}
+              className={hoverConst === c.id ? 'atlas-const hovered' : 'atlas-const'}
+              onPointerEnter={() => setHoverConst(c.id)}
+              onPointerLeave={() => setHoverConst(null)}
+            >
+              <circle
+                className="atlas-hull"
+                cx={c.cx}
+                cy={c.cy}
+                r={c.R * 1.04}
+                onClick={() => {
+                  if (!drag.current?.moved) navigate(`/constellation/${c.id}`)
+                }}
+              />
               {c.lines.map(([f, to], i) => {
                 const a = pos.get(f)
                 const b = pos.get(to)
@@ -203,7 +218,9 @@ export default function AtlasPage() {
                 const th = getThinker(s.slug)!
                 const status = statusOf(s.slug)
                 const lit = status === 'read'
-                const showLabel = tier === 2 || (tier === 1 && th.magnitude <= 2)
+                // 一等星星名常显（天球的"钩子"）；其余随缩放层级浮现
+                const showLabel = th.magnitude === 1 || tier === 2 || (tier === 1 && th.magnitude <= 2)
+                const labelSize = Math.max(8.5, (th.magnitude === 1 ? 13 : 10.8) / Math.sqrt(t.k))
                 return (
                   <g key={s.slug} className="atlas-star-g" onClick={() => clickStar(s.slug)}
                     style={{ animationDelay: `${0.15 + ci * 0.08 + si * 0.012}s` }}
@@ -215,7 +232,12 @@ export default function AtlasPage() {
                     {status === 'want' && <circle className="atlas-star-want" cx={s.x} cy={s.y} r={s.r + 3.2} />}
                     <circle className={lit ? 'atlas-star lit' : 'atlas-star'} cx={s.x} cy={s.y} r={s.r} />
                     {showLabel && (
-                      <text className="atlas-star-name" x={s.x} y={s.y - s.r - 3.5}>
+                      <text
+                        className={th.magnitude === 1 ? 'atlas-star-name mag1' : 'atlas-star-name'}
+                        x={s.x}
+                        y={s.y - s.r - 3.5}
+                        fontSize={labelSize}
+                      >
                         {th.nameZh}
                       </text>
                     )}

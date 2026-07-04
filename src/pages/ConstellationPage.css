@@ -97,8 +97,7 @@
   background: var(--arc-refutes);
 }
 
-.l1-scroll {
-  overflow-x: auto;
+.l1-frame {
   border: 1px solid var(--hairline);
   border-radius: 0 0 var(--radius) var(--radius);
   background:
@@ -107,32 +106,21 @@
 }
 
 .l1-svg {
-  /* 覆盖全局 svg { max-width: 100% }，否则 2400px 宽的星图会被整体压缩 */
   display: block;
-  max-width: none;
+  width: 100%;
+  height: auto;
 }
 
-.l1-base {
-  stroke: var(--hairline);
-  stroke-width: 1.5;
-}
-
-.l1-tick {
-  stroke: var(--ink-faint);
+.l1-graticule path {
+  fill: none;
+  stroke: var(--hairline-soft);
   stroke-width: 1;
 }
 
-.l1-tick-label {
-  font-size: 13.5px;
-  fill: var(--ink-faint);
-  text-anchor: middle;
-  font-family: var(--sans);
-}
-
-.l1-drop {
-  stroke: var(--hairline);
-  stroke-width: 1;
-  opacity: 0.7;
+.l1-const-line {
+  stroke: var(--gold);
+  stroke-width: 1.4;
+  opacity: 0.5;
 }
 
 .l1-arc {
@@ -194,8 +182,21 @@
 
 .l1-name {
   font-family: var(--serif);
-  font-size: 15px;
+  font-size: 14.5px;
   fill: var(--ink);
+  text-anchor: middle;
+}
+
+.l1-name.mag1 {
+  font-size: 16px;
+  font-weight: 600;
+  fill: var(--gold-deep);
+}
+
+.l1-year {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  fill: var(--ink-faint);
   text-anchor: middle;
 }
 

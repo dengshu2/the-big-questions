@@ -5,25 +5,89 @@ import { useProgress } from '../data/progress'
 import { SiteNav } from '../components/SiteNav'
 import './ConstellationPage.css'
 
-const STAR_R: Record<number, number> = { 1: 9, 2: 7, 3: 5.5, 4: 4.5 }
-const CHART_H = 620
-const BASE_Y = 480
-const laneY = (lane: number) => 408 - lane * 60
+// 放大星座视图：沿用天球 L0 的星位（保持座形连续），放大 + 避让后全员星名常显
+const VIEW_W = 1360
+const VIEW_H = 880
+const MARGIN = 110
+const EN_R: Record<number, number> = { 1: 15, 2: 11.5, 3: 9, 4: 7.5 }
+
+interface EnStar {
+  slug: string
+  x: number
+  y: number
+  r: number
+  double: boolean
+  labelUp: boolean
+}
+
+function useEnlarged(qid: number) {
+  return useMemo(() => {
+    const c = atlas.constellations.find((k) => k.id === qid)
+    if (!c) return null
+    const s = Math.min((VIEW_W - MARGIN * 2) / (2 * c.R), (VIEW_H - MARGIN * 2) / (2 * c.R))
+    const stars: EnStar[] = c.stars.map((st, i) => ({
+      slug: st.slug,
+      x: (st.x - c.cx) * s + VIEW_W / 2,
+      y: (st.y - c.cy) * s + VIEW_H / 2,
+      r: EN_R[getThinker(st.slug)!.magnitude],
+      double: st.double,
+      labelUp: i % 2 === 0,
+    }))
+    // 二次避让：放大后为星名留出空间
+    const gap = c.stars.length > 60 ? 30 : 40
+    for (let iter = 0; iter < 80; iter++) {
+      for (let i = 0; i < stars.length; i++) {
+        for (let j = i + 1; j < stars.length; j++) {
+          const a = stars[i], b = stars[j]
+          const min = a.r + b.r + gap
+          let dx = b.x - a.x, dy = b.y - a.y
+          let d = Math.hypot(dx, dy)
+          if (d < min) {
+            if (d < 0.01) { dx = 1; dy = 0; d = 1 }
+            const push = (min - d) / 2 / d
+            a.x -= dx * push; a.y -= dy * push
+            b.x += dx * push; b.y += dy * push
+          }
+        }
+      }
+      for (const st of stars) {
+        st.x = Math.min(VIEW_W - MARGIN, Math.max(MARGIN, st.x))
+        st.y = Math.min(VIEW_H - 90, Math.max(96, st.y))
+      }
+    }
+    const pos = new Map(stars.map((st) => [st.slug, st]))
+    const lines = c.lines
+      .map(([f, t]) => [pos.get(f), pos.get(t)])
+      .filter((p): p is [EnStar, EnStar] => !!p[0] && !!p[1])
+    return { stars, pos, lines }
+  }, [qid])
+}
+
+/** 弧线控制点：中点向远离画面中心的方向外推 */
+function arcPath(a: EnStar, b: EnStar) {
+  const mx = (a.x + b.x) / 2
+  const my = (a.y + b.y) / 2
+  const d = Math.hypot(b.x - a.x, b.y - a.y)
+  let nx = -(b.y - a.y) / (d || 1)
+  let ny = (b.x - a.x) / (d || 1)
+  if ((mx - VIEW_W / 2) * nx + (my - VIEW_H / 2) * ny < 0) {
+    nx = -nx
+    ny = -ny
+  }
+  const push = Math.min(150, 40 + d * 0.22)
+  return `M ${a.x} ${a.y} Q ${mx + nx * push} ${my + ny * push} ${b.x} ${b.y}`
+}
 
 export default function ConstellationPage() {
   const { id } = useParams()
   const qid = Number(id)
   const question = getQuestion(qid)
   const l1 = atlas.l1[String(qid)]
+  const enlarged = useEnlarged(qid)
   const { statusOf } = useProgress()
   const [activeArc, setActiveArc] = useState<L1Arc | null>(null)
 
-  const starPos = useMemo(() => {
-    if (!l1) return new Map<string, { x: number; y: number }>()
-    return new Map(l1.stars.map((s) => [s.slug, { x: s.x, y: laneY(s.lane) }]))
-  }, [l1])
-
-  if (!question || !l1) return <Navigate to="/" replace />
+  if (!question || !l1 || !enlarged) return <Navigate to="/" replace />
 
   const prev = questions.find((q) => q.id === qid - 1)
   const next = questions.find((q) => q.id === qid + 1)
@@ -51,7 +115,7 @@ export default function ConstellationPage() {
           </p>
         </header>
 
-        {/* ---------- 对话星图（桌面横轴） ---------- */}
+        {/* ---------- 放大的星座（桌面） ---------- */}
         <section className="l1-section">
           <div className="l1-note">
             {activeArc ? (
@@ -66,68 +130,72 @@ export default function ConstellationPage() {
               </>
             ) : (
               <span className="l1-note-hint">
-                时间自左向右 · <i className="arc-swatch ext" />呼应/延伸 · <i className="arc-swatch ref" />反驳/对立 ·
-                触摸弧线读对话
+                天球上这一角的放大图 · <i className="arc-swatch ext" />呼应/延伸 · <i className="arc-swatch ref" />反驳/对立 ·
+                触摸弧线读对话 · ✦ 一等星
               </span>
             )}
           </div>
 
-          <div className="l1-scroll">
+          <div className="l1-frame">
             <svg
               className="l1-svg"
-              width={l1.width}
-              height={CHART_H}
-              viewBox={`0 0 ${l1.width} ${CHART_H}`}
+              viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
               role="img"
-              aria-label={`${question.name}：思想家时间轴与对话弧线`}
+              aria-label={`${question.name}星座放大图：思想家星位与对话弧线`}
             >
-              <line className="l1-base" x1={40} y1={BASE_Y} x2={l1.width - 40} y2={BASE_Y} />
-              {l1.ticks.map((tk) => (
-                <g key={tk.year}>
-                  <line className="l1-tick" x1={tk.x} y1={BASE_Y} x2={tk.x} y2={BASE_Y + 10} />
-                  <text className="l1-tick-label" x={tk.x} y={BASE_Y + 30}>
-                    {tk.year < 0 ? `前${-tk.year}` : tk.year}
-                  </text>
-                </g>
+              <g className="l1-graticule" aria-hidden="true">
+                <path d={`M -40 ${VIEW_H * 0.32} Q ${VIEW_W / 2} ${VIEW_H * 0.32 - 60} ${VIEW_W + 40} ${VIEW_H * 0.32}`} />
+                <path d={`M -40 ${VIEW_H * 0.72} Q ${VIEW_W / 2} ${VIEW_H * 0.72 - 60} ${VIEW_W + 40} ${VIEW_H * 0.72}`} />
+              </g>
+
+              {enlarged.lines.map(([a, b], i) => (
+                <line key={i} className="l1-const-line" x1={a.x} y1={a.y} x2={b.x} y2={b.y} />
               ))}
 
-              {l1.arcs.map((a, i) => {
-                const p1 = starPos.get(a.from)!
-                const p2 = starPos.get(a.to)!
-                const mx = (p1.x + p2.x) / 2
-                const top = Math.max(52, Math.min(p1.y, p2.y) - 80 - Math.min(130, Math.abs(p2.x - p1.x) * 0.045))
-                const d = `M ${p1.x} ${p1.y} Q ${mx} ${top} ${p2.x} ${p2.y}`
-                const active = activeArc === a
+              {l1.arcs.map((arc, i) => {
+                const a = enlarged.pos.get(arc.from)
+                const b = enlarged.pos.get(arc.to)
+                if (!a || !b) return null
+                const d = arcPath(a, b)
+                const active = activeArc === arc
                 return (
                   <g key={i}>
-                    <path className={`l1-arc ${a.type}${active ? ' active' : ''}`} d={d} />
+                    <path className={`l1-arc ${arc.type}${active ? ' active' : ''}`} d={d} />
                     <path
                       className="l1-arc-hit"
                       d={d}
-                      onPointerEnter={() => setActiveArc(a)}
-                      onClick={() => setActiveArc(a)}
+                      onPointerEnter={() => setActiveArc(arc)}
+                      onClick={() => setActiveArc(arc)}
                     />
                   </g>
                 )
               })}
 
-              {l1.stars.map((s) => {
+              {enlarged.stars.map((s) => {
                 const t = getThinker(s.slug)!
-                const y = laneY(s.lane)
                 const lit = statusOf(s.slug) === 'read'
-                const r = STAR_R[t.magnitude]
+                const labelY = s.labelUp ? s.y - s.r - 24 : s.y + s.r + 20
+                const yearY = s.labelUp ? labelY - 16 : labelY + 15
                 return (
                   <g key={s.slug} className="l1-star-g">
-                    <line className="l1-drop" x1={s.x} y1={y + r} x2={s.x} y2={BASE_Y} />
                     <Link to={`/thinker/${s.slug}`}>
-                      {lit && <circle className="l1-halo" cx={s.x} cy={y} r={r + 5} />}
-                      {t.questions.length > 1 && <circle className="l1-double" cx={s.x} cy={y} r={r + 3.5} />}
-                      <circle className={lit ? 'l1-star lit' : t.magnitude === 1 ? 'l1-star mag1' : 'l1-star'} cx={s.x} cy={y} r={r} />
-                      <text className="l1-name" x={s.x} y={y - r - 8}>
+                      {lit && <circle className="l1-halo" cx={s.x} cy={s.y} r={s.r + 6} />}
+                      {s.double && <circle className="l1-double" cx={s.x} cy={s.y} r={s.r + 4.5} />}
+                      <circle
+                        className={lit ? 'l1-star lit' : t.magnitude === 1 ? 'l1-star mag1' : 'l1-star'}
+                        cx={s.x}
+                        cy={s.y}
+                        r={s.r}
+                      />
+                      <text className={t.magnitude === 1 ? 'l1-name mag1' : 'l1-name'} x={s.x} y={labelY}>
+                        {t.magnitude === 1 ? '✦ ' : ''}
                         {t.nameZh}
                       </text>
+                      <text className="l1-year" x={s.x} y={yearY}>
+                        {t.birthYear || '—'}
+                      </text>
                       <title>
-                        {t.nameZh} · {formatYears(t)}
+                        {t.nameZh} · {formatYears(t)} · {t.line}
                       </title>
                     </Link>
                   </g>
@@ -150,7 +218,7 @@ export default function ConstellationPage() {
                 <span className="l1m-body">
                   <b>{t.nameZh}</b>
                   <small>
-                    {t.nationality} · 著作 {t.books.filter((b) => b.questionId === qid).length}
+                    {t.line}
                     {t.magnitude === 1 && ' · ✦ 必读'}
                   </small>
                   {talks.map((d, i) => (
