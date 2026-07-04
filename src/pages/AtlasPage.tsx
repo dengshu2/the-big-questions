@@ -23,17 +23,20 @@ function clampTransform(t: Transform): Transform {
   return { x, y, k }
 }
 
-/** 装饰性背景星：确定性种子，不代表数据（模块级常量，渲染期不可变） */
+/** 装饰性背景星：确定性种子，不代表数据（模块级常量，渲染期不可变）
+ *  范围超出 viewBox：meet 模式下溢出到留白区，让纸面铺满星尘 */
 const FIELD_STARS = (() => {
   let seed = 20260704
   const rnd = () => {
     seed = (seed * 1664525 + 1013904223) % 4294967296
     return seed / 4294967296
   }
-  return Array.from({ length: 130 }, () => ({
-    x: rnd() * SKY_W,
-    y: rnd() * SKY_H,
+  return Array.from({ length: 200 }, () => ({
+    x: -500 + rnd() * (SKY_W + 1000),
+    y: -260 + rnd() * (SKY_H + 520),
     r: 0.6 + rnd() * 0.9,
+    dur: 2.8 + rnd() * 4,
+    delay: rnd() * 4,
   }))
 })()
 
@@ -55,10 +58,10 @@ export default function AtlasPage() {
     return () => mq.removeEventListener('change', onChange)
   }, [])
 
-  /** 屏幕坐标 → 天球基准坐标（preserveAspectRatio: slice） */
+  /** 屏幕坐标 → 天球基准坐标（preserveAspectRatio: meet，全图完整可见） */
   const toSky = (clientX: number, clientY: number) => {
     const rect = svgRef.current!.getBoundingClientRect()
-    const scale = Math.max(rect.width / SKY_W, rect.height / SKY_H)
+    const scale = Math.min(rect.width / SKY_W, rect.height / SKY_H)
     const ox = (rect.width - SKY_W * scale) / 2
     const oy = (rect.height - SKY_H * scale) / 2
     return {
@@ -124,7 +127,7 @@ export default function AtlasPage() {
       ref={svgRef}
       className="atlas-svg"
       viewBox={`0 0 ${SKY_W} ${SKY_H}`}
-      preserveAspectRatio={isMobile ? 'xMidYMid meet' : 'xMidYMid slice'}
+      preserveAspectRatio="xMidYMid meet"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -135,15 +138,23 @@ export default function AtlasPage() {
         {/* 经纬弧线（图集肌理） */}
         <g className="atlas-graticule" aria-hidden="true">
           {[0.25, 0.5, 0.75].map((f) => (
-            <path key={`h${f}`} d={`M -100 ${SKY_H * f} Q ${SKY_W / 2} ${SKY_H * f - 90} ${SKY_W + 100} ${SKY_H * f}`} />
+            <path key={`h${f}`} d={`M -500 ${SKY_H * f} Q ${SKY_W / 2} ${SKY_H * f - 90} ${SKY_W + 500} ${SKY_H * f}`} />
           ))}
-          {[0.22, 0.45, 0.68, 0.9].map((f) => (
-            <path key={`v${f}`} d={`M ${SKY_W * f} -60 Q ${SKY_W * f + 60} ${SKY_H / 2} ${SKY_W * f} ${SKY_H + 60}`} />
+          {[0.05, 0.22, 0.45, 0.68, 0.9, 1.06].map((f) => (
+            <path key={`v${f}`} d={`M ${SKY_W * f} -260 Q ${SKY_W * f + 60} ${SKY_H / 2} ${SKY_W * f} ${SKY_H + 260}`} />
           ))}
         </g>
 
         {FIELD_STARS.map((s, i) => (
-          <circle key={i} className="atlas-field-star" cx={s.x} cy={s.y} r={s.r} aria-hidden="true" />
+          <circle
+            key={i}
+            className="atlas-field-star"
+            cx={s.x}
+            cy={s.y}
+            r={s.r}
+            style={{ animationDuration: `${s.dur}s`, animationDelay: `${s.delay}s` }}
+            aria-hidden="true"
+          />
         ))}
 
         {/* 双星虚线：跨星座认领 */}
@@ -154,32 +165,48 @@ export default function AtlasPage() {
           return <line key={i} className="atlas-double-link" x1={a.x} y1={a.y} x2={b.x} y2={b.y} />
         })}
 
-        {atlas.constellations.map((c) => {
+        {atlas.constellations.map((c, ci) => {
           const pos = new Map(c.stars.map((s) => [s.slug, s]))
+          const q = questions.find((x) => x.id === c.id)
           return (
             <g key={c.id}>
               {c.lines.map(([f, to], i) => {
                 const a = pos.get(f)
                 const b = pos.get(to)
                 if (!a || !b) return null
-                return <line key={i} className="atlas-line" x1={a.x} y1={a.y} x2={b.x} y2={b.y} />
+                return (
+                  <line
+                    key={i}
+                    className="atlas-line"
+                    pathLength={1}
+                    style={{ animationDelay: `${0.5 + ci * 0.12 + i * 0.14}s` }}
+                    x1={a.x}
+                    y1={a.y}
+                    x2={b.x}
+                    y2={b.y}
+                  />
+                )
               })}
-              <text
-                className="atlas-const-name"
-                x={c.cx}
-                y={c.cy - c.R - 16}
-                fill={qVar(c.id)}
+              <g
+                className="atlas-const-label"
+                style={{ animationDelay: `${0.3 + ci * 0.1}s` }}
                 onClick={() => navigate(`/constellation/${c.id}`)}
               >
-                {c.name}
-              </text>
-              {c.stars.map((s) => {
+                <text className="atlas-const-name" x={c.cx} y={c.cy - c.R - 26} fill={qVar(c.id)}>
+                  {c.name}
+                </text>
+                <text className="atlas-const-count" x={c.cx} y={c.cy - c.R - 6}>
+                  Q{c.id} · {q?.thinkerCount ?? c.stars.length} 星 · {q?.bookCount} 书
+                </text>
+              </g>
+              {c.stars.map((s, si) => {
                 const th = getThinker(s.slug)!
                 const status = statusOf(s.slug)
                 const lit = status === 'read'
                 const showLabel = tier === 2 || (tier === 1 && th.magnitude <= 2)
                 return (
                   <g key={s.slug} className="atlas-star-g" onClick={() => clickStar(s.slug)}
+                    style={{ animationDelay: `${0.15 + ci * 0.08 + si * 0.012}s` }}
                     onPointerEnter={(e) => setHover({ slug: s.slug, sx: e.clientX, sy: e.clientY })}
                     onPointerLeave={() => setHover(null)}
                   >

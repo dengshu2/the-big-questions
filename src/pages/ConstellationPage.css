@@ -107,7 +107,9 @@
 }
 
 .l1-svg {
+  /* 覆盖全局 svg { max-width: 100% }，否则 2400px 宽的星图会被整体压缩 */
   display: block;
+  max-width: none;
 }
 
 .l1-base {
@@ -121,7 +123,7 @@
 }
 
 .l1-tick-label {
-  font-size: 12px;
+  font-size: 13.5px;
   fill: var(--ink-faint);
   text-anchor: middle;
   font-family: var(--sans);
@@ -192,7 +194,7 @@
 
 .l1-name {
   font-family: var(--serif);
-  font-size: 12.5px;
+  font-size: 15px;
   fill: var(--ink);
   text-anchor: middle;
 }

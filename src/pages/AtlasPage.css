@@ -45,6 +45,16 @@
 .atlas-field-star {
   fill: var(--ink-faint);
   opacity: 0.32;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.42;
+  }
 }
 
 .atlas-line {
@@ -52,32 +62,101 @@
   stroke-width: 1.2;
   opacity: 0.55;
   vector-effect: non-scaling-stroke;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-line 0.9s ease forwards;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .atlas-double-link {
   stroke: var(--gold);
   stroke-width: 1;
   stroke-dasharray: 5 5;
-  opacity: 0.38;
+  opacity: 0;
   vector-effect: non-scaling-stroke;
+  animation: link-in 1.2s ease 2.4s forwards;
+}
+
+@keyframes link-in {
+  to {
+    opacity: 0.38;
+  }
+}
+
+.atlas-const-label {
+  cursor: pointer;
+  opacity: 0;
+  animation: label-in 0.8s ease forwards;
+}
+
+@keyframes label-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .atlas-const-name {
   font-family: var(--serif);
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
   text-anchor: middle;
-  cursor: pointer;
   letter-spacing: 0.12em;
 }
 
-.atlas-const-name:hover {
+.atlas-const-label:hover .atlas-const-name {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
+.atlas-const-count {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  fill: var(--ink-faint);
+  text-anchor: middle;
+  letter-spacing: 0.06em;
+}
+
 .atlas-star-g {
   cursor: pointer;
+  opacity: 0;
+  animation: star-in 0.45s ease forwards;
+}
+
+@keyframes star-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-field-star,
+  .atlas-line,
+  .atlas-double-link,
+  .atlas-const-label,
+  .atlas-star-g {
+    animation: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+  .atlas-field-star {
+    opacity: 0.32;
+  }
+  .atlas-double-link {
+    opacity: 0.38;
+  }
 }
 
 .atlas-star {
@@ -125,9 +204,13 @@
 
 .atlas-head {
   position: absolute;
-  top: 28px;
+  top: 24px;
   left: 32px;
   pointer-events: none;
+  padding: 10px 18px 12px;
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--paper) 72%, transparent);
+  backdrop-filter: blur(6px);
 }
 
 .mobile .atlas-head {

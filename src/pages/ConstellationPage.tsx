@@ -5,10 +5,10 @@ import { useProgress } from '../data/progress'
 import { SiteNav } from '../components/SiteNav'
 import './ConstellationPage.css'
 
-const STAR_R: Record<number, number> = { 1: 8, 2: 6, 3: 4.5, 4: 3.5 }
+const STAR_R: Record<number, number> = { 1: 9, 2: 7, 3: 5.5, 4: 4.5 }
 const CHART_H = 620
-const BASE_Y = 470
-const laneY = (lane: number) => 410 - lane * 54
+const BASE_Y = 480
+const laneY = (lane: number) => 408 - lane * 60
 
 export default function ConstellationPage() {
   const { id } = useParams()
@@ -95,7 +95,7 @@ export default function ConstellationPage() {
                 const p1 = starPos.get(a.from)!
                 const p2 = starPos.get(a.to)!
                 const mx = (p1.x + p2.x) / 2
-                const top = Math.min(p1.y, p2.y) - 70 - Math.min(120, Math.abs(p2.x - p1.x) * 0.045)
+                const top = Math.max(52, Math.min(p1.y, p2.y) - 80 - Math.min(130, Math.abs(p2.x - p1.x) * 0.045))
                 const d = `M ${p1.x} ${p1.y} Q ${mx} ${top} ${p2.x} ${p2.y}`
                 const active = activeArc === a
                 return (

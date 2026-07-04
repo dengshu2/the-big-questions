@@ -107,9 +107,9 @@ for (const [i, d] of dialogueRows.entries()) {
 // 画布 1600×1100。星座中心与半径手工调校（互不重叠已验算），星位 = 种子随机 + 迭代避让
 const SKY = { width: 1600, height: 1100 }
 const CENTERS = {
-  0: { cx: 1050, cy: 450, R: 80 }, 1: { cx: 250, cy: 250, R: 150 }, 2: { cx: 700, cy: 200, R: 145 },
+  0: { cx: 1050, cy: 450, R: 80 }, 1: { cx: 280, cy: 310, R: 150 }, 2: { cx: 700, cy: 200, R: 145 },
   3: { cx: 1150, cy: 180, R: 135 }, 4: { cx: 1420, cy: 420, R: 140 }, 5: { cx: 1310, cy: 760, R: 145 },
-  6: { cx: 960, cy: 850, R: 145 }, 7: { cx: 780, cy: 550, R: 135 }, 8: { cx: 400, cy: 620, R: 205 },
+  6: { cx: 960, cy: 850, R: 145 }, 7: { cx: 780, cy: 550, R: 135 }, 8: { cx: 400, cy: 650, R: 205 },
   9: { cx: 640, cy: 930, R: 130 }, 10: { cx: 160, cy: 880, R: 125 },
 }
 const RADIUS = { 1: 7, 2: 5, 3: 3.5, 4: 2.6 }
@@ -175,22 +175,23 @@ for (const t of thinkers.values()) {
 
 // ---------- L1 星座内时间轴布局 ----------
 // 混合刻度：0.45 线性年份 + 0.55 排名分位 → 稀疏上古与稠密现代都可读；单调保序
-const L1_WIDTH = 2400
+// 宽度按人数动态给足呼吸感
 const l1 = {}
 for (const c of constellations) {
   const members = [...thinkers.values()].filter((t) => t.questions.includes(c.id)).sort((a, b) => a.birthNum - b.birthNum)
+  const width = Math.max(2200, members.length * 72 + 480)
   const years = members.map((t) => t.birthNum)
   const minY = years[0], maxY = years[years.length - 1], span = Math.max(1, maxY - minY)
   const xOf = (y) => {
     let lo = 0; while (lo < years.length && years[lo] < y) lo++
     let hi = lo; while (hi < years.length && years[hi] === y) hi++
     const rank = years.length <= 1 ? 0.5 : (lo + hi) / 2 / (years.length - 1)
-    return Math.round(L1_WIDTH * (0.06 + 0.88 * (0.55 * Math.min(rank, 1) + 0.45 * ((y - minY) / span))))
+    return Math.round(width * (0.05 + 0.9 * (0.55 * Math.min(rank, 1) + 0.45 * ((y - minY) / span))))
   }
   const laneLastX = []
   const stars = members.map((t) => {
     const x = xOf(t.birthNum)
-    let lane = laneLastX.findIndex((last) => x - last >= 120)
+    let lane = laneLastX.findIndex((last) => x - last >= 150)
     if (lane === -1) { lane = laneLastX.length; laneLastX.push(x) } else laneLastX[lane] = x
     if (lane > 3) lane = lane % 4
     return { slug: t.slug, x, lane }
@@ -198,12 +199,12 @@ for (const c of constellations) {
   const ticks = [-1000, -500, -300, 0, 300, 600, 900, 1200, 1500, 1700, 1800, 1850, 1900, 1950, 2000]
     .filter((y) => y >= minY - 30 && y <= maxY + 30)
     .map((y) => ({ year: y, x: xOf(y) }))
-    .filter((t, i, arr) => i === 0 || t.x - arr[i - 1].x > 90)
+    .filter((t, i, arr) => i === 0 || t.x - arr[i - 1].x > 110)
   const inQ = new Set(members.map((t) => t.slug))
   const arcs = dialogueRows
     .filter((d) => inQ.has(d.from_slug) && inQ.has(d.to_slug))
     .map((d) => ({ from: d.from_slug, to: d.to_slug, type: d.type, note: d.note }))
-  l1[c.id] = { width: L1_WIDTH, stars, ticks, arcs }
+  l1[c.id] = { width, stars, ticks, arcs }
 }
 
 // ---------- 输出 ----------
