@@ -131,8 +131,12 @@ the-big-questions/
 
 ## 七、清理清单
 
-- [ ] 删 `public/database/`（数据移至 `data/`）
-- [ ] 删 `_index.json`（由构建生成替代）
-- [ ] 删 `src/data/parser.ts` / `aggregator.ts` / `hooks.ts`
-- [ ] 删遗留的 `dist/`（未被 git 跟踪的旧构建产物）
-- [ ] PROGRESS.md 归档为 `docs/PROGRESS-v1.md`，本文件接替其交接职能
+- [x] 删 `public/database/`（数据移至 `data/`）
+- [x] 删 `_index.json`（由构建生成替代）
+- [x] 删 `src/data/parser.ts` / `aggregator.ts` / `hooks.ts`
+- [x] 删遗留的 `dist/`（未被 git 跟踪的旧构建产物）
+- [x] PROGRESS.md 归档为 `docs/PROGRESS-v1.md`，本文件接替其交接职能
+
+---
+
+*P1–P5 已于 2026-07-04 全部完成并分阶段提交。后续扩展方向：星志补齐（54/420）、对话关系扩充（91 条起步）、AB 连线彩蛋（数据已就绪，前端未实现）。*
