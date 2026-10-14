@@ -47,7 +47,7 @@ bertrand-arthur-william-russell-1,数学原理,Principia Mathematica,bertrand-ar
 bertrand-arthur-william-russell-2,数理哲学导论,Introduction to Mathematical Philosophy,bertrand-arthur-william-russell,通俗讲解数、序、无穷与摹状词等数理哲学问题,,
 alfred-tarski-1,逻辑导论,Introduction to Logic and to the Methodology of Deductive Sciences,alfred-tarski,面向初学者讲解逻辑与演绎科学方法论的教材,,
 alfred-tarski-2,逻辑、语义与元数学,"Logic, Semantics, Metamathematics",alfred-tarski,收录关于真的定义、语义学和元数学的主要论文,,
-alfred-tarski-3,真理与证明,Truth and Proof,alfred-tarski,通俗阐述真的概念、可证性及二者的区别,,
+alfred-tarski-3,真理与证明,Truth and Proof,alfred-tarski,通俗阐述真的概念、可证性及二者的区别,原是塔斯基 1969 年发表在《科学美国人》上的一篇文章，不是一本书,
 kurt-godel-1,逻辑之旅,A Logical Journey: From Gödel to Philosophy,kurt-godel,王浩记述与哥德尔的交往，阐述其哲学与逻辑思想,作者是王浩，记录他与哥德尔的交谈和哥德尔的哲学思想,
 kurt-godel-2,哥德尔证明,Gödel's Proof,kurt-godel,用通俗语言讲解不完全性定理的思路与意义,作者是内格尔与纽曼，讲解哥德尔的不完全性定理,
 douglas-r-hofstadter-1,哥德尔、艾舍尔、巴赫,"Gödel, Escher, Bach: an Eternal Golden Braid",douglas-r-hofstadter,借哥德尔、艾舍尔与巴赫讲自指、递归、形式系统与心智,,
@@ -93,8 +93,8 @@ zuo-teng-xin-fu-1,修辞感觉,レトリック感覚,zuo-teng-xin-fu,以比喻�
 zuo-teng-xin-fu-2,修辞认识,レトリック認識,zuo-teng-xin-fu,续论更多修辞手法，讨论修辞与思考和认识的关系,,
 wang-yang-ming-1,青年王阳明,Neo-Confucian Thought in Action: Wang Yang-ming's Youth (1472–1509),wang-yang-ming,考察王阳明早年求学、出入佛道到龙场悟道的思想形成,作者是杜维明，研究王阳明青年时期的思想形成,
 mao-ze-dong-1,实践论,,mao-ze-dong,论认识来源于实践、经由感性到理性再回到实践检验,,
-gregory-bateson-1,迈向心灵生态学,Steps to an Ecology of Mind,gregory-bateson,汇集人类学、精神医学、演化与认识论方面的论文,,
-gregory-bateson-2,心灵生态学导论,,gregory-bateson,从系统与沟通角度讨论心灵生态思想的论文集,,
+gregory-bateson-1,迈向心灵生态学,Steps to an Ecology of Mind,gregory-bateson,汇集人类学、精神医学、演化与认识论方面的论文,没有以此为名的中文版；它与《心灵生态学导论》是同一本书,
+gregory-bateson-2,心灵生态学导论,Steps to an Ecology of Mind,gregory-bateson,从系统与沟通角度讨论心灵生态思想的论文集,,
 gregory-bateson-3,心灵与自然,Mind and Nature: A Necessary Unity,gregory-bateson,阐述心灵与生物演化共有的模式和学习层次,,
 paul-watzlawick-1,改变,Change: Principles of Problem Formation and Problem Resolution,paul-watzlawick,区分两类改变，讲问题如何形成与如何通过重构解决,,与 John Weakland、Richard Fisch 合著
 paul-watzlawick-2,人类沟通的语用学,Pragmatics of Human Communication,paul-watzlawick,提出人际沟通的基本公理并分析病态沟通的模式,,与 Janet Beavin Bavelas、Don Jackson 合著
@@ -118,7 +118,7 @@ donald-a-norman-1,设计心理学1：日常的设计,The Design of Everyday Thin
 donald-a-norman-2,设计心理学2：与复杂共处,Living with Complexity,donald-a-norman,区分复杂与混乱，讨论如何让复杂的事物易于使用,,
 donald-a-norman-3,设计心理学3：情感化设计,Emotional Design,donald-a-norman,从本能、行为、反思三层次分析人与产品的情感,,
 ikujiro-nonaka-1,创造知识的企业,The Knowledge-Creating Company,ikujiro-nonaka,以日本企业为例提出隐性与显性知识相互转换的理论,,与竹内弘高合著
-ikujiro-nonaka-2,知识创造的螺旋,,ikujiro-nonaka,进一步讨论知识创造理论的方法与企业案例,,
+ikujiro-nonaka-2,知识创造的螺旋,Hitotsubashi on Knowledge Management,ikujiro-nonaka,进一步讨论知识创造理论的方法与企业案例,,与竹内弘高合编
 ikujiro-nonaka-3,创新的本质,イノベーションの本質,ikujiro-nonaka,通过日本企业的创新案例说明知识创造的过程,,与胜见明合著
 everett-m-rogers-1,创新的扩散,Diffusion of Innovations,everett-m-rogers,讲新观念和技术如何在社会中传播及采纳者的类型,,
 everett-m-rogers-2,传播学史,A History of Communication Study: A Biographical Approach,everett-m-rogers,以人物和机构为线索讲传播学这门学科的形成,,
@@ -204,7 +204,7 @@ robert-boyle-1,怀疑的化学家,The Sceptical Chymist,robert-boyle,以对话�
 antoine-laurent-de-lavoisier-1,化学基础论,Traité élémentaire de chimie,antoine-laurent-de-lavoisier,系统阐述氧化学说、新命名法和元素表,,
 john-dalton-1,化学哲学新体系,A New System of Chemical Philosophy,john-dalton,提出原子论并给出相对原子质量表,,
 linus-carl-pauling-1,化学键的本质,The Nature of the Chemical Bond,linus-carl-pauling,用量子力学概念解释各类化学键与分子结构,,
-gregor-mendel-1,遗传学经典文选,,gregor-mendel,汇集孟德尔豌豆杂交论文等遗传学奠基文献,,
+gregor-mendel-1,遗传学经典文选,,gregor-mendel,汇集孟德尔豌豆论文以来三十多篇遗传学奠基论文,中文编选的文集：孟德尔的两篇论文之外，还收了多位遗传学家的三十多篇经典论文,
 jean-henri-fabre-1,昆虫记,Souvenirs entomologiques,jean-henri-fabre,长年野外观察写成的昆虫行为与生活记录,,
 konrad-lorenz-1,所罗门王的指环,"Er redete mit dem Vieh, den Vögeln und den Fischen",konrad-lorenz,讲述与寒鸦、灰雁等动物共处的观察趣事,,
 konrad-lorenz-2,攻击的秘密,Das sogenannte Böse,konrad-lorenz,从动物行为出发分析攻击本能的演化功能,,
@@ -361,7 +361,7 @@ rem-koolhaas-3,建筑要素,Elements of Architecture,rem-koolhaas,逐一考察�
 alfred-adler-1,自卑与超越,What Life Should Mean to You,alfred-adler,讲自卑感、生活风格与社会兴趣如何决定人生的意义,,
 carl-r-rogers-1,个人形成论,On Becoming a Person,carl-r-rogers,从心理治疗经验出发，讲人如何在接纳中成为真实的自己,,
 viktor-e-frankl-1,活出生命的意义,Man's Search for Meaning,viktor-e-frankl,记述集中营经历，并说明人如何在苦难中找到意义,,
-viktor-e-frankl-2,我们为什么而活,,viktor-e-frankl,继续讨论人对意义的追求与意义疗法的基本观点,,
+viktor-e-frankl-2,我们为什么而活,The Unheard Cry for Meaning,viktor-e-frankl,系统介绍意义疗法，另收关于爱、性、运动与文学的意义漫谈,,
 jean-jacques-rousseau-3,忏悔录,Les Confessions,jean-jacques-rousseau,毫无保留地叙述自己一生经历与内心的自传,,
 jean-jacques-rousseau-4,一个孤独漫步者的遐想,Les Rêveries du promeneur solitaire,jean-jacques-rousseau,晚年独居时在散步中写下的十篇沉思随笔,,
 niccolo-machiavelli-2,君主论,Il Principe,niccolo-machiavelli,君主如何获得、维持权力，以及权术与道德的分离,,
@@ -380,7 +380,7 @@ michel-foucault-2,疯癫与文明,Histoire de la folie à l'âge classique,miche
 michel-foucault-3,性经验史,Histoire de la sexualité,michel-foucault,考察关于性的话语如何生产主体，并转向古代自我伦理,,
 michel-foucault-4,词与物,Les Mots et les choses,michel-foucault,分析文艺复兴以来各知识领域背后的深层认识结构,,
 michel-foucault-5,知识考古学,L'Archéologie du savoir,michel-foucault,阐述话语分析与知识考古的研究方法,,
-michel-foucault-6,自我技术,,michel-foucault,收入晚期关于自我实践、伦理与主体的讲演和文章,,
+michel-foucault-6,自我技术,,michel-foucault,收入晚期关于自我实践、伦理与主体的讲演和文章,,汪民安编选的中文文集
 pierre-bourdieu-6,自我分析纲要,Esquisse pour une auto-analyse,pierre-bourdieu,用自己的理论分析自己的出身与学术道路,,
 pierre-bourdieu-7,反思社会学,Réponses : pour une anthropologie réflexive,pierre-bourdieu,与华康德以对话形式介绍其核心概念与研究方法,,
 erving-goffman-1,日常生活中的自我呈现,The Presentation of Self in Everyday Life,erving-goffman,用戏剧比喻分析人在日常交往中如何管理他人印象,,
@@ -427,7 +427,7 @@ paul-a-samuelson-1,经济学,Economics,paul-a-samuelson,影响最广的经济学
 paul-a-samuelson-2,经济分析的基础,Foundations of Economic Analysis,paul-a-samuelson,以最优化与均衡的数学方法统一表述经济理论,,
 paul-a-samuelson-3,萨缪尔森科学论文集,The Collected Scientific Papers of Paul A. Samuelson,paul-a-samuelson,汇集他在经济学各领域发表的学术论文,,
 herbert-simon-3,有限理性模型,Models of Bounded Rationality,herbert-simon,汇集他关于有限理性与经济决策的经济学论文,,
-herbert-simon-4,西蒙选集,,herbert-simon,选编西蒙在多个领域的代表性论文,,
+herbert-simon-4,西蒙选集,Models of Bounded Rationality（节选）,herbert-simon,选自有限理性模型，围绕有限理性讨论经济与管理问题,,
 herbert-simon-5,基于实践的微观经济学,An Empirically Based Microeconomics,herbert-simon,主张以对真实行为的观察为基础来重建微观经济学,,
 jeremy-bentham-1,道德与立法原理导论,An Introduction to the Principles of Morals and Legislation,jeremy-bentham,提出功利原理，并以此为基础讨论立法与刑罚,,
 jeremy-bentham-2,政府片论,A Fragment on Government,jeremy-bentham,批评布莱克斯通的法律评注及其对政府起源的解释,,
@@ -446,7 +446,7 @@ hannah-arendt-2,艾希曼在耶路撒冷,Eichmann in Jerusalem,hannah-arendt,报
 hannah-arendt-3,极权主义的起源,The Origins of Totalitarianism,hannah-arendt,追溯反犹主义与帝国主义，分析极权统治的机制,,
 benedict-anderson-1,想象的共同体,Imagined Communities,benedict-anderson,论证民族是借印刷媒介想象出来的共同体,,
 benedict-anderson-2,比较的幽灵,The Spectre of Comparisons,benedict-anderson,收入关于东南亚政治、民族主义与比较研究的文章,,
-benedict-anderson-3,全球化时代,Under Three Flags,benedict-anderson,讨论十九世纪末无政府主义与菲律宾反殖民运动的联系,,
+benedict-anderson-3,全球化时代,The Age of Globalization（初版名 Under Three Flags）,benedict-anderson,讨论十九世纪末无政府主义与菲律宾反殖民运动的联系,,
 samuel-p-huntington-2,变化社会中的政治秩序,Political Order in Changing Societies,samuel-p-huntington,现代化中政治参与扩大快于制度化而引起动荡,,
 robert-d-putnam-1,独自打保龄,Bowling Alone,robert-d-putnam,用大量数据描述美国社区参与与社会资本的衰落,,
 robert-d-putnam-2,我们的孩子,Our Kids,robert-d-putnam,比较不同阶层家庭的孩子，讨论机会不平等的扩大,,
@@ -492,7 +492,7 @@ henry-mintzberg-1,卓有成效的组织,Structure in Fives: Designing Effective 
 henry-mintzberg-2,战略历程,Strategy Safari,henry-mintzberg,梳理比较战略管理的十个学派，各自的长处与盲点,,
 henry-mintzberg-3,管理工作的本质,The Nature of Managerial Work,henry-mintzberg,基于观察描述经理人真实的工作方式，提出十种管理角色,,
 david-mcclelland-1,成就社会,The Achieving Society,david-mcclelland,用跨文化和历史材料论证成就动机与经济发展的关系,,
-david-mcclelland-2,才能评鉴法,,david-mcclelland,介绍识别和评估岗位胜任力的方法，用于人才选拔,,
+david-mcclelland-2,才能评鉴法,Competence at Work,david-mcclelland,介绍识别和评估岗位胜任力的方法，用于人才选拔,作者是史班瑟夫妇，麦克利兰写了第一章，方法出自他的胜任力研究,
 robert-hogan-1,领导人格与组织命运,Personality and the Fate of Organizations,robert-hogan,讨论领导者的人格如何影响团队与组织的成败及如何选拔,,
 chris-argyris-4,组织学习,Organizational Learning: A Theory of Action Perspective,chris-argyris|donald-a-schon,提出单环与双环学习，讨论组织如何学习,,
 chris-argyris-5,克服组织防卫,Overcoming Organizational Defenses,chris-argyris,分析组织中的防卫惯例如何阻碍学习及应对办法,,
@@ -517,13 +517,13 @@ robert-s-kaplan-4,管理会计兴衰史,Relevance Lost,robert-s-kaplan,回顾管
 stephen-a-ross-1,公司理财,Corporate Finance,stephen-a-ross,讲资本预算、资本成本、资本结构与股利政策等公司财务问题,,
 benjamin-graham-1,聪明的投资者,The Intelligent Investor,benjamin-graham,面向普通投资者，讲安全边际、市场先生和防御型投资策略,,
 benjamin-graham-2,证券分析,Security Analysis,benjamin-graham,依据财务报表分析债券和股票内在价值的系统方法,,与戴维·多德合著
-paul-wilmott-1,金融方程式,,paul-wilmott,量化金融中用于衍生品定价的数学方法与方程,,
+paul-wilmott-1,金融方程式,The Money Formula,paul-wilmott,讲数学模型怎样主导金融市场，以及由此带来的风险和危机,,与戴维·欧瑞尔合著
 paul-wilmott-2,量化金融常见问题解答,Frequently Asked Questions in Quantitative Finance,paul-wilmott,以问答形式简明梳理量化金融的主要概念、模型和公式,,
 paul-wilmott-3,数量金融,Paul Wilmott on Quantitative Finance,paul-wilmott,系统讲解衍生品定价、风险管理与数值方法的多卷本教材,,
 frederick-p-brooks-jr-1,人月神话,The Mythical Man-Month,frederick-p-brooks-jr,从大型系统开发经验总结软件项目的进度、人员与沟通问题,,
 frederick-p-brooks-jr-2,设计原本,The Design of Design,frederick-p-brooks-jr,以计算机、建筑等领域为例讨论设计过程与设计团队,,
-adrian-j-slywotzky-1,利润模式,,adrian-j-slywotzky,归纳行业中反复出现的利润转移模式及企业的应对,,
-adrian-j-slywotzky-2,发现利润模式,,adrian-j-slywotzky,以企业案例说明如何围绕顾客设计能获取利润的业务模式,,
+adrian-j-slywotzky-1,利润模式,Profit Patterns,adrian-j-slywotzky,归纳行业中反复出现的利润转移模式及企业的应对,,与大卫·莫里森等合著
+adrian-j-slywotzky-2,发现利润模式,,adrian-j-slywotzky,以企业案例说明如何围绕顾客设计能获取利润的业务模式,没有以此为名的中文版，最可能指《发现利润区》（The Profit Zone）,
 robert-beno-cialdini-1,影响力,Influence: The Psychology of Persuasion,robert-beno-cialdini,讲互惠、承诺一致、社会认同、喜好、权威、稀缺六条说服原理,,
 jack-trout-1,定位,Positioning: The Battle for Your Mind,jack-trout,主张在顾客心智中占据清晰独特的位置，而非比拼产品本身,,与艾·里斯合著
 jack-trout-2,营销战,Marketing Warfare,jack-trout,借用军事战略，讲防御、进攻、侧翼和游击四种市场竞争战法,,与艾·里斯合著
@@ -537,7 +537,7 @@ ohmae-kenichi-2,思考的技术,考える技術,ohmae-kenichi,讲如何用逻辑
 ohmae-kenichi-3,无国界的世界,The Borderless World,ohmae-kenichi,论全球化下企业和经济活动跨越国界运作的趋势,,
 steve-blank-1,四步创业法,The Four Steps to the Epiphany,steve-blank,提出客户发现、验证、积累和建立公司的客户开发四步法,,
 steve-blank-2,创业者手册,The Startup Owner's Manual,steve-blank,按步骤讲解如何用客户开发方法验证商业模式的操作手册,,与鲍勃·多夫合著
-steve-blank-3,创业成功范式,,steve-blank,围绕创业公司如何寻找和验证商业模式的方法论述,,
+steve-blank-3,创业成功范式,Holding a Cat by the Tail,steve-blank,集结作者的博客文章，谈创业者、客户发展和大公司创新,,
 gerald-m-weinberg-1,咨询的奥秘,The Secrets of Consulting,gerald-m-weinberg,以格言和故事讲顾问如何给出建议并让客户接受,,
 gerald-m-weinberg-2,你的灯亮着吗,Are Your Lights On?,gerald-m-weinberg,用短小故事讨论如何在解决问题之前先弄清问题是什么,,与唐纳德·高斯合著
 gerald-m-weinberg-3,系统化思维导论,An Introduction to General Systems Thinking,gerald-m-weinberg,介绍一般系统思维的基本概念与观察、建模的方法,,
@@ -547,12 +547,12 @@ sam-walton-1,富甲美国,Made in America: My Story,sam-walton,沃尔玛创始�
 warren-buffett-1,巴菲特致股东的信,Berkshire Hathaway Letters to Shareholders,warren-buffett,历年股东信，讲投资原则、资本配置、公司治理与会计,,
 george-soros-1,金融炼金术,The Alchemy of Finance,george-soros,以交易实录阐述反身性理论及其对市场繁荣与崩溃的解释,,
 george-soros-2,开放社会,Open Society: Reforming Global Capitalism,george-soros,用反身性和开放社会理念分析和批评全球资本主义,,
-george-soros-3,超越金融,,george-soros,讲述反身性、易错性与开放社会等思想的演讲集,,
+george-soros-3,超越金融,The Soros Lectures: At the Central European University,george-soros,讲述反身性、易错性与开放社会等思想的演讲集,,
 marvin-bower-1,管理意志,The Will to Manage,marvin-bower,讲企业如何建立目标、战略、政策与控制组成的管理体系,,
 marvin-bower-2,领导意志,The Will to Lead,marvin-bower,主张以分布在组织中的领导网络取代命令式等级管理,,
 ke-li-si-ting-·-di-ao-1,迪奥的时尚笔记,The Little Dictionary of Fashion,ke-li-si-ting-·-di-ao,按词条讲面料、颜色、剪裁与着装搭配的时尚要点,,
-song-xia-xing-zhi-zhu-1,自来水哲学,,song-xia-xing-zhi-zhu,阐述企业应像自来水一样廉价充足地供应产品的使命观,,
-song-xia-xing-zhi-zhu-2,经营沉思录,,song-xia-xing-zhi-zhu,关于经营理念和为人处世的短篇思考集,,
+song-xia-xing-zhi-zhu-1,自来水哲学,,song-xia-xing-zhi-zhu,结合松下的创业经历，讲他的经营理念、管理方法和人生体会,,
+song-xia-xing-zhi-zhu-2,经营沉思录,,song-xia-xing-zhi-zhu,合辑四本心得帖，谈经商、管理、用人和做人的心得,,《商业》《经营》《员工》《人生》四本心得帖的中文合辑
 dao-sheng-he-fu-1,活法,生き方,dao-sheng-he-fu,讲他关于为人、工作和修养的人生哲学,,
 dao-sheng-he-fu-2,稻盛和夫的实学,稲盛和夫の実学,dao-sheng-he-fu,讲经营者必须懂的会计原则与经营原则,,
 dao-sheng-he-fu-3,阿米巴经营,アメーバ経営,dao-sheng-he-fu,讲把公司分成独立核算小单位、全员参与经营的制度,,
@@ -574,19 +574,19 @@ john-bowlby-3,丧失,Loss: Sadness and Depression,john-bowlby,分析失去依恋
 urie-bronfenbrenner-1,人类发展的生态学,The Ecology of Human Development,urie-bronfenbrenner,提出微系统到宏系统层层嵌套的发展环境框架,,
 urie-bronfenbrenner-2,人之为人,Making Human Beings Human,urie-bronfenbrenner,晚年文集，阐述生物生态模型并讨论家庭政策与儿童发展,,
 murray-bowen-1,家庭评估,Family Evaluation,murray-bowen,以自我分化、三角关系等概念系统阐述家庭情绪系统,,与迈克尔·克尔合著，克尔为第一作者
-murray-bowen-2,鲍文家庭系统理论,,murray-bowen,介绍鲍文家庭系统理论的主要概念及其在治疗中的运用,,
+murray-bowen-2,鲍文家庭系统理论,,murray-bowen,介绍鲍文家庭系统理论的主要概念及其在治疗中的运用,没有查到以此为名、鲍文署名的中文书；最接近的是鲍文的《鲍文家庭系统治疗》,
 david-buss-1,进化心理学,Evolutionary Psychology: The New Science of the Mind,david-buss,系统介绍进化心理学的方法与生存、择偶、亲缘等主题,,
 david-buss-2,欲望的演化,The Evolution of Desire,david-buss,用跨文化数据解释男女择偶偏好与策略的演化逻辑,,
 david-buss-3,当男人行为不端时,When Men Behave Badly,david-buss,从演化角度分析两性冲突、性骚扰与伴侣暴力的根源,,
 david-h-olson-1,婚姻与家庭,Marriages and Families,david-h-olson,从亲密、多样性与家庭优势角度介绍婚姻家庭研究的教材,,与 John DeFrain 等合著的教材
 david-h-olson-2,夫妻关系体检,The Couple Checkup,david-h-olson,借助问卷数据帮助伴侣检视沟通、冲突与财务等关系状况,,与 Amy Olson-Sigg、Peter Larson 合著
-john-m-gottman-1,爱的博弈,The Science of Trust,john-m-gottman,用博弈论和观察数据分析伴侣之间信任的建立与背叛,,
+john-m-gottman-1,爱的博弈,What Makes Love Last?,john-m-gottman,根据对近七百对伴侣的研究，讲如何建立信任、避免背叛,,与娜恩·西尔弗合著
 john-m-gottman-2,幸福的婚姻,The Seven Principles for Making Marriage Work,john-m-gottman,把婚姻研究成果归纳为经营婚姻的七条原则,,与娜恩·西尔弗合著
 john-m-gottman-3,爱的八次约会,Eight Dates,john-m-gottman,围绕信任、冲突、金钱等主题设计八次伴侣约会对话,,与朱莉·戈特曼等合著
 marshall-bertram-rosenberg-1,非暴力沟通,Nonviolent Communication: A Language of Life,marshall-bertram-rosenberg,以观察、感受、需要、请求四要素重建表达与倾听方式,,
 arlie-russell-hochschild-1,心灵的整饰,The Managed Heart,arlie-russell-hochschild,以空乘人员为例提出情感劳动，分析情绪被商品化,,
 arlie-russell-hochschild-2,职场妈妈不下班,The Second Shift,arlie-russell-hochschild,研究双职工家庭中女性承担的家务与育儿“第二轮班”,,
-arlie-russell-hochschild-3,我们如何捍卫私人生活,,arlie-russell-hochschild,考察婚恋、育儿等私人生活如何被市场服务接管,,
+arlie-russell-hochschild-3,我们如何捍卫私人生活,The Outsourced Self,arlie-russell-hochschild,考察婚恋、育儿等私人生活如何被市场服务接管,,
 martha-c-nussbaum-1,爱的知识,Love's Knowledge,martha-c-nussbaum,论证文学作品能呈现哲学论文难以传达的伦理认识,,
 martha-c-nussbaum-2,善的脆弱性,The Fragility of Goodness,martha-c-nussbaum,通过希腊悲剧与哲学讨论运气对善好生活的影响,,
 martha-c-nussbaum-3,欲望的治疗,The Therapy of Desire,martha-c-nussbaum,研究伊壁鸠鲁派、怀疑派、斯多亚派如何把哲学当作情感治疗,,
@@ -603,7 +603,7 @@ henry-m-wellman-1,读心,Reading Minds,henry-m-wellman,面向大众讲述儿童�
 henry-m-wellman-2,孩子的心理理论,The Child's Theory of Mind,henry-m-wellman,提出儿童对心智的理解是一套朴素理论的观点,,
 henry-m-wellman-3,塑造心智,Making Minds,henry-m-wellman,总结心理理论的发展顺序、机制及跨文化差异,,
 alison-gopnik-1,园丁与木匠,The Gardener and the Carpenter,alison-gopnik,批评按蓝图塑造孩子，主张父母像园丁般提供成长环境,,
-alison-gopnik-2,孩子如何学习,The Scientist in the Crib,alison-gopnik,介绍婴儿如何像科学家一样认识世界与语言,,
+alison-gopnik-2,孩子如何学习,The Scientist in the Crib,alison-gopnik,介绍婴儿如何像科学家一样认识世界与语言,,与安德鲁·梅尔佐夫、帕特里夏·库尔合著
 alison-gopnik-3,宝宝也是哲学家,The Philosophical Baby,alison-gopnik,从儿童心智出发讨论想象、意识、真理与爱等哲学问题,,
 lawrence-kohlberg-1,道德发展心理学,The Psychology of Moral Development,lawrence-kohlberg,阐述道德判断六阶段理论及其测量与研究争论,,
 michael-tomasello-1,人类认知的文化起源,The Cultural Origins of Human Cognition,michael-tomasello,论证文化传递与共同注意使人类认知区别于其他灵长类,,
@@ -619,11 +619,11 @@ laurence-steinberg-3,青少年心理学手册,Handbook of Adolescent Psychology,
 daniel-j-levinson-1,男人四季,The Seasons of a Man's Life,daniel-j-levinson,以男性传记访谈提出成人生命结构与中年转换理论,,
 daniel-j-levinson-2,女人四季,The Seasons of a Woman's Life,daniel-j-levinson,用同样方法研究女性人生阶段，比较两性差异,,与妻子朱迪·莱文森合作，在他去世后出版
 salvador-minuchin-1,家庭与家庭治疗,Families and Family Therapy,salvador-minuchin,提出家庭结构、次系统与界限等概念，奠定结构派治疗,,
-salvador-minuchin-2,大师的手艺与绝活,,salvador-minuchin,结合治疗实录展示结构派家庭治疗的技巧,,
-salvador-minuchin-3,家庭与夫妻治疗,,salvador-minuchin,以案例说明如何从个人症状转向家庭系统评估,,
+salvador-minuchin-2,大师的手艺与绝活,The Craft of Family Therapy,salvador-minuchin,以治疗实录和学员督导讲解家庭治疗的基本功,,与迈克尔·雷特、夏尔曼·博尔达合著
+salvador-minuchin-3,家庭与夫妻治疗,Assessing Families and Couples,salvador-minuchin,以案例说明如何从个人症状转向家庭系统评估,,与迈克尔·尼科尔斯、李维榕合著
 virginia-satir-1,新家庭如何塑造人,Peoplemaking,virginia-satir,讲述家庭沟通、规则与自我价值如何塑造成员,,
-virginia-satir-2,心的面貌,,virginia-satir,引导读者认识和接纳自身的多个侧面与自我价值,,
-virginia-satir-3,萨提亚治疗实录,,virginia-satir,记录萨提亚的治疗会谈过程并加以评析,,
+virginia-satir-2,心的面貌,Your Many Faces,virginia-satir,引导读者认识和接纳自身的多个侧面与自我价值,,
+virginia-satir-3,萨提亚治疗实录,Satir Step by Step,virginia-satir,记录萨提亚的治疗会谈过程并加以评析,,与米凯莱·鲍德温合著
 mara-selvini-palazzoli-1,悖论与反悖论,Paradox and Counterparadox,mara-selvini-palazzoli,介绍米兰小组用悖论处方治疗精神分裂症家庭的方法,,与 Luigi Boscolo、Gianfranco Cecchin、Giuliana Prata 合著
 mara-selvini-palazzoli-2,家庭游戏,Family Games,mara-selvini-palazzoli,分析精神病患者家庭中的互动游戏模式,,与 Stefano Cirillo、Matteo Selvini、Anna Maria Sorrentino 合著
 steve-de-shazer-1,超越奇迹,More Than Miracles,steve-de-shazer,总结焦点解决短期治疗的理念、技术与发展现状,,与 Yvonne Dolan 等合著，在他去世后出版
@@ -634,7 +634,7 @@ sue-johnson-2,依恋与情绪聚焦治疗,Attachment Theory in Practice,sue-john
 sue-johnson-3,爱的感觉,Love Sense,sue-johnson,介绍成人依恋与浪漫爱情的科学研究,,
 michael-white-1,叙事治疗的力量,Narrative Means to Therapeutic Ends,michael-white,提出问题外化与重写生命故事的叙事治疗基本思路,,与大卫·艾普斯顿合著
 michael-white-2,叙事治疗的工作地图,Maps of Narrative Practice,michael-white,整理外化对话、改写对话等叙事治疗实践方法,,
-michael-white-3,说故事的魔力,,michael-white,通过案例介绍以讲故事方式进行的叙事治疗,,
+michael-white-3,说故事的魔力,Narrative Therapy with Children and Their Families,michael-white,以儿童案例介绍如何对孩子及其家庭进行叙事治疗,,与艾莉丝·摩根合著
 tom-kirkwood-1,人生几何,Time of Our Lives,tom-kirkwood,面向大众讲解人为何衰老及衰老的生物学机制,,
 tom-kirkwood-2,机会、发展和衰老,"Chance, Development, and Aging",tom-kirkwood,讨论随机因素如何影响个体发育与衰老差异,,与 Caleb Finch 合著，Finch 为第一作者
 howard-s-friedman-1,长寿项目,The Longevity Project,howard-s-friedman,基于八十年追踪数据分析人格、生活方式与长寿的关系,,与 Leslie Martin 合著
@@ -647,7 +647,7 @@ victor-a-regnier-1,辅助生活设计,Design for Assisted Living,victor-a-regnie
 victor-a-regnier-2,老龄化时代的居住环境设计,Housing Design for an Increasingly Older Population,victor-a-regnier,介绍面向老龄社会的多种老年住宅类型与设计策略,,
 rose-anne-kenny-1,年龄证明,Age Proof,rose-anne-kenny,结合老龄研究讨论减缓衰老、保持健康的生活方式,,
 yu-de-hui-1,生死学十四讲,,yu-de-hui,课堂讲稿，讨论死亡、哀伤与生命意义等生死议题,,
-yu-de-hui-2,临终心理与陪伴研究,,yu-de-hui,基于安宁病房观察，研究临终者心理与陪伴方式,,
+yu-de-hui-2,临终心理与陪伴研究,,yu-de-hui,基于安宁病房观察，研究临终者心理与陪伴方式,,余德慧与他人合著
 irvin-yalom-1,直视骄阳,Staring at the Sun,irvin-yalom,讨论死亡焦虑的表现，以及如何正视死亡而活得充实,,
 irvin-yalom-2,一日浮生,Creatures of a Day,irvin-yalom,以十个治疗故事探讨衰老、死亡与生命的意义,,
 sigmund-freud-1,梦的解析,Die Traumdeutung,sigmund-freud,提出梦是被压抑愿望的伪装满足，阐述释梦方法,,
@@ -662,7 +662,7 @@ gordon-w-allport-2,偏见的本质,The Nature of Prejudice,gordon-w-allport,分�
 gordon-w-allport-3,成为,Becoming,gordon-w-allport,短篇论著，讨论人格如何在成长中不断生成,,
 gordon-w-allport-4,人格的模式与成长,Pattern and Growth in Personality,gordon-w-allport,系统阐述以特质为核心的人格结构与发展理论,,
 george-kelly-1,个人建构心理学,The Psychology of Personal Constructs,george-kelly,提出人如科学家般以个人建构解释世界的人格理论,,
-herbert-simon-9,认知,,herbert-simon,讨论人类思维与问题求解背后的认知机制,,
+herbert-simon-9,认知,,herbert-simon,讨论人类思维与问题求解背后的认知机制,,据西蒙 1983 年在北京大学的讲课整理，没有英文原著
 herbert-simon-10,思维模型,Models of Thought,herbert-simon,汇集用信息加工模型研究人类思维的论文,,
 james-j-gibson-1,视觉感知的生态学方法,The Ecological Approach to Visual Perception,james-j-gibson,提出直接知觉理论和可供性概念，重建视觉研究框架,,
 santiago-ramon-y-cajal-1,大脑之美,The Beautiful Brain,santiago-ramon-y-cajal,收录他的神经组织手绘图，附现代神经科学解说,后人编选的卡哈尔神经元手绘图集,
@@ -671,19 +671,19 @@ eric-r-kandel-1,无序的心灵,The Disordered Mind,eric-r-kandel,从脑科学�
 eric-r-kandel-2,启示的年代,The Age of Insight,eric-r-kandel,从维也纳艺术与精神分析谈到无意识与审美的脑科学,,
 eric-r-kandel-3,神经科学原理,Principles of Neural Science,eric-r-kandel,系统讲授神经细胞、感知、运动与认知的经典教材,,与 James Schwartz、Thomas Jessell 等合编
 michael-merzenich-1,软连线,Soft-Wired,michael-merzenich,介绍大脑可塑性研究及借训练改善脑功能的方法,,
-michael-merzenich-2,改变大脑,Changing Brains,michael-merzenich,汇集应用大脑可塑性提升和恢复能力的研究,,
+michael-merzenich-2,改变大脑,Changing Brains,michael-merzenich,汇集应用大脑可塑性提升和恢复能力的研究,,与莫尔·纳胡姆、托马斯·范弗利特合编的论文集
 michael-i-posner-1,注意力的神经科学,Cognitive Neuroscience of Attention,michael-i-posner,汇集注意力的认知与脑机制研究的专业论文集,,
 michael-i-posner-2,社会世界中的注意力,Attention in a Social World,michael-i-posner,从发展、气质和人际互动角度讨论注意网络,,
 michael-i-posner-3,人脑的教育,Educating the Human Brain,michael-i-posner,儿童注意与自我调节的大脑发育及其对教育的意义,,
 chris-frith-1,心智的构建,Making Up the Mind,chris-frith,大脑如何靠预测和推断构造出我们所感知的世界,,
-chris-frith-2,精神分裂症,Schizophrenia,chris-frith,从认知与大脑机制解释精神分裂症的幻听与妄想,,
+chris-frith-2,精神分裂症,Schizophrenia: A Very Short Introduction,chris-frith,简明介绍精神分裂症的症状、病因、治疗与脑机制研究,,与伊芙·约翰斯通合著
 chris-frith-3,三十秒大脑,30-Second Brain,chris-frith,用一页一题的短篇条目介绍脑科学基本概念,由阿尼尔·塞斯主编，弗里斯是撰稿人之一,
 joseph-e-ledoux-1,突触自我,Synaptic Self,joseph-e-ledoux,自我和人格如何由神经元突触连接塑造与维持,,
 joseph-e-ledoux-2,情绪大脑,The Emotional Brain,joseph-e-ledoux,以杏仁核为中心的恐惧回路与情绪的神经基础,,
 joseph-e-ledoux-3,重新理解焦虑,Anxious,joseph-e-ledoux,区分防御回路与有意识的恐惧，重新解释焦虑,,
 karl-j-friston-1,主动推理,Active Inference,karl-j-friston,系统讲解自由能原理与主动推理框架的教科书,,与 Thomas Parr、Giovanni Pezzulo 合著，Parr 为第一作者
-karl-j-friston-2,预测算法,,karl-j-friston,讨论大脑以预测为核心的计算机制,,
-karl-j-friston-3,预测心智,,karl-j-friston,把感知与认知理解为大脑不断预测和纠错的过程,同名英文著作 The Predictive Mind 的作者是雅各布·霍维（Jakob Hohwy），书单把它归在弗里斯顿名下,
+karl-j-friston-2,预测算法,Surfing Uncertainty,karl-j-friston,讨论大脑以预测为核心的计算机制,中文版作者是安迪·克拉克，书单把它归在弗里斯顿名下；与克拉克名下的《预测算法》是同一本书,
+karl-j-friston-3,预测心智,The Predictive Mind,karl-j-friston,把感知与认知理解为大脑不断预测和纠错的过程,作者是雅各布·霍维（Jakob Hohwy），书单把它归在弗里斯顿名下,
 daniel-kahneman-1,思考，快与慢,"Thinking, Fast and Slow",daniel-kahneman,以快慢两种思维系统总结判断偏差与决策研究,,
 daniel-kahneman-2,选择、价值与决策,"Choices, Values, and Frames",daniel-kahneman,收录前景理论、框架效应等决策研究原始论文,,
 gerd-gigerenzer-1,适应性思维,Adaptive Thinking,gerd-gigerenzer,讨论概率推理、频率表述与认知适应性的论文集,,
@@ -774,8 +774,8 @@ konstantin-paustovsky-2,文学肖像,,konstantin-paustovsky,为他敬重的俄�
 ernst-robert-curtius-1,欧洲文学与拉丁中世纪,Europäische Literatur und lateinisches Mittelalter,ernst-robert-curtius,以修辞程式追踪古典到近代欧洲文学的拉丁连续性,,
 erich-auerbach-1,摹仿论,Mimesis,erich-auerbach,从荷马到伍尔夫，逐段细读西方文学怎样再现现实,,
 rene-girard-1,浪漫的谎言与小说的真实,Mensonge romantique et vérité romanesque,rene-girard,从塞万提斯到陀思妥耶夫斯基的小说中揭示模仿欲望,,
-rene-girard-2,疯狂的谱系,,rene-girard,以模仿欲望理论讨论疯狂与文学中的病态心理,,
-rene-girard-3,祭牲与成神,,rene-girard,讨论祭祀、替罪羊机制与神圣的起源,,
+rene-girard-2,疯狂的谱系,,rene-girard,法国思想家论荷尔德林、尼采、梵高、阿尔托等人疯狂的文集,这是福柯、巴塔耶、布朗肖等人谈疯狂的文集，基拉尔只写了其中一篇论尼采的文章,
+rene-girard-3,祭牲与成神,La Violence et le sacré,rene-girard,讨论祭祀、替罪羊机制与神圣的起源,,
 rene-girard-4,莎士比亚：欲望之火,A Theater of Envy,rene-girard,以模仿欲望和嫉妒解读莎士比亚的戏剧,,
 harold-bloom-1,西方正典,The Western Canon,harold-bloom,以莎士比亚为中心，论二十六位西方经典作家的审美价值,,
 harold-bloom-2,如何读，为什么读,How to Read and Why,harold-bloom,面向普通读者，示范怎样读小说、诗歌和戏剧,,
@@ -804,7 +804,7 @@ john-yudkin-1,甜蜜的，致命的,"Pure, White and Deadly",john-yudkin,陈述�
 walter-c-willett-1,吃喝和健康,"Eat, Drink, and Be Healthy",walter-c-willett,以队列研究证据讲脂肪、碳水和蛋白质该怎么吃,,
 mark-p-mattson-1,间歇性禁食,The Intermittent Fasting Revolution,mark-p-mattson,间歇性禁食影响代谢与大脑的机制、证据和做法,,
 tim-d-spector-1,饮食的迷思,The Diet Myth,tim-d-spector,以肠道菌群和双胞胎研究拆解常见饮食观念,,
-tim-d-spector-2,饮食真相,,tim-d-spector,批驳膳食指南与食品宣传中流行的饮食误区,,
+tim-d-spector-2,饮食真相,Spoon-Fed,tim-d-spector,批驳膳食指南与食品宣传中流行的饮食误区,,
 charles-b-corbin-1,健身和健康的概念,Concepts of Fitness and Wellness,charles-b-corbin,讲体能要素、运动处方与健康生活方式的大学教材,,与人合著的教材
 charles-b-corbin-2,健身与生活,Fitness for Life,charles-b-corbin,面向中学生的健身与健康生活教材,,与人合著的教材
 thomas-roth-1,睡眠医学原理与实践,Principles and Practice of Sleep Medicine,thomas-roth,睡眠生理与各类睡眠障碍诊疗的权威参考书,,与 Meir Kryger、William Dement 合编
@@ -815,12 +815,12 @@ albert-ellis-3,控制焦虑,How to Control Your Anxiety Before It Controls You,a
 aaron-beck-1,抑郁症,Depression: Causes and Treatment,aaron-beck,抑郁症的临床表现、认知成因与认知治疗,,第二版与 Brad Alford 合著
 aaron-beck-2,愤怒的囚徒,Prisoners of Hate,aaron-beck,以认知理论分析愤怒、敌意与暴力的根源,,
 aaron-beck-3,人格障碍的认知行为疗法,Cognitive Therapy of Personality Disorders,aaron-beck,把认知疗法用于各类人格障碍的治疗手册,,与 Arthur Freeman 等合著
-aaron-beck-4,这样想，你才不焦虑,,aaron-beck,识别并改变引发焦虑的想法的自助读物,,
+aaron-beck-4,这样想，你才不焦虑,The Anxiety and Worry Workbook,aaron-beck,识别并改变引发焦虑的想法的自助读物,,与戴维·克拉克合著，克拉克为第一作者
 steven-c-hayes-1,接纳承诺疗法,Acceptance and Commitment Therapy,steven-c-hayes,以接纳、解离与价值行动提升心理灵活性的疗法总论,,与 Kirk Strosahl、Kelly Wilson 合著
 lester-luborsky-1,理解移情,Understanding Transference: The CCRT Method,lester-luborsky,用核心冲突关系主题法把移情变成可测量的对象,,与 Paul Crits-Christoph 合著
 peter-fonagy-1,依恋理论与精神分析,Attachment Theory and Psychoanalysis,peter-fonagy,梳理依恋理论与各精神分析流派之间的异同与互补,,
 peter-fonagy-2,心智化临床实践,Mentalizing in Clinical Practice,peter-fonagy,把心智化概念用于日常临床工作的方法与案例,,与 Jon Allen、Anthony Bateman 合著，Allen 为第一作者
-peter-fonagy-3,人格障碍的心智化治疗,Mentalization-Based Treatment for Personality Disorders,peter-fonagy,以修复心智化能力为目标治疗人格障碍的操作手册,,与 Anthony Bateman 合著
+peter-fonagy-3,人格障碍的心智化治疗,Mentalization-Based Treatment for Personality Disorders: A Practical Guide,peter-fonagy,以修复心智化能力为目标治疗人格障碍的操作手册,,与安东尼·贝特曼合著，贝特曼为第一作者
 sen-tian-zheng-ma-1,神经衰弱和强迫观念的根治法,,sen-tian-zheng-ma,针对神经衰弱与强迫观念讲解森田疗法的具体做法,,
 sen-tian-zheng-ma-2,神经质的实质与治疗,,sen-tian-zheng-ma,阐述神经质的成因机制及森田疗法的理论基础,,
 jacob-levy-moreno-1,心理剧：心理治疗的基础,"Psychodrama, Volume 1",jacob-levy-moreno,以舞台演出与角色扮演进行治疗的理论和技术,,
@@ -840,7 +840,7 @@ lewis-thomas-1,最年轻的科学,The Youngest Science: Notes of a Medicine-Watc
 lewis-thomas-2,细胞生命的礼赞,The Lives of a Cell,lewis-thomas,随笔集，从细胞与共生谈生命之间的相互依存,,
 lewis-thomas-3,水母与蜗牛,The Medusa and the Snail,lewis-thomas,随笔集，谈生物学、医学与人类自身的种种现象,,
 sherwin-b-nuland-1,死亡之书,How We Die,sherwin-b-nuland,按常见死因描述人如何死去，反思医学的过度抗争,,
-sherwin-b-nuland-2,生命之书,The Wisdom of the Body,sherwin-b-nuland,讲人体各系统如何协同维持生命与自我修复,,
+sherwin-b-nuland-2,生命之书,How We Live（又名 The Wisdom of the Body）,sherwin-b-nuland,讲人体各系统如何协同维持生命与自我修复,,
 oliver-sacks-1,错把妻子当帽子,The Man Who Mistook His Wife for a Hat,oliver-sacks,二十多个神经疾病病例，看大脑受损的人如何生活,,
 oliver-sacks-2,火星上的人类学家,An Anthropologist on Mars,oliver-sacks,七位神经异常者的长篇故事与他们的适应方式,,
 oliver-sacks-3,幻觉,Hallucinations,oliver-sacks,各类幻觉的神经学成因与病人及作者的亲身经历,,
@@ -850,7 +850,7 @@ arthur-kleinman-2,苦痛和疾病的社会根源,Social Origins of Distress and 
 david-hume-4,宗教的自然史,The Natural History of Religion,david-hume,从人性中的恐惧与希望解释宗教与多神信仰的起源,,
 david-hume-5,自然宗教对话录,Dialogues Concerning Natural Religion,david-hume,三人对话检讨由世界秩序推论上帝存在的设计论证,,
 wang-yang-ming-2,王阳明全集,,wang-yang-ming,收录传习录、文章、书信与奏疏等王阳明著作的总集,,
-william-james-1,心理学原理,The Principles of Psychology,william-james,系统论述意识流、习惯、自我、情绪与意志的心理学,,
+william-james-1,心理学原理,The Principles of Psychology,william-james,系统论述意识流、习惯、自我、情绪与意志的心理学,书单把它放在信仰总论下；詹姆斯谈信仰的代表作是《宗教经验种种》和《信仰的意志》,
 bertrand-arthur-william-russell-3,为什么我不是基督教徒,Why I Am Not a Christian,bertrand-arthur-william-russell,陈述不信基督教的理由，批评宗教对道德与社会的影响,,
 bertrand-arthur-william-russell-4,我的信仰,What I Believe,bertrand-arthur-william-russell,简述他对自然、人生与美好生活的看法,,
 jonathan-haidt-1,象与骑象人,The Happiness Hypothesis,jonathan-haidt,用现代心理学检验古代关于幸福的种种智慧,,
@@ -878,8 +878,8 @@ liang-qichao-4,饮冰室合集,,liang-qichao,汇集梁启超一生的政论、�
 daniel-c-dennett-2,意向立场,The Intentional Stance,daniel-c-dennett,阐述以信念和欲望预测系统行为的意向立场,,
 daniel-c-dennett-3,意识的解释,Consciousness Explained,daniel-c-dennett,以多重草稿模型反对笛卡尔剧场式的意识观,,
 daniel-c-dennett-4,自由的进化,Freedom Evolves,daniel-c-dennett,论证自由意志可在决定论和演化中产生并存在,,
-andy-clark-1,预测算法,,andy-clark,以预测加工解释感知、行动与具身心智,,
-andy-clark-2,心体,,andy-clark,从具身认知角度讨论心智与身体、环境的关系,,
+andy-clark-1,预测算法,"Surfing Uncertainty: Prediction, Action, and the Embodied Mind",andy-clark,以预测加工解释感知、行动与具身心智,,
+andy-clark-2,心体,Mindware: An Introduction to the Philosophy of Cognitive Science,andy-clark,介绍认知科学哲学，比较符号计算、神经网络与具身认知等进路,,
 andy-clark-3,体验机器,The Experience Machine,andy-clark,面向大众讲大脑如何通过预测构造我们的体验,,
 andy-clark-4,放大心灵,Supersizing the Mind,andy-clark,论证认知可以延展到身体和外部工具之中,,
 li-yi-yuan-1,宗教与神话,,li-yi-yuan,汉人民间信仰、仪式与神话的人类学研究,,
