@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { allBooks, allThinkers } from '../data/catalog'
-import { BookItem, Top, useOpenBook } from '../components/ui'
+import { BookItem, Top, useOpenBook, useTitle } from '../components/ui'
 
 const LIMIT = 30
 const norm = (s: string) => s.toLowerCase().replace(/[\s·・.\-—]/g, '')
@@ -16,6 +16,7 @@ export function search(query: string) {
 }
 
 export default function Search() {
+  useTitle('搜索')
   const [params, setParams] = useSearchParams()
   const [query, setQuery] = useState(params.get('q') ?? '')
   const [open, toggle] = useOpenBook()

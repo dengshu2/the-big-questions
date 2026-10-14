@@ -1,13 +1,15 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { booksOfQuestion, getQuestion, pickOf, questions, sectionBookIds, sectionLabel } from '../data/catalog'
 import { countDone, useShelf } from '../data/shelf'
-import { BookItem, Icon, ICONS, PickCard, ShelfPill, Top, useOpenBook } from '../components/ui'
+import { BookItem, Icon, ICONS, PickCard, ShelfPill, Top, useOpenBook, useTitle } from '../components/ui'
 
 export default function Question() {
   const { id, sec } = useParams()
   const q = getQuestion(id)
   const shelf = useShelf()
   const [open, toggle] = useOpenBook()
+  const sectionName = q?.sections.find((x) => x.id === sec)?.name
+  useTitle(q ? (q.sections.length > 1 && sectionName ? `${sectionName} · ${q.name}` : q.name) : '')
   if (!q) return <Navigate to="/" replace />
   const idx = q.sections.findIndex((s) => s.id === sec)
   if (idx < 0) return <Navigate to={`/q/${q.id}/${q.sections[0].id}`} replace />
@@ -23,7 +25,7 @@ export default function Question() {
   return (
     <>
       <Top title={q.name} sub={`读完 ${countDone(shelf, all)} / ${all.length}`} back="/" right={<ShelfPill />} />
-      <main className="q-page reader">
+      <main className={single ? 'q-page reader reader--single' : 'q-page reader'}>
         {!single && (
           <nav className="outline" aria-label={`${q.name}的各节`}>
             <p className="outline-q">{q.name}</p>
@@ -94,7 +96,7 @@ export default function Question() {
               {sectionLabel(s.id) && <span className="q-num">{s.id}</span>}
               {s.name}
             </h2>
-            <p>{s.note}</p>
+            {!single && <p>{s.note}</p>}
           </section>
 
           {pick ? (

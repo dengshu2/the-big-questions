@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react'
 import { getBook } from '../data/catalog'
 import { exportShelf, importShelf, STATUS_LABEL, STATUSES, useShelf, type Status } from '../data/shelf'
-import { BookItem, Top, useOpenBook } from '../components/ui'
+import { BookItem, Top, useOpenBook, useTitle } from '../components/ui'
 
 export default function Shelf() {
+  useTitle('我的书架')
   const shelf = useShelf()
   const [tab, setTab] = useState<Status>('reading')
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null)

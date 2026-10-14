@@ -21,6 +21,13 @@ export const ICONS = {
   out: 'M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5',
 }
 
+/** 浏览器标签页标题 */
+export function useTitle(title: string) {
+  useEffect(() => {
+    document.title = title ? `${title} · 大问题` : '大问题 · 经典书单'
+  }, [title])
+}
+
 /** 子页面返回：有站内历史就后退，否则回到上一级 */
 function useBack(fallback: string) {
   const navigate = useNavigate()
@@ -79,6 +86,13 @@ export function ShelfPill() {
 export function useOpenBook(): [string | null, (id: string) => void] {
   const [params, setParams] = useSearchParams()
   const open = params.get('b')
+  // 从分享链接进来时，把展开的那本书滚到眼前（只在进入页面时做一次）
+  useEffect(() => {
+    if (!open) return
+    const t = setTimeout(() => document.querySelector('.is-open')?.scrollIntoView({ block: 'center' }), 50)
+    return () => clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   const toggle = (id: string) =>
     setParams(
       (p) => {
@@ -181,7 +195,7 @@ export function PickCard({ id, why, here, open, onToggle }: { id: string; why: s
   const book = getBook(id)
   if (!book) return null
   return (
-    <article className="pick">
+    <article className={open ? 'pick is-open' : 'pick'}>
       <span className="pick-tag">先读这本</span>
       <h3 className="pick-title">
         《{book.title}》<span className="book-by">{authorNames(book)}</span>

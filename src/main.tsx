@@ -14,7 +14,8 @@ function Layout() {
   return (
     <div className="q-app q-app--wide">
       <Outlet />
-      <ScrollRestoration />
+      {/* 按地址记滚动位置：直接打开的页面都用同一个 key，按 key 会把上一页的位置带过来 */}
+      <ScrollRestoration getKey={(loc) => loc.pathname} />
     </div>
   )
 }

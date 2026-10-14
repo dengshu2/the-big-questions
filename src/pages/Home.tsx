@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { about, booksOfQuestion, picks, questions, stats } from '../data/catalog'
 import { countDone, useShelf } from '../data/shelf'
-import { ShelfPill, Top } from '../components/ui'
+import { ShelfPill, Top, useTitle } from '../components/ui'
 
 const STEPS = [
   { no: 1, title: '先读元典', text: '十三部源头之书，后面许多问题的最早说法都在这里', to: '/q/0/0' },
@@ -10,6 +10,7 @@ const STEPS = [
 ]
 
 export default function Home() {
+  useTitle('')
   const shelf = useShelf()
   const picksDone = countDone(shelf, picks.map((p) => p.book.id))
   const [lead, ...rest] = about

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { picks, questions } from '../data/catalog'
 import { countDone, useShelf } from '../data/shelf'
-import { BookItem, Progress, ShelfPill, Top, useOpenBook } from '../components/ui'
+import { BookItem, Progress, ShelfPill, Top, useOpenBook, useTitle } from '../components/ui'
 
 export default function Picks() {
+  useTitle('最短路径')
   const shelf = useShelf()
   const [open, toggle] = useOpenBook()
   return (
