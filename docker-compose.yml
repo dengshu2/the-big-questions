@@ -7,7 +7,25 @@ services:
     container_name: the-big-questions
     restart: unless-stopped
     ports:
-      - "127.0.0.1:3003:80"   # 仅本地访问，由 NPM 反代
+      - "127.0.0.1:3003:80"   # 仅本地访问，由 Caddy 反代
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: 128M
     networks:
       - proxy-network
 
