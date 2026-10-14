@@ -128,6 +128,11 @@ function BookDetail({ id, here, why }: { id: string; here?: string; why?: string
     <div className="book-detail">
       {why && <p className="pick-why">{why}</p>}
       <p className="book-note">{book.note}</p>
+      {book.byline && (
+        <p className="q-meta">
+          {authorNames(book)}，{book.byline}
+        </p>
+      )}
       {book.orig && <p className="q-meta orig">{book.orig}</p>}
       {book.credit && <p className="q-notice">{book.credit}</p>}
       {book.authors.map((a) => {

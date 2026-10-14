@@ -30,6 +30,8 @@ export interface Book {
   note: string
   /** 作者归属需要说明时的一句话，比如书单所列作者其实是编者或研究对象 */
   credit: string
+  /** 书单外的合著者、编者，接在作者名后面，如“与马克·约翰逊合著” */
+  byline: string
   authors: string[]
   places: Place[]
 }

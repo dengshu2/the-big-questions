@@ -70,7 +70,8 @@ export function buildCatalog(dataDir) {
     }
     need(r, 'note', 8, 40)
     if (r.credit) need(r, 'credit', 8, 70)
-    books[r.id] = { id: r.id, title: r.title, orig: r.orig, note: r.note, credit: r.credit, authors, places: [] }
+    if (r.byline) need(r, 'byline', 4, 60)
+    books[r.id] = { id: r.id, title: r.title, orig: r.orig, note: r.note, credit: r.credit, byline: r.byline, authors, places: [] }
   }
 
   // ---------- 问题、章节与书的位置 ----------
