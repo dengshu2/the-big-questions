@@ -14,8 +14,11 @@ function Layout() {
   return (
     <div className="q-app q-app--wide">
       <Outlet />
-      {/* 按地址记滚动位置：直接打开的页面都用同一个 key，按 key 会把上一页的位置带过来 */}
-      <ScrollRestoration getKey={(loc) => loc.pathname} />
+      {/* 滚动位置按每条历史记录各记一份，返回时恢复；只要某个 key 存过位置，
+          React Router 在任何跳转（不只是返回）都会恢复它，所以不能按地址记，
+          否则点回看过的节会被拉到上次的位置。直接打开的页面 key 都是 default，
+          这一种按地址区分，免得继承上一个页面的位置。 */}
+      <ScrollRestoration getKey={(loc) => (loc.key === 'default' ? loc.pathname : loc.key)} />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useEffect, type ReactNode } from 'react'
-import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { authorNames, doubanUrl, formatYears, getBook, getSection, getThinker, sectionLabel } from '../data/catalog'
 import { setStatus, STATUS_LABEL, STATUSES, useShelf } from '../data/shelf'
 
@@ -28,11 +28,11 @@ export function useTitle(title: string) {
   }, [title])
 }
 
-/** 子页面返回：有站内历史就后退，否则回到上一级 */
+/** 子页面返回：本站内有上一页就后退（回去时恢复滚动位置），否则回到上一级。
+ *  用 React Router 记在 history.state 里的序号判断；切换节用的是 replace，不会增加序号。 */
 function useBack(fallback: string) {
   const navigate = useNavigate()
-  const location = useLocation()
-  return () => (location.key !== 'default' ? navigate(-1) : navigate(fallback))
+  return () => ((window.history.state?.idx ?? 0) > 0 ? navigate(-1) : navigate(fallback))
 }
 
 /** 顶栏：左边返回（首页没有），中间两行状态，右边一个胶囊。子页面按 Esc 也会返回。 */
