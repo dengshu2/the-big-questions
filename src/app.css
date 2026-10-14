@@ -76,12 +76,12 @@ a.q-row { color: inherit; text-decoration: none; }
 .outline-no { font-size: 12.5px; }
 .outline-count { font-size: 12.5px; font-weight: 400; color: var(--q-sub); }
 
-.q-intro h1 { margin: 0 0 8px; font-size: 30px; font-weight: 650; letter-spacing: -0.03em; }
-.q-intro p { margin: 0; font-size: 16px; line-height: 1.75; color: var(--q-ink); text-wrap: pretty; }
+.q-intro { display: grid; gap: 6px; padding: 16px 18px; }
+.q-intro p { margin: 0; font-size: 15.5px; line-height: 1.75; text-wrap: pretty; }
+.q-intro .q-intro-label { font-size: 13px; font-weight: 600; color: var(--q-sub); }
 .sec-head h2 { margin: 0; font-size: 22px; font-weight: 650; letter-spacing: -0.02em; display: flex; gap: 10px; align-items: baseline; }
 .sec-head h2 .q-num { font-size: 15px; font-weight: 600; color: var(--q-sub); }
 .sec-head p { margin: 4px 0 0; color: var(--q-sub); font-size: 15.5px; }
-.q-intro + .sec-head { padding-top: 10px; border-top: 1px solid var(--q-line); }
 
 .pick { display: grid; gap: 8px; padding: 18px 20px 16px; border-radius: var(--q-r-l); background: var(--q-surface); box-shadow: var(--q-shadow); }
 .pick-tag { justify-self: start; font-size: 12.5px; font-weight: 600; color: var(--q-accent); background: var(--q-accent-soft); border-radius: var(--q-r-pill); padding: 3px 10px; }

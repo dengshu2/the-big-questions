@@ -51,46 +51,6 @@ export default function Question() {
         )}
 
         <div className="reader-main">
-          {(idx === 0 || single) && (
-            <header className="q-intro">
-              <h1>{q.name}</h1>
-              <p>{q.intro}</p>
-            </header>
-          )}
-
-          {!single && (
-            <div className="stepper">
-              {prev ? (
-                <Link to={`/q/${q.id}/${prev.id}`} className="q-round" replace aria-label={`上一节：${prev.name}`}>
-                  <Icon d={ICONS.prev} />
-                </Link>
-              ) : (
-                <span className="q-round is-off" aria-hidden="true">
-                  <Icon d={ICONS.prev} />
-                </span>
-              )}
-              <span className="stepper-mid">
-                <span className="q-dots" aria-hidden="true">
-                  {q.sections.map((x) => (
-                    <i key={x.id} className={x.id === s.id ? 'on' : undefined} />
-                  ))}
-                </span>
-                <span className="q-meta q-num">
-                  第 {idx + 1} 节，共 {q.sections.length} 节
-                </span>
-              </span>
-              {next ? (
-                <Link to={`/q/${q.id}/${next.id}`} className="q-round" replace aria-label={`下一节：${next.name}`}>
-                  <Icon d={ICONS.next} />
-                </Link>
-              ) : (
-                <span className="q-round is-off" aria-hidden="true">
-                  <Icon d={ICONS.next} />
-                </span>
-              )}
-            </div>
-          )}
-
           <section className="sec-head">
             <h2>
               {sectionLabel(s.id) && <span className="q-num">{s.id}</span>}
@@ -98,6 +58,14 @@ export default function Question() {
             </h2>
             {!single && <p>{s.note}</p>}
           </section>
+
+          {/* 问题导语放在第一节标题下面：每一节的标题都从同一高度开始，切换时不跳动 */}
+          {(idx === 0 || single) && (
+            <section className="q-bubble q-intro">
+              <p className="q-intro-label">怎么读「{q.name}」</p>
+              <p>{q.intro}</p>
+            </section>
+          )}
 
           {pick ? (
             <PickCard id={pick} why={s.why} here={s.id} open={open === pick} onToggle={toggle} />
