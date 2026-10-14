@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { booksOfQuestion, getQuestion, pickOf, questions, sectionBookIds, sectionLabel } from '../data/catalog'
 import { countDone, useShelf } from '../data/shelf'
@@ -9,10 +8,6 @@ export default function Question() {
   const q = getQuestion(id)
   const shelf = useShelf()
   const [open, toggle] = useOpenBook()
-  // 窄屏时各节是一行横向列表，把当前这一节滚进视野
-  useEffect(() => {
-    document.querySelector('.outline [aria-current="page"]')?.scrollIntoView({ inline: 'center', block: 'nearest' })
-  }, [id, sec])
   if (!q) return <Navigate to="/" replace />
   const idx = q.sections.findIndex((s) => s.id === sec)
   if (idx < 0) return <Navigate to={`/q/${q.id}/${q.sections[0].id}`} replace />
@@ -59,6 +54,39 @@ export default function Question() {
               <h1>{q.name}</h1>
               <p>{q.intro}</p>
             </header>
+          )}
+
+          {!single && (
+            <div className="stepper">
+              {prev ? (
+                <Link to={`/q/${q.id}/${prev.id}`} className="q-round" replace aria-label={`上一节：${prev.name}`}>
+                  <Icon d={ICONS.prev} />
+                </Link>
+              ) : (
+                <span className="q-round is-off" aria-hidden="true">
+                  <Icon d={ICONS.prev} />
+                </span>
+              )}
+              <span className="stepper-mid">
+                <span className="q-dots" aria-hidden="true">
+                  {q.sections.map((x) => (
+                    <i key={x.id} className={x.id === s.id ? 'on' : undefined} />
+                  ))}
+                </span>
+                <span className="q-meta q-num">
+                  第 {idx + 1} 节，共 {q.sections.length} 节
+                </span>
+              </span>
+              {next ? (
+                <Link to={`/q/${q.id}/${next.id}`} className="q-round" replace aria-label={`下一节：${next.name}`}>
+                  <Icon d={ICONS.next} />
+                </Link>
+              ) : (
+                <span className="q-round is-off" aria-hidden="true">
+                  <Icon d={ICONS.next} />
+                </span>
+              )}
+            </div>
           )}
 
           <section className="sec-head">
@@ -116,6 +144,29 @@ export default function Question() {
               )
             )}
           </nav>
+
+          {!single && (
+            <section className="q-sec sec-list">
+              <h3>{q.name}的各节</h3>
+              <ul className="q-rows">
+                {q.sections.map((x) => {
+                  const ids = sectionBookIds(x)
+                  const done = countDone(shelf, ids)
+                  return (
+                    <li key={x.id}>
+                      <Link to={`/q/${q.id}/${x.id}`} className="q-row" replace aria-current={x.id === s.id ? 'page' : undefined}>
+                        <span className="q-no q-num">{x.id}</span>
+                        <span className="q-row-main">
+                          <span>{x.name}</span>
+                        </span>
+                        <span className={done ? 'q-st q-st--done' : 'q-st'}>{done ? `${done}/${ids.length}` : ids.length}</span>
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </section>
+          )}
         </div>
       </main>
     </>

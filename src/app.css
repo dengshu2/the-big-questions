@@ -13,6 +13,7 @@
 .top-title { display: inline-flex; align-items: center; gap: 6px; }
 .q-status b, .q-status span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 52vw; }
 .q-round { color: inherit; }
+a.q-row { color: inherit; text-decoration: none; }
 
 .q-page.narrow { width: 100%; max-width: 720px; margin-inline: auto; }
 .inline-link { color: var(--q-accent); text-decoration: none; font-weight: 500; }
@@ -112,15 +113,21 @@
 .who { display: grid; gap: 2px; }
 .who p { margin: 0; }
 
-/* ── 窄屏：各节改成顶部一行 ──────────────────────────────────────── */
+/* 窄屏专用：顶部的上一节/下一节，底部的各节列表 */
+.stepper, .sec-list { display: none; }
+.stepper { align-items: center; justify-content: space-between; gap: 12px; }
+.stepper-mid { display: grid; justify-items: center; gap: 6px; }
+.stepper .q-round.is-off { opacity: 0.35; box-shadow: none; }
+.sec-list a[aria-current="page"] .q-row-main > :first-child { color: var(--q-accent); font-weight: 600; }
+.q-no { width: 34px; flex: none; font-size: 13px; font-weight: 600; color: var(--q-sub); }
+
+/* ── 窄屏：左侧目录换成顶部的上下节 + 底部列表 ─────────────────────── */
 
 @media (max-width: 899px) {
-  .reader { grid-template-columns: minmax(0, 1fr); row-gap: 18px; }
-  .outline { position: static; }
-  .outline-q { display: none; }
-  .outline ol { display: flex; overflow-x: auto; scrollbar-width: none; gap: 6px; margin-inline: calc(-1 * var(--q-gutter)); padding: 4px var(--q-gutter); }
-  .outline ol::-webkit-scrollbar { display: none; }
-  .outline-item { display: flex; gap: 6px; white-space: nowrap; padding: 7px 14px; border-radius: var(--q-r-pill); background: var(--q-surface); box-shadow: var(--q-shadow); font-size: 14px; }
-  .outline-count { display: none; }
-  .pager .q-btn { flex: 1; }
+  .reader { grid-template-columns: minmax(0, 1fr); }
+  .outline { display: none; }
+  .stepper { display: flex; }
+  .sec-list { display: grid; padding-top: 12px; }
+  .pager > :not(.q-btn--primary) { display: none; }
+  .pager .q-btn--primary { flex: 1; height: auto; min-height: 46px; padding-block: 10px; text-align: center; }
 }
