@@ -98,7 +98,10 @@ a.q-row { color: inherit; text-decoration: none; }
 .books .book:last-child { border-bottom: 0; }
 .books .book-line { border-bottom: 0; gap: 8px; }
 .book-line .book-title { font-size: 16px; font-weight: 500; }
-.book-by { font-size: 14px; color: var(--q-sub); font-weight: 400; margin-right: auto; }
+.book-by { font-size: 14px; color: var(--q-sub); font-weight: 400; flex: none; }
+.book-orig { flex: 1; min-width: 0; font-size: 13px; font-style: italic; color: var(--q-sub); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; padding-left: 12px; }
+.book-line > .q-st { flex: none; }
+.book-line .chev { margin-left: auto; }
 .chev { display: grid; color: var(--q-faint); transition: transform 0.15s ease; }
 .book.is-open .chev { transform: rotate(180deg); }
 .book.is-open .book-title { color: var(--q-accent); }
@@ -129,6 +132,7 @@ a.q-row { color: inherit; text-decoration: none; }
   .reader { grid-template-columns: minmax(0, 1fr); }
   .outline { display: none; }
   .stepper { display: flex; }
+  .book-orig { display: none; }
   .sec-list { display: grid; padding-top: 12px; }
   .pager > :not(.q-btn--primary) { display: none; }
   .pager .q-btn--primary { flex: 1; height: auto; min-height: 46px; padding-block: 10px; text-align: center; }

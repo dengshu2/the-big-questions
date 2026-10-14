@@ -1,6 +1,6 @@
 import { useEffect, type ReactNode } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { authorNames, doubanUrl, formatYears, getBook, getSection, getThinker, sectionLabel } from '../data/catalog'
+import { doubanUrl, shownAuthor, formatYears, getBook, getSection, getThinker, sectionLabel } from '../data/catalog'
 import { setStatus, STATUS_LABEL, STATUSES, useShelf } from '../data/shelf'
 
 export function Icon({ d, sm }: { d: string; sm?: boolean }) {
@@ -130,7 +130,7 @@ function BookDetail({ id, here, why }: { id: string; here?: string; why?: string
       <p className="book-note">{book.note}</p>
       {book.byline && (
         <p className="q-meta">
-          {authorNames(book)}，{book.byline}
+          {shownAuthor(book)}，{book.byline}
         </p>
       )}
       {book.orig && <p className="q-meta orig">{book.orig}</p>}
@@ -184,7 +184,8 @@ export function BookItem({ id, here, why, open, onToggle }: { id: string; here?:
     <li className={open ? 'book is-open' : 'book'}>
       <button className="q-row book-line" aria-expanded={open} onClick={() => onToggle(id)}>
         <span className="book-title">《{book.title}》</span>
-        <span className="book-by">{authorNames(book)}</span>
+        <span className="book-by">{shownAuthor(book)}</span>
+        {book.orig && <span className="book-orig">{book.orig}</span>}
         {status && <span className={status === 'done' ? 'q-st q-st--done' : 'q-st'}>{STATUS_LABEL[status]}</span>}
         <span className="chev">
           <Icon d={ICONS.down} sm />
@@ -203,8 +204,9 @@ export function PickCard({ id, why, here, open, onToggle }: { id: string; why: s
     <article className={open ? 'pick is-open' : 'pick'}>
       <span className="pick-tag">先读这本</span>
       <h3 className="pick-title">
-        《{book.title}》<span className="book-by">{authorNames(book)}</span>
+        《{book.title}》<span className="book-by">{shownAuthor(book)}</span>
       </h3>
+      {book.orig && <p className="q-meta orig">{book.orig}</p>}
       <p className="pick-why">{why}</p>
       {open ? (
         <BookDetail id={id} here={here} />

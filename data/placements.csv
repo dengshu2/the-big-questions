@@ -93,7 +93,6 @@ section_id,discipline,book_id,must
 1.3,修辞学,zuo-teng-xin-fu-2,false
 1.4,行动哲学,wang-yang-ming-1,false
 1.4,行动哲学,mao-ze-dong-1,false
-1.4,行动科学,gregory-bateson-1,false
 1.4,行动科学,gregory-bateson-2,false
 1.4,行动科学,gregory-bateson-3,false
 1.4,行动科学,paul-watzlawick-1,true
@@ -585,7 +584,6 @@ section_id,discipline,book_id,must
 7.1,系统的视角,urie-bronfenbrenner-2,false
 7.1,系统的视角,murray-bowen-1,false
 7.1,系统的视角,murray-bowen-2,false
-7.1,系统的视角,gregory-bateson-1,false
 7.1,系统的视角,gregory-bateson-2,false
 7.1,系统的视角,gregory-bateson-3,false
 7.2,婚恋心理学,david-buss-1,true
@@ -698,7 +696,7 @@ section_id,discipline,book_id,must
 8.2,神经科学,joseph-e-ledoux-2,false
 8.2,神经科学,joseph-e-ledoux-3,false
 8.2,神经科学,karl-j-friston-1,false
-8.2,神经科学,karl-j-friston-2,false
+8.2,神经科学,andy-clark-1,false
 8.2,神经科学,karl-j-friston-3,false
 8.3,认知、情绪、动机与行动,daniel-kahneman-1,true
 8.3,认知、情绪、动机与行动,daniel-kahneman-2,false

@@ -27,6 +27,8 @@ export interface Book {
   id: string
   title: string
   orig: string
+  /** 真实作者：书单把书列在某人名下、实际作者是别人时填写，列表里显示这个名字 */
+  writer: string
   note: string
   /** 作者归属需要说明时的一句话，比如书单所列作者其实是编者或研究对象 */
   credit: string
@@ -102,6 +104,9 @@ export const picks: { question: Question; section: Section; book: Book }[] = que
 )
 
 export const authorNames = (b: Book) => b.authors.map((a) => catalog.thinkers[a]?.name ?? a).join('、')
+
+/** 列表里显示的作者：有真实作者就显示真实作者 */
+export const shownAuthor = (b: Book) => b.writer || authorNames(b)
 
 export function formatYears(t: Thinker): string {
   if (!t.birth && !t.death) return '生卒年不详'

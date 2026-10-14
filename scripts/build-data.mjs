@@ -71,7 +71,8 @@ export function buildCatalog(dataDir) {
     need(r, 'note', 8, 40)
     if (r.credit) need(r, 'credit', 8, 70)
     if (r.byline) need(r, 'byline', 4, 60)
-    books[r.id] = { id: r.id, title: r.title, orig: r.orig, note: r.note, credit: r.credit, byline: r.byline, authors, places: [] }
+    if (r.writer && !r.credit) fail(`${r.at}: 写了真实作者 writer，要在 credit 里说明为什么列在书单所列人物名下`)
+    books[r.id] = { id: r.id, title: r.title, orig: r.orig, writer: r.writer, note: r.note, credit: r.credit, byline: r.byline, authors, places: [] }
   }
 
   // ---------- 问题、章节与书的位置 ----------
