@@ -1,13 +1,14 @@
 import { useRef, useState } from 'react'
 import { getBook } from '../data/catalog'
 import { exportShelf, importShelf, STATUS_LABEL, STATUSES, useShelf, type Status } from '../data/shelf'
-import { BookRow, Top } from '../components/ui'
+import { BookItem, Top, useOpenBook } from '../components/ui'
 
 export default function Shelf() {
   const shelf = useShelf()
   const [tab, setTab] = useState<Status>('reading')
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
+  const [open, toggle] = useOpenBook()
 
   const ids = Object.entries(shelf)
     .filter(([id, e]) => e.status === tab && getBook(id))
@@ -38,7 +39,7 @@ export default function Shelf() {
   return (
     <>
       <Top title="我的书架" sub={`${Object.keys(shelf).length} 本`} back="/" />
-      <main className="q-page q-enter">
+      <main className="q-page narrow">
         <div className="q-tiles">
           {STATUSES.map((s) => (
             <div key={s} className="q-tile">
@@ -57,13 +58,13 @@ export default function Shelf() {
         </div>
 
         {ids.length ? (
-          <ul className="q-rows">
+          <ul className="q-rows books">
             {ids.map((id) => (
-              <BookRow key={id} id={id} />
+              <BookItem key={id} id={id} open={open === id} onToggle={toggle} />
             ))}
           </ul>
         ) : (
-          <p className="q-empty">还没有{STATUS_LABEL[tab]}的书。打开任意一本书，在“阅读状态”里标记，就会出现在这里。</p>
+          <p className="q-empty">还没有{STATUS_LABEL[tab]}的书。点开任意一本书，在下面的想读、在读、读完里标记，就会出现在这里。</p>
         )}
 
         <section className="q-sec">

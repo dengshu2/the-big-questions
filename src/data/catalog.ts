@@ -38,6 +38,8 @@ export interface Section {
   id: string
   name: string
   note: string
+  /** 为什么先读这一节的首选；没有首选的节为空 */
+  why: string
   groups: { name: string; books: { id: string; must?: boolean }[] }[]
 }
 
@@ -66,6 +68,18 @@ export const allThinkers = Object.values(catalog.thinkers)
 export const getQuestion = (id: string | undefined) => questions.find((q) => q.id === id)
 export const getBook = (id: string | undefined) => (id ? catalog.books[id] : undefined)
 export const getThinker = (slug: string | undefined) => (slug ? catalog.thinkers[slug] : undefined)
+
+/** 一节的首选书 id */
+export const pickOf = (s: Section) => s.groups.flatMap((g) => g.books).find((b) => b.must)?.id
+
+/** 一节的书数（去重） */
+export const sectionBookIds = (s: Section) => [...new Set(s.groups.flatMap((g) => g.books.map((b) => b.id)))]
+
+/** 某本书在书单中的第一个位置，用来生成链接 */
+export const bookHref = (id: string) => {
+  const p = catalog.books[id]?.places[0]
+  return p ? `/q/${p.question}/${p.section}?b=${encodeURIComponent(id)}` : '/'
+}
 
 export const getSection = (id: string) => {
   for (const q of questions) for (const s of q.sections) if (s.id === id) return { question: q, section: s }

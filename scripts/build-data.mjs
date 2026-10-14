@@ -85,7 +85,7 @@ export function buildCatalog(dataDir) {
     const q = questionById.get(r.question_id)
     if (!q) { fail(`${r.at}: 问题 ${r.question_id} 不存在`); continue }
     need(r, 'note', 10, 50)
-    const s = { id: r.id, name: r.name, note: r.note, groups: [] }
+    const s = { id: r.id, name: r.name, note: r.note, why: r.why, groups: [] }
     q.sections.push(s)
     sectionById.set(r.id, { s, q })
   }
@@ -115,7 +115,11 @@ export function buildCatalog(dataDir) {
   for (const t of Object.values(thinkers)) if (!t.books.length) fail(`thinkers.csv: ${t.slug} 没有任何书`)
   for (const q of questions) for (const s of q.sections) {
     if (!s.groups.length) fail(`sections.csv: ${s.id} 没有书`)
-    if (s.groups.flatMap((g) => g.books).filter((b) => b.must).length > 1) fail(`placements.csv: ${s.id} 的首选超过一本`)
+    const musts = s.groups.flatMap((g) => g.books).filter((b) => b.must).length
+    if (musts > 1) fail(`placements.csv: ${s.id} 的首选超过一本`)
+    if (musts && !s.why) fail(`sections.csv: ${s.id} 有首选但缺 why（为什么先读）`)
+    if (!musts && s.why) fail(`sections.csv: ${s.id} 没有首选却写了 why`)
+    if (s.why && ([...s.why].length < 20 || [...s.why].length > 60)) fail(`sections.csv: ${s.id} 的 why 长度应在 20–60`)
   }
 
   if (errors.length) {
