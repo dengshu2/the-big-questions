@@ -1,0 +1,4903 @@
+{
+ "zhuang-zi": {
+  "qid": "Q47739",
+  "birth": -368,
+  "death": -287,
+  "en": "Zhuang Zhou",
+  "zh": "庄子",
+  "zhwiki": "https://zh.wikipedia.org/wiki/庄子",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
+  "country": []
+ },
+ "kong-zi": {
+  "qid": "Q4604",
+  "birth": -550,
+  "death": -478,
+  "en": "Confucius",
+  "zh": "孔子",
+  "zhwiki": "https://zh.wikipedia.org/wiki/孔子",
+  "enwiki": "https://en.wikipedia.org/wiki/Confucius",
+  "country": [
+   "鲁国"
+  ]
+ },
+ "lao-zi": {
+  "qid": "Q9333",
+  "birth": -579,
+  "death": -500,
+  "en": "Laozi",
+  "zh": "老子",
+  "zhwiki": "https://zh.wikipedia.org/wiki/老子",
+  "enwiki": "https://en.wikipedia.org/wiki/Laozi",
+  "country": []
+ },
+ "mo-zi": {
+  "qid": "Q272411",
+  "birth": -469,
+  "death": -390,
+  "en": "Mozi",
+  "zh": "墨子",
+  "zhwiki": "https://zh.wikipedia.org/wiki/墨子",
+  "enwiki": "https://en.wikipedia.org/wiki/Mozi",
+  "country": []
+ },
+ "su-ge-la-di": {
+  "qid": "Q913",
+  "birth": -469,
+  "death": -398,
+  "en": "Socrates",
+  "zh": "苏格拉底",
+  "zhwiki": "https://zh.wikipedia.org/wiki/苏格拉底",
+  "enwiki": "https://en.wikipedia.org/wiki/Socrates",
+  "country": []
+ },
+ "plato": {
+  "qid": "Q859",
+  "birth": -428,
+  "death": -348,
+  "en": "Plato",
+  "zh": "柏拉图",
+  "zhwiki": "https://zh.wikipedia.org/wiki/柏拉图",
+  "enwiki": "https://en.wikipedia.org/wiki/Plato",
+  "country": []
+ },
+ "ya-li-shi-duo-de": {
+  "qid": "Q868",
+  "birth": -383,
+  "death": -321,
+  "en": "Aristotle",
+  "zh": "亚里士多德",
+  "zhwiki": "https://zh.wikipedia.org/wiki/亚里士多德",
+  "enwiki": "https://en.wikipedia.org/wiki/Aristotle",
+  "country": []
+ },
+ "yi-suo": {
+  "qid": "Q43423",
+  "birth": -619,
+  "death": -563,
+  "en": "Aesop",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/伊索",
+  "enwiki": "https://en.wikipedia.org/wiki/Aesop",
+  "country": []
+ },
+ "shi-jia-mu-ni": {
+  "qid": "Q9441",
+  "birth": -500,
+  "death": -500,
+  "en": "The Buddha",
+  "zh": "释迦牟尼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/释迦牟尼",
+  "enwiki": "https://en.wikipedia.org/wiki/The_Buddha",
+  "country": []
+ },
+ "francis-bacon": {
+  "qid": "Q37388",
+  "birth": 1561,
+  "death": 1626,
+  "en": "Francis Bacon",
+  "zh": "弗朗西斯·培根",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗朗西斯·培根",
+  "enwiki": "https://en.wikipedia.org/wiki/Francis_Bacon",
+  "country": [
+   "英格兰王国"
+  ]
+ },
+ "rene-descartes": {
+  "qid": "Q9191",
+  "birth": 1596,
+  "death": 1650,
+  "en": "René Descartes",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/勒内·笛卡儿",
+  "enwiki": "https://en.wikipedia.org/wiki/René_Descartes",
+  "country": [
+   "法国"
+  ]
+ },
+ "david-hume": {
+  "qid": "Q37160",
+  "birth": 1711,
+  "death": 1776,
+  "en": "David Hume",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/大卫·休谟",
+  "enwiki": "https://en.wikipedia.org/wiki/David_Hume",
+  "country": [
+   "大不列颠王国"
+  ]
+ },
+ "immanuel-kant": {
+  "qid": "Q9312",
+  "birth": 1724,
+  "death": 1804,
+  "en": "Immanuel Kant",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/伊曼努尔·康德",
+  "enwiki": "https://en.wikipedia.org/wiki/Immanuel_Kant",
+  "country": []
+ },
+ "edmund-husserl": {
+  "qid": "Q58586",
+  "birth": 1859,
+  "death": 1938,
+  "en": "Edmund Husserl",
+  "zh": "埃德蒙德·胡塞尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃德蒙德·胡塞爾",
+  "enwiki": "https://en.wikipedia.org/wiki/Edmund_Husserl",
+  "country": [
+   "奥地利帝国"
+  ]
+ },
+ "ludwig-wittgenstein": {
+  "qid": "Q9391",
+  "birth": 1889,
+  "death": 1951,
+  "en": "Ludwig Wittgenstein",
+  "zh": "路德维希·维特根斯坦",
+  "zhwiki": "https://zh.wikipedia.org/wiki/路德维希·维特根斯坦",
+  "enwiki": "https://en.wikipedia.org/wiki/Ludwig_Wittgenstein",
+  "country": [
+   "奥地利",
+   "英国"
+  ]
+ },
+ "michael-polanyi": {
+  "qid": "Q163087",
+  "birth": 1891,
+  "death": 1976,
+  "en": "Michael Polanyi",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/迈克尔·波兰尼",
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Polanyi",
+  "country": [
+   "匈牙利",
+   "奥地利",
+   "英国"
+  ]
+ },
+ "george-polya": {
+  "qid": "Q296259",
+  "birth": 1887,
+  "death": 1985,
+  "en": "George Pólya",
+  "zh": "乔治·波利亚",
+  "zhwiki": "https://zh.wikipedia.org/wiki/喬治·波利亞",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Pólya",
+  "country": [
+   "匈牙利",
+   "美国"
+  ]
+ },
+ "godfrey-harold-hardy": {
+  "qid": "Q184337",
+  "birth": 1877,
+  "death": 1947,
+  "en": "G.H. Hardy",
+  "zh": "戈弗雷·哈罗德·哈代",
+  "zhwiki": "https://zh.wikipedia.org/wiki/戈弗雷·哈罗德·哈代",
+  "enwiki": "https://en.wikipedia.org/wiki/G._H._Hardy",
+  "country": [
+   "英国"
+  ]
+ },
+ "martin-gardner": {
+  "qid": "Q677706",
+  "birth": 1914,
+  "death": 2010,
+  "en": "Martin Gardner",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/马丁·加德纳",
+  "enwiki": "https://en.wikipedia.org/wiki/Martin_Gardner",
+  "country": [
+   "美国"
+  ]
+ },
+ "george-boole": {
+  "qid": "Q134661",
+  "birth": 1815,
+  "death": 1864,
+  "en": null,
+  "zh": "乔治·布尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/乔治·布尔",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Boole",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "gottlob-frege": {
+  "qid": "Q60028",
+  "birth": 1848,
+  "death": 1925,
+  "en": "Gottlob Frege",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/戈特洛布·弗雷格",
+  "enwiki": "https://en.wikipedia.org/wiki/Gottlob_Frege",
+  "country": [
+   "德国"
+  ]
+ },
+ "bertrand-arthur-william-russell": {
+  "qid": "Q33760",
+  "birth": 1872,
+  "death": 1970,
+  "en": "Bertrand Russell",
+  "zh": "伯特兰·罗素",
+  "zhwiki": "https://zh.wikipedia.org/wiki/伯特兰·罗素",
+  "enwiki": "https://en.wikipedia.org/wiki/Bertrand_Russell",
+  "country": [
+   "英国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "alfred-tarski": {
+  "qid": "Q207534",
+  "birth": 1901,
+  "death": 1983,
+  "en": "Alfred Tarski",
+  "zh": "阿尔弗雷德·塔斯基",
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿尔弗雷德·塔斯基",
+  "enwiki": "https://en.wikipedia.org/wiki/Alfred_Tarski",
+  "country": [
+   "美国",
+   "波兰",
+   "俄罗斯帝国"
+  ]
+ },
+ "kurt-godel": {
+  "qid": "Q41390",
+  "birth": 1906,
+  "death": 1978,
+  "en": "Kurt Gödel",
+  "zh": "库尔特·弗雷德里希·哥德尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/库尔特·哥德尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Kurt_Gödel",
+  "country": [
+   "美国",
+   "奥地利",
+   "捷克斯洛伐克"
+  ]
+ },
+ "douglas-r-hofstadter": {
+  "qid": "Q319308",
+  "birth": 1945,
+  "death": null,
+  "en": "Douglas Hofstadter",
+  "zh": "侯世达",
+  "zhwiki": "https://zh.wikipedia.org/wiki/侯世達",
+  "enwiki": "https://en.wikipedia.org/wiki/Douglas_Hofstadter",
+  "country": [
+   "美国"
+  ]
+ },
+ "karl-popper": {
+  "qid": "Q81244",
+  "birth": 1902,
+  "death": 1994,
+  "en": "Karl Popper",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡尔·波普尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Karl_Popper",
+  "country": [
+   "奥地利",
+   "英国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "thomas-s-kuhn": {
+  "qid": "Q184980",
+  "birth": 1922,
+  "death": 1996,
+  "en": "Thomas Kuhn",
+  "zh": "托马斯·库恩",
+  "zhwiki": "https://zh.wikipedia.org/wiki/托马斯·库恩",
+  "enwiki": "https://en.wikipedia.org/wiki/Thomas_Kuhn",
+  "country": [
+   "美国"
+  ]
+ },
+ "denis-diderot": {
+  "qid": "Q448",
+  "birth": 1713,
+  "death": 1784,
+  "en": "Denis Diderot",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/德尼·狄德罗",
+  "enwiki": "https://en.wikipedia.org/wiki/Denis_Diderot",
+  "country": []
+ },
+ "benjamin-s-bloom": {
+  "qid": "Q436017",
+  "birth": 1913,
+  "death": 1999,
+  "en": "Benjamin Bloom",
+  "zh": "本杰明·布鲁姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/本杰明·布鲁姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Benjamin_Bloom",
+  "country": [
+   "美国"
+  ]
+ },
+ "charles-sanders-peirce": {
+  "qid": "Q187520",
+  "birth": 1839,
+  "death": 1914,
+  "en": "Charles Sanders Peirce",
+  "zh": "查尔斯·桑德斯·皮尔士",
+  "zhwiki": "https://zh.wikipedia.org/wiki/查尔斯·桑德斯·皮尔士",
+  "enwiki": "https://en.wikipedia.org/wiki/Charles_Sanders_Peirce",
+  "country": [
+   "美国"
+  ]
+ },
+ "umberto-eco": {
+  "qid": "Q12807",
+  "birth": 1932,
+  "death": 2016,
+  "en": "Umberto Eco",
+  "zh": "翁贝托·埃科",
+  "zhwiki": "https://zh.wikipedia.org/wiki/翁贝托·埃科",
+  "enwiki": "https://en.wikipedia.org/wiki/Umberto_Eco",
+  "country": [
+   "意大利",
+   "意大利王国"
+  ]
+ },
+ "joseph-campbell": {
+  "qid": "Q295516",
+  "birth": 1904,
+  "death": 1987,
+  "en": "Joseph Campbell",
+  "zh": "约瑟夫·坎贝尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/約瑟夫·坎伯",
+  "enwiki": "https://en.wikipedia.org/wiki/Joseph_Campbell",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-mckee": {
+  "qid": "Q2417140",
+  "birth": 1941,
+  "death": null,
+  "en": "Robert McKee",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗伯特·麦基",
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_McKee",
+  "country": [
+   "美国"
+  ]
+ },
+ "jerome-s-bruner": {
+  "qid": "Q114867",
+  "birth": 1915,
+  "death": 2016,
+  "en": "Jerome Bruner",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/杰罗姆·布鲁纳",
+  "enwiki": "https://en.wikipedia.org/wiki/Jerome_Bruner",
+  "country": [
+   "美国"
+  ]
+ },
+ "wang-yang-ming": {
+  "qid": "Q378462",
+  "birth": 1472,
+  "death": 1529,
+  "en": "Wang Yangming",
+  "zh": "王阳明",
+  "zhwiki": "https://zh.wikipedia.org/wiki/王陽明",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Yangming",
+  "country": [
+   "明朝"
+  ]
+ },
+ "mao-ze-dong": {
+  "qid": "Q5816",
+  "birth": 1893,
+  "death": 1976,
+  "en": "Mao Zedong",
+  "zh": "毛泽东",
+  "zhwiki": "https://zh.wikipedia.org/wiki/毛泽东",
+  "enwiki": "https://en.wikipedia.org/wiki/Mao_Zedong",
+  "country": [
+   "中华人民共和国",
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "gregory-bateson": {
+  "qid": "Q314252",
+  "birth": 1904,
+  "death": 1980,
+  "en": "Gregory Bateson",
+  "zh": "格雷戈里·贝特森",
+  "zhwiki": "https://zh.wikipedia.org/wiki/格雷戈里·贝特森",
+  "enwiki": "https://en.wikipedia.org/wiki/Gregory_Bateson",
+  "country": [
+   "美国",
+   "英国"
+  ]
+ },
+ "peter-m-senge": {
+  "qid": "Q435801",
+  "birth": 1947,
+  "death": null,
+  "en": "Peter Senge",
+  "zh": "彼得·圣吉",
+  "zhwiki": "https://zh.wikipedia.org/wiki/彼得·圣吉",
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_Senge",
+  "country": [
+   "美国"
+  ]
+ },
+ "subrahmanyan-chandrasekhar": {
+  "qid": "Q148109",
+  "birth": 1910,
+  "death": 1995,
+  "en": "Subrahmanyan Chandrasekhar",
+  "zh": "苏布拉马尼扬·钱德拉塞卡",
+  "zhwiki": "https://zh.wikipedia.org/wiki/苏布拉马尼扬·钱德拉塞卡",
+  "enwiki": "https://en.wikipedia.org/wiki/Subrahmanyan_Chandrasekhar",
+  "country": [
+   "美国",
+   "印度",
+   "英属印度"
+  ]
+ },
+ "genrich-altshuller": {
+  "qid": "Q737626",
+  "birth": 1926,
+  "death": 1998,
+  "en": "Genrich Altshuller",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/根里奇·阿奇舒勒",
+  "enwiki": "https://en.wikipedia.org/wiki/Genrikh_Altshuller",
+  "country": [
+   "俄罗斯",
+   "苏联"
+  ]
+ },
+ "ikujiro-nonaka": {
+  "qid": "Q1150063",
+  "birth": 1935,
+  "death": 2025,
+  "en": "Ikujiro Nonaka",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/野中郁次郎",
+  "enwiki": "https://en.wikipedia.org/wiki/Ikujiro_Nonaka",
+  "country": [
+   "日本"
+  ]
+ },
+ "clayton-m-christensen": {
+  "qid": "Q5130292",
+  "birth": 1952,
+  "death": 2020,
+  "en": "Clayton Christensen",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/克萊頓·克里斯坦森",
+  "enwiki": "https://en.wikipedia.org/wiki/Clayton_Christensen",
+  "country": [
+   "美国"
+  ]
+ },
+ "friedrich-hegel": {
+  "qid": "Q9235",
+  "birth": 1770,
+  "death": 1831,
+  "en": "Georg Wilhelm Friedrich Hegel",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/格奥尔格·威廉·弗里德里希·黑格尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel",
+  "country": []
+ },
+ "martin-heidegger": {
+  "qid": "Q48301",
+  "birth": 1889,
+  "death": 1976,
+  "en": "Martin Heidegger",
+  "zh": "马丁·海德格尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/马丁·海德格尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Martin_Heidegger",
+  "country": [
+   "德国",
+   "纳粹德国",
+   "西德"
+  ]
+ },
+ "jean-paul-sartre": {
+  "qid": "Q9364",
+  "birth": 1905,
+  "death": 1980,
+  "en": "Jean-Paul Sartre",
+  "zh": "让-保罗·萨特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/让-保罗·萨特",
+  "enwiki": "https://en.wikipedia.org/wiki/Jean-Paul_Sartre",
+  "country": [
+   "法国"
+  ]
+ },
+ "charles-darwin": {
+  "qid": "Q1035",
+  "birth": 1809,
+  "death": 1882,
+  "en": "Charles Darwin",
+  "zh": "查尔斯·达尔文",
+  "zhwiki": "https://zh.wikipedia.org/wiki/查尔斯·达尔文",
+  "enwiki": "https://en.wikipedia.org/wiki/Charles_Darwin",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "albert-einstein": {
+  "qid": "Q937",
+  "birth": 1879,
+  "death": 1955,
+  "en": "Albert Einstein",
+  "zh": "阿尔伯特·爱因斯坦",
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿尔伯特·爱因斯坦",
+  "enwiki": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "country": [
+   "美国",
+   "瑞士",
+   "德国",
+   "无国籍"
+  ]
+ },
+ "herbert-simon": {
+  "qid": "Q181529",
+  "birth": 1916,
+  "death": 2001,
+  "en": "Herbert Simon",
+  "zh": "赫伯特·亚历山大·西蒙",
+  "zhwiki": "https://zh.wikipedia.org/wiki/司马贺",
+  "enwiki": "https://en.wikipedia.org/wiki/Herbert_A._Simon",
+  "country": [
+   "美国"
+  ]
+ },
+ "richard-dawkins": {
+  "qid": "Q44461",
+  "birth": 1941,
+  "death": null,
+  "en": "Richard Dawkins",
+  "zh": "理查德·道金斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/理查德·道金斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Richard_Dawkins",
+  "country": [
+   "英国"
+  ]
+ },
+ "stephen-jay-gould": {
+  "qid": "Q180619",
+  "birth": 1941,
+  "death": 2002,
+  "en": "Stephen Jay Gould",
+  "zh": "史蒂芬·古尔德",
+  "zhwiki": "https://zh.wikipedia.org/wiki/史蒂芬·古爾德",
+  "enwiki": "https://en.wikipedia.org/wiki/Stephen_Jay_Gould",
+  "country": [
+   "美国"
+  ]
+ },
+ "daniel-c-dennett": {
+  "qid": "Q215263",
+  "birth": 1942,
+  "death": 2024,
+  "en": "Daniel Dennett",
+  "zh": "丹尼尔·丹尼特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/丹尼爾·丹尼特",
+  "enwiki": "https://en.wikipedia.org/wiki/Daniel_Dennett",
+  "country": [
+   "美国"
+  ]
+ },
+ "edward-o-wilson": {
+  "qid": "Q211029",
+  "birth": 1929,
+  "death": 2021,
+  "en": "Edward O. Wilson",
+  "zh": "爱德华·奥斯本·威尔逊",
+  "zhwiki": "https://zh.wikipedia.org/wiki/E._O._威尔逊",
+  "enwiki": "https://en.wikipedia.org/wiki/E._O._Wilson",
+  "country": [
+   "美国"
+  ]
+ },
+ "robin-i-m-dunbar": {
+  "qid": "Q1935522",
+  "birth": 1947,
+  "death": null,
+  "en": "Robin Dunbar",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗宾·邓巴",
+  "enwiki": "https://en.wikipedia.org/wiki/Robin_Dunbar",
+  "country": [
+   "英国"
+  ]
+ },
+ "carl-sagan": {
+  "qid": "Q410",
+  "birth": 1934,
+  "death": 1996,
+  "en": "Carl Sagan",
+  "zh": "卡尔·萨根",
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡尔·萨根",
+  "enwiki": "https://en.wikipedia.org/wiki/Carl_Sagan",
+  "country": [
+   "美国"
+  ]
+ },
+ "brian-r-greene": {
+  "qid": "Q60815",
+  "birth": 1963,
+  "death": null,
+  "en": "Brian Greene",
+  "zh": "布赖恩·格林",
+  "zhwiki": "https://zh.wikipedia.org/wiki/布赖恩·格林",
+  "enwiki": "https://en.wikipedia.org/wiki/Brian_Greene",
+  "country": [
+   "美国"
+  ]
+ },
+ "steven-weinberg": {
+  "qid": "Q179282",
+  "birth": 1933,
+  "death": 2021,
+  "en": "Steven Weinberg",
+  "zh": "史蒂文·温伯格",
+  "zhwiki": "https://zh.wikipedia.org/wiki/史蒂文·温伯格",
+  "enwiki": "https://en.wikipedia.org/wiki/Steven_Weinberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "roger-penrose": {
+  "qid": "Q193803",
+  "birth": 1931,
+  "death": null,
+  "en": "Roger Penrose",
+  "zh": "罗杰·彭罗斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/羅傑·潘洛斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Roger_Penrose",
+  "country": [
+   "英国"
+  ]
+ },
+ "stephen-hawking": {
+  "qid": "Q17714",
+  "birth": 1942,
+  "death": 2018,
+  "en": "Stephen Hawking",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/史蒂芬·霍金",
+  "enwiki": "https://en.wikipedia.org/wiki/Stephen_Hawking",
+  "country": [
+   "英国"
+  ]
+ },
+ "leonard-susskind": {
+  "qid": "Q203243",
+  "birth": 1940,
+  "death": null,
+  "en": "Leonard Susskind",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/李奧納特·蘇士侃",
+  "enwiki": "https://en.wikipedia.org/wiki/Leonard_Susskind",
+  "country": [
+   "美国"
+  ]
+ },
+ "jared-diamond": {
+  "qid": "Q205772",
+  "birth": 1937,
+  "death": null,
+  "en": "Jared Diamond",
+  "zh": "贾德·戴蒙",
+  "zhwiki": "https://zh.wikipedia.org/wiki/賈德·戴蒙",
+  "enwiki": "https://en.wikipedia.org/wiki/Jared_Diamond",
+  "country": [
+   "美国"
+  ]
+ },
+ "rachel-carson": {
+  "qid": "Q100948",
+  "birth": 1907,
+  "death": 1964,
+  "en": "Rachel Carson",
+  "zh": "雷切尔·卡森",
+  "zhwiki": "https://zh.wikipedia.org/wiki/雷切尔·卡森",
+  "enwiki": "https://en.wikipedia.org/wiki/Rachel_Carson",
+  "country": [
+   "美国"
+  ]
+ },
+ "isaac-newton": {
+  "qid": "Q935",
+  "birth": 1643,
+  "death": 1727,
+  "en": "Isaac Newton",
+  "zh": "艾萨克·牛顿",
+  "zhwiki": "https://zh.wikipedia.org/wiki/艾萨克·牛顿",
+  "enwiki": "https://en.wikipedia.org/wiki/Isaac_Newton",
+  "country": [
+   "大不列颠王国",
+   "英格兰王国"
+  ]
+ },
+ "george-gamow": {
+  "qid": "Q59478",
+  "birth": 1904,
+  "death": 1968,
+  "en": "George Gamow",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/乔治·伽莫夫",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Gamow",
+  "country": [
+   "美国",
+   "苏联",
+   "俄罗斯帝国"
+  ]
+ },
+ "richard-p-feynman": {
+  "qid": "Q39246",
+  "birth": 1918,
+  "death": 1988,
+  "en": "Richard Feynman",
+  "zh": "理查德·费曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/理查德·費曼",
+  "enwiki": "https://en.wikipedia.org/wiki/Richard_Feynman",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-boyle": {
+  "qid": "Q43393",
+  "birth": 1627,
+  "death": 1691,
+  "en": "Robert Boyle",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗伯特·波义耳",
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_Boyle",
+  "country": []
+ },
+ "antoine-laurent-de-lavoisier": {
+  "qid": "Q39607",
+  "birth": 1743,
+  "death": 1794,
+  "en": "Antoine Lavoisier",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/安托万·拉瓦锡",
+  "enwiki": "https://en.wikipedia.org/wiki/Antoine_Lavoisier",
+  "country": [
+   "法国"
+  ]
+ },
+ "john-dalton": {
+  "qid": "Q41284",
+  "birth": 1766,
+  "death": 1844,
+  "en": "John Dalton",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·道尔顿",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Dalton",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "linus-carl-pauling": {
+  "qid": "Q48983",
+  "birth": 1901,
+  "death": 1994,
+  "en": "Linus Pauling",
+  "zh": "萊納斯·鮑林",
+  "zhwiki": "https://zh.wikipedia.org/wiki/萊納斯·鮑林",
+  "enwiki": "https://en.wikipedia.org/wiki/Linus_Pauling",
+  "country": [
+   "美国"
+  ]
+ },
+ "gregor-mendel": {
+  "qid": "Q37970",
+  "birth": 1822,
+  "death": 1884,
+  "en": "Gregor Mendel",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/格雷戈爾·孟德爾",
+  "enwiki": "https://en.wikipedia.org/wiki/Gregor_Mendel",
+  "country": [
+   "奥地利帝国"
+  ]
+ },
+ "jean-henri-fabre": {
+  "qid": "Q313348",
+  "birth": 1823,
+  "death": 1915,
+  "en": "Jean-Henri Fabre",
+  "zh": "让-亨利·法布尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/让-亨利·法布尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Jean-Henri_Fabre",
+  "country": [
+   "法国"
+  ]
+ },
+ "konrad-lorenz": {
+  "qid": "Q78496",
+  "birth": 1903,
+  "death": 1989,
+  "en": "Konrad Lorenz",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/康拉德·洛伦兹",
+  "enwiki": "https://en.wikipedia.org/wiki/Konrad_Lorenz",
+  "country": [
+   "奥地利"
+  ]
+ },
+ "ernst-w-mayr": {
+  "qid": "Q5354",
+  "birth": 1904,
+  "death": 2005,
+  "en": "Ernst Mayr",
+  "zh": "厄恩斯特·迈尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/恩斯特·瓦尔特·迈尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Ernst_Mayr",
+  "country": [
+   "美国",
+   "德国"
+  ]
+ },
+ "james-d-watson": {
+  "qid": "Q83333",
+  "birth": 1928,
+  "death": 2025,
+  "en": "James Watson",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/詹姆斯·杜威·沃森",
+  "enwiki": "https://en.wikipedia.org/wiki/James_Watson",
+  "country": [
+   "美国"
+  ]
+ },
+ "sima-qian": {
+  "qid": "Q9372",
+  "birth": -144,
+  "death": -85,
+  "en": "Sima Qian",
+  "zh": "司马迁",
+  "zhwiki": "https://zh.wikipedia.org/wiki/司馬遷",
+  "enwiki": "https://en.wikipedia.org/wiki/Sima_Qian",
+  "country": [
+   "西汉"
+  ]
+ },
+ "thucydides": {
+  "qid": "Q41683",
+  "birth": -460,
+  "death": -394,
+  "en": "Thucydides",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/修昔底德",
+  "enwiki": "https://en.wikipedia.org/wiki/Thucydides",
+  "country": []
+ },
+ "si-ma-guang": {
+  "qid": "Q33566",
+  "birth": 1019,
+  "death": 1086,
+  "en": "Sima Guang",
+  "zh": "司马光",
+  "zhwiki": "https://zh.wikipedia.org/wiki/司马光",
+  "enwiki": "https://en.wikipedia.org/wiki/Sima_Guang",
+  "country": [
+   "宋朝"
+  ]
+ },
+ "wang-chuan-shan": {
+  "qid": "Q714374",
+  "birth": 1619,
+  "death": 1692,
+  "en": "Wang Fuzhi",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/王夫之",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Fuzhi",
+  "country": [
+   "清朝",
+   "明朝"
+  ]
+ },
+ "liang-qichao": {
+  "qid": "Q379836",
+  "birth": 1873,
+  "death": 1929,
+  "en": "Liang Chi-chao",
+  "zh": "梁启超",
+  "zhwiki": "https://zh.wikipedia.org/wiki/梁启超",
+  "enwiki": "https://en.wikipedia.org/wiki/Liang_Qichao",
+  "country": [
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "yan-geng-wang": {
+  "qid": "Q10924406",
+  "birth": 1916,
+  "death": 1996,
+  "en": "Gengwang Yan",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/嚴耕望",
+  "enwiki": null,
+  "country": []
+ },
+ "fernand-braudel": {
+  "qid": "Q185105",
+  "birth": 1902,
+  "death": 1985,
+  "en": "Fernand Braudel",
+  "zh": "费尔南·布劳岱尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/費爾南·布勞岱爾",
+  "enwiki": "https://en.wikipedia.org/wiki/Fernand_Braudel",
+  "country": [
+   "法国"
+  ]
+ },
+ "lü-si-mian": {
+  "qid": "Q6711506",
+  "birth": 1884,
+  "death": 1957,
+  "en": "Lü Simian",
+  "zh": "吕思勉",
+  "zhwiki": "https://zh.wikipedia.org/wiki/呂思勉",
+  "enwiki": "https://en.wikipedia.org/wiki/Lü_Simian",
+  "country": [
+   "中华人民共和国",
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "qian-mu": {
+  "qid": "Q707313",
+  "birth": 1895,
+  "death": 1990,
+  "en": "Ch'ien Mu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/錢穆",
+  "enwiki": "https://en.wikipedia.org/wiki/Ch'ien_Mu",
+  "country": [
+   "中华民国",
+   "清朝"
+  ]
+ },
+ "zhang-yin-lin": {
+  "qid": "Q11067631",
+  "birth": 1905,
+  "death": 1942,
+  "en": "Zhang Yinlin",
+  "zh": "张荫麟",
+  "zhwiki": "https://zh.wikipedia.org/wiki/张荫麟",
+  "enwiki": null,
+  "country": []
+ },
+ "fu-le-cheng": {
+  "qid": "Q10889115",
+  "birth": 1922,
+  "death": 1984,
+  "en": "Lecheng Fu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/傅樂成",
+  "enwiki": null,
+  "country": [
+   "中华民国"
+  ]
+ },
+ "xu-zhuo-yun": {
+  "qid": "Q2949721",
+  "birth": 1930,
+  "death": 2025,
+  "en": "Cho-yun Hsu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/許倬雲",
+  "enwiki": "https://en.wikipedia.org/wiki/Cho-yun_Hsu",
+  "country": [
+   "美国",
+   "中华民国"
+  ]
+ },
+ "john-king-fairbank": {
+  "qid": "Q1394780",
+  "birth": 1907,
+  "death": 1991,
+  "en": "John King Fairbank",
+  "zh": "费正清",
+  "zhwiki": "https://zh.wikipedia.org/wiki/費正清",
+  "enwiki": "https://en.wikipedia.org/wiki/John_King_Fairbank",
+  "country": [
+   "美国"
+  ]
+ },
+ "timothy-brook": {
+  "qid": "Q130197",
+  "birth": 1951,
+  "death": null,
+  "en": "Timothy Brook",
+  "zh": "卜正民",
+  "zhwiki": "https://zh.wikipedia.org/wiki/卜正民",
+  "enwiki": "https://en.wikipedia.org/wiki/Timothy_Brook",
+  "country": [
+   "加拿大"
+  ]
+ },
+ "karl-jaspers": {
+  "qid": "Q76509",
+  "birth": 1883,
+  "death": 1969,
+  "en": "Karl Jaspers",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡尔·雅斯贝尔斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Karl_Jaspers",
+  "country": [
+   "瑞士",
+   "德国"
+  ]
+ },
+ "arnold-joseph-toynbee": {
+  "qid": "Q185381",
+  "birth": 1889,
+  "death": 1975,
+  "en": "Arnold J. Toynbee",
+  "zh": "阿诺德·约瑟夫·汤因比",
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿诺德·J·汤因比",
+  "enwiki": "https://en.wikipedia.org/wiki/Arnold_J._Toynbee",
+  "country": [
+   "英国"
+  ]
+ },
+ "ernst-h-gombrich": {
+  "qid": "Q78504",
+  "birth": 1909,
+  "death": 2001,
+  "en": "Ernst Gombrich",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/恩斯特·贡布里希",
+  "enwiki": "https://en.wikipedia.org/wiki/Ernst_Gombrich",
+  "country": [
+   "奥地利",
+   "英国"
+  ]
+ },
+ "chen-yin-ke": {
+  "qid": "Q714824",
+  "birth": 1890,
+  "death": 1969,
+  "en": "Chen Yinque",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/陈寅恪",
+  "enwiki": "https://en.wikipedia.org/wiki/Chen_Yinke",
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "fu-yi-ling": {
+  "qid": "Q10889182",
+  "birth": 1911,
+  "death": 1988,
+  "en": "Yiling Fu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/傅衣凌",
+  "enwiki": null,
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "joseph-needham": {
+  "qid": "Q318054",
+  "birth": 1900,
+  "death": 1995,
+  "en": "Joseph Needham",
+  "zh": "李约瑟",
+  "zhwiki": "https://zh.wikipedia.org/wiki/李约瑟",
+  "enwiki": "https://en.wikipedia.org/wiki/Joseph_Needham",
+  "country": [
+   "英国"
+  ]
+ },
+ "fu-si-nian": {
+  "qid": "Q5506857",
+  "birth": 1896,
+  "death": 1950,
+  "en": "Fu Ssu-nien",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/傅斯年",
+  "enwiki": "https://en.wikipedia.org/wiki/Fu_Ssu-nien",
+  "country": [
+   "中华民国"
+  ]
+ },
+ "yu-yingshi": {
+  "qid": "Q9079071",
+  "birth": 1930,
+  "death": 2021,
+  "en": "Yu Ying-shih",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/余英時",
+  "enwiki": "https://en.wikipedia.org/wiki/Yu_Ying-shih",
+  "country": [
+   "中华民国"
+  ]
+ },
+ "tian-yu-qing": {
+  "qid": "Q8464492",
+  "birth": 1924,
+  "death": 2014,
+  "en": "Tian Yuqing",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/田餘慶",
+  "enwiki": null,
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "luo-zhi-tian": {
+  "qid": "Q63809149",
+  "birth": 1952,
+  "death": null,
+  "en": "Luo Zhitian",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗志田",
+  "enwiki": null,
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "sang-bing": {
+  "qid": "Q110405509",
+  "birth": 1956,
+  "death": null,
+  "en": "Sang Bin",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/桑兵",
+  "enwiki": null,
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "edward-gibbon": {
+  "qid": "Q161841",
+  "birth": 1737,
+  "death": 1794,
+  "en": "Edward Gibbon",
+  "zh": "爱德华·吉本",
+  "zhwiki": "https://zh.wikipedia.org/wiki/爱德华·吉本",
+  "enwiki": "https://en.wikipedia.org/wiki/Edward_Gibbon",
+  "country": [
+   "大不列颠王国"
+  ]
+ },
+ "niccolo-machiavelli": {
+  "qid": "Q1399",
+  "birth": 1469,
+  "death": 1527,
+  "en": "Niccolò Machiavelli",
+  "zh": "尼科洛·马基雅维利",
+  "zhwiki": "https://zh.wikipedia.org/wiki/尼古洛·馬基雅維利",
+  "enwiki": "https://en.wikipedia.org/wiki/Niccolò_Machiavelli",
+  "country": [
+   "佛罗伦萨共和国"
+  ]
+ },
+ "voltaire": {
+  "qid": "Q9068",
+  "birth": 1694,
+  "death": 1778,
+  "en": "Voltaire",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/伏爾泰",
+  "enwiki": "https://en.wikipedia.org/wiki/Voltaire",
+  "country": []
+ },
+ "francois-pierre-guillaume-guizot": {
+  "qid": "Q157324",
+  "birth": 1787,
+  "death": 1874,
+  "en": "François Guizot",
+  "zh": "弗朗索瓦·基佐",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗朗索瓦·基佐",
+  "enwiki": "https://en.wikipedia.org/wiki/François_Guizot",
+  "country": [
+   "法国"
+  ]
+ },
+ "alexis-de-tocqueville": {
+  "qid": "Q140694",
+  "birth": 1805,
+  "death": 1859,
+  "en": "Alexis de Tocqueville",
+  "zh": "亚历西斯·德·托克维尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/亞歷克西·德·托克維爾",
+  "enwiki": "https://en.wikipedia.org/wiki/Alexis_de_Tocqueville",
+  "country": [
+   "法国"
+  ]
+ },
+ "jacob-burckhardt": {
+  "qid": "Q59945",
+  "birth": 1818,
+  "death": 1897,
+  "en": "Jacob Burckhardt",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/雅各·布克哈特",
+  "enwiki": "https://en.wikipedia.org/wiki/Jacob_Burckhardt",
+  "country": [
+   "瑞士"
+  ]
+ },
+ "leopold-von-ranke": {
+  "qid": "Q77184",
+  "birth": 1795,
+  "death": 1886,
+  "en": "Leopold von Ranke",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/利奧波德·馮·蘭克",
+  "enwiki": "https://en.wikipedia.org/wiki/Leopold_von_Ranke",
+  "country": []
+ },
+ "axel-honneth": {
+  "qid": "Q60735",
+  "birth": 1949,
+  "death": null,
+  "en": "Axel Honneth",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿克塞尔·霍耐特",
+  "enwiki": "https://en.wikipedia.org/wiki/Axel_Honneth",
+  "country": [
+   "德国"
+  ]
+ },
+ "marshall-mcluhan": {
+  "qid": "Q193871",
+  "birth": 1911,
+  "death": 1980,
+  "en": "Marshall McLuhan",
+  "zh": "马歇尔·麦克卢汉",
+  "zhwiki": "https://zh.wikipedia.org/wiki/馬素·麥克魯漢",
+  "enwiki": "https://en.wikipedia.org/wiki/Marshall_McLuhan",
+  "country": [
+   "加拿大"
+  ]
+ },
+ "samuel-p-huntington": {
+  "qid": "Q19074",
+  "birth": 1927,
+  "death": 2008,
+  "en": "Samuel P. Huntington",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/塞繆爾·P·亨廷頓",
+  "enwiki": "https://en.wikipedia.org/wiki/Samuel_P._Huntington",
+  "country": [
+   "美国"
+  ]
+ },
+ "raymond-aron": {
+  "qid": "Q160640",
+  "birth": 1905,
+  "death": 1983,
+  "en": "Raymond Aron",
+  "zh": "雷蒙·阿隆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/雷蒙·阿隆",
+  "enwiki": "https://en.wikipedia.org/wiki/Raymond_Aron",
+  "country": [
+   "法国"
+  ]
+ },
+ "michael-e-porter": {
+  "qid": "Q272146",
+  "birth": 1947,
+  "death": null,
+  "en": "Michael Porter",
+  "zh": "迈克尔·波特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/迈克尔·波特",
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Porter",
+  "country": [
+   "美国"
+  ]
+ },
+ "john-nash": {
+  "qid": "Q128736",
+  "birth": 1928,
+  "death": 2015,
+  "en": "John Forbes Nash",
+  "zh": "约翰·福布斯·纳什",
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·福布斯·纳什",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.",
+  "country": [
+   "美国"
+  ]
+ },
+ "john-von-neumann": {
+  "qid": "Q17455",
+  "birth": 1903,
+  "death": 1957,
+  "en": "John von Neumann",
+  "zh": "约翰·冯·诺伊曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·冯·诺伊曼",
+  "enwiki": "https://en.wikipedia.org/wiki/John_von_Neumann",
+  "country": [
+   "匈牙利",
+   "美国"
+  ]
+ },
+ "sun-wu": {
+  "qid": "Q37151",
+  "birth": -543,
+  "death": -469,
+  "en": "Sun Tzu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/孙武",
+  "enwiki": "https://en.wikipedia.org/wiki/Sun_Tzu",
+  "country": []
+ },
+ "carl-von-clausewitz": {
+  "qid": "Q76430",
+  "birth": 1780,
+  "death": 1831,
+  "en": "Carl von Clausewitz",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡尔·冯·克劳塞维茨",
+  "enwiki": "https://en.wikipedia.org/wiki/Carl_von_Clausewitz",
+  "country": []
+ },
+ "alfred-thayer-mahan": {
+  "qid": "Q142988",
+  "birth": 1840,
+  "death": 1914,
+  "en": "Alfred Thayer Maan",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿尔弗雷德·赛耶·马汉",
+  "enwiki": "https://en.wikipedia.org/wiki/Alfred_Thayer_Mahan",
+  "country": [
+   "美国"
+  ]
+ },
+ "giulio-douhet": {
+  "qid": "Q364463",
+  "birth": 1869,
+  "death": 1930,
+  "en": "Giulio Douhet",
+  "zh": "朱利欧·杜黑",
+  "zhwiki": "https://zh.wikipedia.org/wiki/朱利奥·杜黑",
+  "enwiki": "https://en.wikipedia.org/wiki/Giulio_Douhet",
+  "country": [
+   "意大利王国"
+  ]
+ },
+ "qu-tong-zu": {
+  "qid": "Q15912358",
+  "birth": 1910,
+  "death": 2008,
+  "en": "Qu Tongzu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/瞿同祖",
+  "enwiki": null,
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "montesquieu": {
+  "qid": "Q15975",
+  "birth": 1689,
+  "death": 1755,
+  "en": null,
+  "zh": "孟德斯鸠",
+  "zhwiki": "https://zh.wikipedia.org/wiki/孟德斯鸠",
+  "enwiki": "https://en.wikipedia.org/wiki/Montesquieu",
+  "country": []
+ },
+ "jean-jacques-rousseau": {
+  "qid": "Q6527",
+  "birth": 1712,
+  "death": 1778,
+  "en": "Jean-Jacques Rousseau",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/让-雅克·卢梭",
+  "enwiki": "https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau",
+  "country": []
+ },
+ "thomas-paine": {
+  "qid": "Q126462",
+  "birth": 1737,
+  "death": 1809,
+  "en": "Thomas Paine",
+  "zh": "托马斯·潘恩",
+  "zhwiki": "https://zh.wikipedia.org/wiki/托马斯·潘恩",
+  "enwiki": "https://en.wikipedia.org/wiki/Thomas_Paine",
+  "country": [
+   "美国",
+   "法国",
+   "大不列颠王国"
+  ]
+ },
+ "pierre-bourdieu": {
+  "qid": "Q156268",
+  "birth": 1930,
+  "death": 2002,
+  "en": "Pierre Bourdieu",
+  "zh": "皮埃尔·布尔迪厄",
+  "zhwiki": "https://zh.wikipedia.org/wiki/皮埃尔·布迪厄",
+  "enwiki": "https://en.wikipedia.org/wiki/Pierre_Bourdieu",
+  "country": [
+   "法国"
+  ]
+ },
+ "emile-durkheim": {
+  "qid": "Q15948",
+  "birth": 1858,
+  "death": 1917,
+  "en": "Émile Durkheim",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃米尔·涂尔干",
+  "enwiki": "https://en.wikipedia.org/wiki/Émile_Durkheim",
+  "country": [
+   "法国"
+  ]
+ },
+ "paulo-freire": {
+  "qid": "Q164797",
+  "birth": 1921,
+  "death": 1997,
+  "en": "Paulo Freire",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/保罗·弗莱雷",
+  "enwiki": "https://en.wikipedia.org/wiki/Paulo_Freire",
+  "country": [
+   "巴西"
+  ]
+ },
+ "donald-ervin-knuth": {
+  "qid": "Q17457",
+  "birth": 1938,
+  "death": null,
+  "en": "Donald Knuth",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/高德纳",
+  "enwiki": "https://en.wikipedia.org/wiki/Donald_Knuth",
+  "country": [
+   "美国"
+  ]
+ },
+ "eric-s-raymond": {
+  "qid": "Q188954",
+  "birth": 1957,
+  "death": null,
+  "en": "Eric S. Raymond",
+  "zh": "埃里克·雷蒙",
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃里克·雷蒙",
+  "enwiki": "https://en.wikipedia.org/wiki/Eric_S._Raymond",
+  "country": [
+   "美国"
+  ]
+ },
+ "kevin-kelly": {
+  "qid": "Q2707355",
+  "birth": 1952,
+  "death": null,
+  "en": "Kevin Kelly",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/凯文·凯利",
+  "enwiki": "https://en.wikipedia.org/wiki/Kevin_Kelly_(editor)",
+  "country": [
+   "美国"
+  ]
+ },
+ "paul-graham": {
+  "qid": "Q92650",
+  "birth": 1964,
+  "death": null,
+  "en": "Paul Graham",
+  "zh": "保罗·格雷厄姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/保罗·格雷厄姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Paul_Graham_(programmer)",
+  "country": [
+   "英国"
+  ]
+ },
+ "judea-pearl": {
+  "qid": "Q92824",
+  "birth": 1936,
+  "death": null,
+  "en": "Judea Pearl",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/朱迪亚·珀尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Judea_Pearl",
+  "country": [
+   "美国"
+  ]
+ },
+ "karl-marx": {
+  "qid": "Q9061",
+  "birth": 1818,
+  "death": 1883,
+  "en": "Karl Marx",
+  "zh": "卡尔·马克思",
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡尔·马克思",
+  "enwiki": "https://en.wikipedia.org/wiki/Karl_Marx",
+  "country": [
+   "无国籍"
+  ]
+ },
+ "herbert-marcuse": {
+  "qid": "Q60030",
+  "birth": 1898,
+  "death": 1979,
+  "en": "Herbert Marcuse",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/赫伯特·马尔库塞",
+  "enwiki": "https://en.wikipedia.org/wiki/Herbert_Marcuse",
+  "country": [
+   "美国",
+   "瑞士",
+   "德国",
+   "西德"
+  ]
+ },
+ "liu-jing-zheng": {
+  "qid": "Q3276951",
+  "birth": 1949,
+  "death": null,
+  "en": "Tadashi Yanai",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/柳井正",
+  "enwiki": "https://en.wikipedia.org/wiki/Tadashi_Yanai",
+  "country": [
+   "日本"
+  ]
+ },
+ "muhammad-yunus": {
+  "qid": "Q43969",
+  "birth": 1940,
+  "death": null,
+  "en": "Muhammad Yunus",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/穆罕默德·尤努斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Muhammad_Yunus",
+  "country": [
+   "孟加拉国"
+  ]
+ },
+ "charlie-munger": {
+  "qid": "Q918630",
+  "birth": 1924,
+  "death": 2023,
+  "en": "Charlie Munger",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/查理·芒格",
+  "enwiki": "https://en.wikipedia.org/wiki/Charlie_Munger",
+  "country": [
+   "美国"
+  ]
+ },
+ "nassim-nicholas-taleb": {
+  "qid": "Q333521",
+  "birth": 1960,
+  "death": null,
+  "en": "Nassim Nicholas Taleb",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/納西姆·尼可拉斯·塔雷伯",
+  "enwiki": "https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb",
+  "country": [
+   "美国",
+   "黎巴嫩"
+  ]
+ },
+ "rem-koolhaas": {
+  "qid": "Q232364",
+  "birth": 1944,
+  "death": null,
+  "en": "Rem Koolhaas",
+  "zh": "雷姆·库哈斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/雷姆·库哈斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Rem_Koolhaas",
+  "country": [
+   "荷兰王国"
+  ]
+ },
+ "alfred-adler": {
+  "qid": "Q152393",
+  "birth": 1870,
+  "death": 1937,
+  "en": "Alfred Adler",
+  "zh": "阿尔弗雷德·阿德勒",
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿尔弗雷德·阿德勒",
+  "enwiki": "https://en.wikipedia.org/wiki/Alfred_Adler",
+  "country": [
+   "奥地利"
+  ]
+ },
+ "carl-r-rogers": {
+  "qid": "Q191004",
+  "birth": 1902,
+  "death": 1987,
+  "en": "Carl Rogers",
+  "zh": "卡尔·罗哲斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡爾·羅哲斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Carl_Rogers",
+  "country": [
+   "美国"
+  ]
+ },
+ "niccolo-machiavelli-2": {
+  "qid": "Q1399",
+  "birth": 1469,
+  "death": 1527,
+  "en": "Niccolò Machiavelli",
+  "zh": "尼科洛·马基雅维利",
+  "zhwiki": "https://zh.wikipedia.org/wiki/尼古洛·馬基雅維利",
+  "enwiki": "https://en.wikipedia.org/wiki/Niccolò_Machiavelli",
+  "country": [
+   "佛罗伦萨共和国"
+  ]
+ },
+ "max-weber": {
+  "qid": "Q9387",
+  "birth": 1864,
+  "death": 1920,
+  "en": "Max Weber",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/马克斯·韦伯",
+  "enwiki": "https://en.wikipedia.org/wiki/Max_Weber",
+  "country": [
+   "德国",
+   "北德意志邦联",
+   "德意志帝国"
+  ]
+ },
+ "georg-simmel": {
+  "qid": "Q76849",
+  "birth": 1858,
+  "death": 1918,
+  "en": "Georg Simmel",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/格奥尔格·齐美尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Georg_Simmel",
+  "country": []
+ },
+ "adam-smith": {
+  "qid": "Q9381",
+  "birth": 1723,
+  "death": 1790,
+  "en": "Adam Smith",
+  "zh": "亚当·斯密",
+  "zhwiki": "https://zh.wikipedia.org/wiki/亚当·斯密",
+  "enwiki": "https://en.wikipedia.org/wiki/Adam_Smith",
+  "country": [
+   "大不列颠王国"
+  ]
+ },
+ "michel-foucault": {
+  "qid": "Q44272",
+  "birth": 1926,
+  "death": 1984,
+  "en": "Michel Foucault",
+  "zh": "米歇尔·福柯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/米歇尔·福柯",
+  "enwiki": "https://en.wikipedia.org/wiki/Michel_Foucault",
+  "country": [
+   "法国"
+  ]
+ },
+ "erving-goffman": {
+  "qid": "Q314471",
+  "birth": 1922,
+  "death": 1982,
+  "en": "Erving Goffman",
+  "zh": "欧文·戈夫曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/厄文·高夫曼",
+  "enwiki": "https://en.wikipedia.org/wiki/Erving_Goffman",
+  "country": [
+   "加拿大",
+   "美国"
+  ]
+ },
+ "peter-l-berger": {
+  "qid": "Q84486",
+  "birth": 1929,
+  "death": 2017,
+  "en": "Peter L. Berger",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/彼得·柏格_(美國社會學家)",
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_L._Berger",
+  "country": [
+   "美国",
+   "奥地利"
+  ]
+ },
+ "mark-granovetter": {
+  "qid": "Q594320",
+  "birth": 1943,
+  "death": null,
+  "en": "Mark S. Granovetter",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/马克·格兰诺维特",
+  "enwiki": "https://en.wikipedia.org/wiki/Mark_Granovetter",
+  "country": [
+   "美国"
+  ]
+ },
+ "kurt-lewin": {
+  "qid": "Q77106",
+  "birth": 1890,
+  "death": 1947,
+  "en": "Kurt Zadek Lewin",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/库尔特·扎德克·勒温",
+  "enwiki": "https://en.wikipedia.org/wiki/Kurt_Lewin",
+  "country": [
+   "美国",
+   "德国"
+  ]
+ },
+ "philip-g-zimbardo": {
+  "qid": "Q296042",
+  "birth": 1933,
+  "death": 2024,
+  "en": "Philip Zimbardo",
+  "zh": "菲利普·津巴多",
+  "zhwiki": "https://zh.wikipedia.org/wiki/菲利普·津巴多",
+  "enwiki": "https://en.wikipedia.org/wiki/Philip_Zimbardo",
+  "country": [
+   "美国"
+  ]
+ },
+ "john-maynard-keynes": {
+  "qid": "Q9317",
+  "birth": 1883,
+  "death": 1946,
+  "en": "John Maynard Keynes",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·梅纳德·凯恩斯",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+  "country": [
+   "英国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "milton-friedman": {
+  "qid": "Q47426",
+  "birth": 1912,
+  "death": 2006,
+  "en": "Milton Friedman",
+  "zh": "米尔顿·弗里德曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/米爾頓·佛利民",
+  "enwiki": "https://en.wikipedia.org/wiki/Milton_Friedman",
+  "country": [
+   "美国"
+  ]
+ },
+ "douglass-c-north": {
+  "qid": "Q243193",
+  "birth": 1920,
+  "death": 2015,
+  "en": "Douglass North",
+  "zh": "道格拉斯·诺斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/道格拉斯·诺斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Douglass_North",
+  "country": [
+   "美国"
+  ]
+ },
+ "ludwig-von-mises": {
+  "qid": "Q84233",
+  "birth": 1881,
+  "death": 1973,
+  "en": "Ludwig von Mises",
+  "zh": "路德维希·冯·米塞斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/路德維希·馮·米塞斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Ludwig_von_Mises",
+  "country": [
+   "美国",
+   "奥地利"
+  ]
+ },
+ "friedrich-hayek": {
+  "qid": "Q1325",
+  "birth": 1899,
+  "death": 1992,
+  "en": "Friedrich Hayek",
+  "zh": "弗里德里希·哈耶克",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗里德里希·哈耶克",
+  "enwiki": "https://en.wikipedia.org/wiki/Friedrich_Hayek",
+  "country": [
+   "奥地利",
+   "英国"
+  ]
+ },
+ "paul-a-samuelson": {
+  "qid": "Q102454",
+  "birth": 1915,
+  "death": 2009,
+  "en": "Paul Samuelson",
+  "zh": "保罗·萨缪尔森",
+  "zhwiki": "https://zh.wikipedia.org/wiki/保羅·薩繆爾森",
+  "enwiki": "https://en.wikipedia.org/wiki/Paul_Samuelson",
+  "country": [
+   "美国"
+  ]
+ },
+ "jeremy-bentham": {
+  "qid": "Q60887",
+  "birth": 1748,
+  "death": 1832,
+  "en": "Jeremy Bentham",
+  "zh": "杰里米·边沁",
+  "zhwiki": "https://zh.wikipedia.org/wiki/杰里米·边沁",
+  "enwiki": "https://en.wikipedia.org/wiki/Jeremy_Bentham",
+  "country": [
+   "法国",
+   "大不列颠王国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "john-stuart-mill": {
+  "qid": "Q50020",
+  "birth": 1806,
+  "death": 1873,
+  "en": "John Stuart Mill",
+  "zh": "约翰·斯图尔特·密尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·斯图尔特·密尔",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Stuart_Mill",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "john-rawls": {
+  "qid": "Q172544",
+  "birth": 1921,
+  "death": 2002,
+  "en": "John Rawls",
+  "zh": "约翰·罗尔斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·罗尔斯",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Rawls",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-nozick": {
+  "qid": "Q205927",
+  "birth": 1938,
+  "death": 2002,
+  "en": "Robert Nozick",
+  "zh": "罗伯特·诺齐克",
+  "zhwiki": "https://zh.wikipedia.org/wiki/羅伯特·諾齊克",
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_Nozick",
+  "country": [
+   "美国"
+  ]
+ },
+ "michael-j-sandel": {
+  "qid": "Q381044",
+  "birth": 1953,
+  "death": null,
+  "en": "Michael Sandel",
+  "zh": "迈克尔·桑德尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/迈克尔·桑德尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Sandel",
+  "country": [
+   "美国"
+  ]
+ },
+ "hannah-arendt": {
+  "qid": "Q60025",
+  "birth": 1906,
+  "death": 1975,
+  "en": "Hannah Arendt",
+  "zh": "汉娜·阿伦特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/汉娜·阿伦特",
+  "enwiki": "https://en.wikipedia.org/wiki/Hannah_Arendt",
+  "country": [
+   "美国",
+   "无国籍"
+  ]
+ },
+ "benedict-anderson": {
+  "qid": "Q212993",
+  "birth": 1936,
+  "death": 2015,
+  "en": "Benedict Anderson",
+  "zh": "本尼迪克特·安德森",
+  "zhwiki": "https://zh.wikipedia.org/wiki/本尼迪克特·安德森",
+  "enwiki": "https://en.wikipedia.org/wiki/Benedict_Anderson",
+  "country": [
+   "爱尔兰"
+  ]
+ },
+ "robert-d-putnam": {
+  "qid": "Q351815",
+  "birth": 1941,
+  "death": null,
+  "en": "Robert D. Putnam",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗伯特·普特南",
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_D._Putnam",
+  "country": [
+   "美国"
+  ]
+ },
+ "francis-fukuyama": {
+  "qid": "Q186123",
+  "birth": 1952,
+  "death": null,
+  "en": "Francis Fukuyama",
+  "zh": "弗朗西斯·福山",
+  "zhwiki": "https://zh.wikipedia.org/wiki/法蘭西斯·福山",
+  "enwiki": "https://en.wikipedia.org/wiki/Francis_Fukuyama",
+  "country": [
+   "美国"
+  ]
+ },
+ "marcel-mauss": {
+  "qid": "Q295393",
+  "birth": 1872,
+  "death": 1950,
+  "en": "Marcel Mauss",
+  "zh": "马塞尔·莫斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/马塞尔·莫斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Marcel_Mauss",
+  "country": [
+   "法国"
+  ]
+ },
+ "ruth-benedict": {
+  "qid": "Q228822",
+  "birth": 1887,
+  "death": 1948,
+  "en": "Ruth Benedict",
+  "zh": "鲁思·本尼迪克特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/鲁思·本尼迪克特",
+  "enwiki": "https://en.wikipedia.org/wiki/Ruth_Benedict",
+  "country": [
+   "美国"
+  ]
+ },
+ "margaret-mead": {
+  "qid": "Q180099",
+  "birth": 1901,
+  "death": 1978,
+  "en": "Margaret Mead",
+  "zh": "玛格丽特·米德",
+  "zhwiki": "https://zh.wikipedia.org/wiki/瑪格麗特·米德",
+  "enwiki": "https://en.wikipedia.org/wiki/Margaret_Mead",
+  "country": [
+   "美国"
+  ]
+ },
+ "fei-xiao-tong": {
+  "qid": "Q982656",
+  "birth": 1910,
+  "death": 2005,
+  "en": "Fei Xiaotong",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/费孝通",
+  "enwiki": "https://en.wikipedia.org/wiki/Fei_Xiaotong",
+  "country": [
+   "中华人民共和国",
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "mary-douglas": {
+  "qid": "Q231349",
+  "birth": 1921,
+  "death": 2007,
+  "en": "Mary Douglas",
+  "zh": "玛丽·道格拉斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/瑪麗·道格拉斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Mary_Douglas",
+  "country": [
+   "英国"
+  ]
+ },
+ "clifford-geertz": {
+  "qid": "Q310956",
+  "birth": 1926,
+  "death": 2006,
+  "en": "Clifford Geertz",
+  "zh": "克利福德·格尔茨",
+  "zhwiki": "https://zh.wikipedia.org/wiki/克里弗德·紀爾茲",
+  "enwiki": "https://en.wikipedia.org/wiki/Clifford_Geertz",
+  "country": [
+   "美国"
+  ]
+ },
+ "frederick-winslow-taylor": {
+  "qid": "Q203906",
+  "birth": 1856,
+  "death": 1915,
+  "en": "Frederick Winslow Taylor",
+  "zh": "弗雷德里克·温斯洛·泰勒",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗雷德里克·温斯洛·泰勒",
+  "enwiki": "https://en.wikipedia.org/wiki/Frederick_Winslow_Taylor",
+  "country": [
+   "美国"
+  ]
+ },
+ "henri-fayol": {
+  "qid": "Q213820",
+  "birth": 1841,
+  "death": 1925,
+  "en": "Henri Fayol",
+  "zh": "亨利·法约尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/亨利·法约尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Henri_Fayol",
+  "country": [
+   "法国"
+  ]
+ },
+ "peter-drucker": {
+  "qid": "Q84238",
+  "birth": 1909,
+  "death": 2005,
+  "en": "Peter Drucker",
+  "zh": "彼得·杜拉克",
+  "zhwiki": "https://zh.wikipedia.org/wiki/彼得·德鲁克",
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_Drucker",
+  "country": [
+   "美国",
+   "奥地利"
+  ]
+ },
+ "james-g-march": {
+  "qid": "Q1352604",
+  "birth": 1928,
+  "death": 2018,
+  "en": "James G. March",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/詹姆斯·马奇",
+  "enwiki": "https://en.wikipedia.org/wiki/James_G._March",
+  "country": [
+   "美国"
+  ]
+ },
+ "henry-mintzberg": {
+  "qid": "Q355277",
+  "birth": 1939,
+  "death": null,
+  "en": "Henry Mintzberg Storch",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/亨利·明茨伯格",
+  "enwiki": "https://en.wikipedia.org/wiki/Henry_Mintzberg",
+  "country": [
+   "加拿大"
+  ]
+ },
+ "frederick-herzberg": {
+  "qid": "Q142881",
+  "birth": 1923,
+  "death": 2000,
+  "en": "Frederick Irving Herzberg",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗雷德里克·歐文·赫茨伯格",
+  "enwiki": "https://en.wikipedia.org/wiki/Frederick_Herzberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "geert-hofstede": {
+  "qid": "Q313908",
+  "birth": 1928,
+  "death": 2020,
+  "en": "Geert Hofstede",
+  "zh": "吉尔特·霍夫斯塔德",
+  "zhwiki": "https://zh.wikipedia.org/wiki/吉爾特·霍夫斯塔德",
+  "enwiki": "https://en.wikipedia.org/wiki/Geert_Hofstede",
+  "country": [
+   "荷兰王国"
+  ]
+ },
+ "benjamin-graham": {
+  "qid": "Q290560",
+  "birth": 1894,
+  "death": 1976,
+  "en": "Benjamin Graham",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/本杰明·格雷厄姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Benjamin_Graham",
+  "country": [
+   "美国"
+  ]
+ },
+ "frederick-p-brooks-jr": {
+  "qid": "Q92609",
+  "birth": 1931,
+  "death": 2022,
+  "en": "Fred Brooks",
+  "zh": "佛瑞德·布鲁克斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/佛瑞德·布魯克斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Fred_Brooks",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-beno-cialdini": {
+  "qid": "Q1198516",
+  "birth": 1945,
+  "death": null,
+  "en": null,
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_Cialdini",
+  "country": [
+   "美国"
+  ]
+ },
+ "jack-trout": {
+  "qid": "Q983171",
+  "birth": 1935,
+  "death": 2017,
+  "en": "Jack Trout",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/杰克·特鲁特",
+  "enwiki": "https://en.wikipedia.org/wiki/Jack_Trout",
+  "country": [
+   "美国"
+  ]
+ },
+ "philip-kotler": {
+  "qid": "Q164170",
+  "birth": 1931,
+  "death": null,
+  "en": "Philip Kotler",
+  "zh": "菲利普·科特勒",
+  "zhwiki": "https://zh.wikipedia.org/wiki/菲利普·科特勒",
+  "enwiki": "https://en.wikipedia.org/wiki/Philip_Kotler",
+  "country": [
+   "美国"
+  ]
+ },
+ "walter-lippmann": {
+  "qid": "Q316568",
+  "birth": 1889,
+  "death": 1974,
+  "en": "Walter Lippmann",
+  "zh": "沃尔特·李普曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/沃尔特·李普曼",
+  "enwiki": "https://en.wikipedia.org/wiki/Walter_Lippmann",
+  "country": [
+   "美国"
+  ]
+ },
+ "peter-thiel": {
+  "qid": "Q705525",
+  "birth": 1967,
+  "death": null,
+  "en": "Peter Thiel",
+  "zh": "彼得·蒂尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/彼得·泰爾",
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_Thiel",
+  "country": [
+   "美国",
+   "德国",
+   "新西兰"
+  ]
+ },
+ "ohmae-kenichi": {
+  "qid": "Q725049",
+  "birth": 1943,
+  "death": null,
+  "en": "Kenichi Ohmae",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/大前研一",
+  "enwiki": "https://en.wikipedia.org/wiki/Kenichi_Ohmae",
+  "country": [
+   "日本"
+  ]
+ },
+ "sam-walton": {
+  "qid": "Q497827",
+  "birth": 1918,
+  "death": 1992,
+  "en": "Sam Walton",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/山姆·沃尔顿",
+  "enwiki": "https://en.wikipedia.org/wiki/Sam_Walton",
+  "country": [
+   "美国"
+  ]
+ },
+ "warren-buffett": {
+  "qid": "Q47213",
+  "birth": 1930,
+  "death": null,
+  "en": "Warren Buffett",
+  "zh": "沃伦·巴菲特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/沃伦·巴菲特",
+  "enwiki": "https://en.wikipedia.org/wiki/Warren_Buffett",
+  "country": [
+   "美国"
+  ]
+ },
+ "george-soros": {
+  "qid": "Q12908",
+  "birth": 1930,
+  "death": null,
+  "en": "George Soros",
+  "zh": "乔治·索罗斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/乔治·索罗斯",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Soros",
+  "country": [
+   "匈牙利",
+   "美国"
+  ]
+ },
+ "ke-li-si-ting-·-di-ao": {
+  "qid": "Q159694",
+  "birth": 1905,
+  "death": 1957,
+  "en": "Christian Dior",
+  "zh": "克里斯汀·迪奥",
+  "zhwiki": "https://zh.wikipedia.org/wiki/克里斯汀·迪奧",
+  "enwiki": "https://en.wikipedia.org/wiki/Christian_Dior",
+  "country": [
+   "法国"
+  ]
+ },
+ "song-xia-xing-zhi-zhu": {
+  "qid": "Q252785",
+  "birth": 1894,
+  "death": 1989,
+  "en": "Kōnosuke Matsushita",
+  "zh": "松下幸之助",
+  "zhwiki": "https://zh.wikipedia.org/wiki/松下幸之助",
+  "enwiki": "https://en.wikipedia.org/wiki/Kōnosuke_Matsushita",
+  "country": [
+   "日本",
+   "大日本帝国"
+  ]
+ },
+ "dao-sheng-he-fu": {
+  "qid": "Q982623",
+  "birth": 1932,
+  "death": 2022,
+  "en": "Kazuo Inamori",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/稻盛和夫",
+  "enwiki": "https://en.wikipedia.org/wiki/Kazuo_Inamori",
+  "country": [
+   "日本",
+   "大日本帝国"
+  ]
+ },
+ "jean-piaget": {
+  "qid": "Q123190",
+  "birth": 1896,
+  "death": 1980,
+  "en": "Jean Piaget",
+  "zh": "让·皮亚杰",
+  "zhwiki": "https://zh.wikipedia.org/wiki/尚·皮亞傑",
+  "enwiki": "https://en.wikipedia.org/wiki/Jean_Piaget",
+  "country": [
+   "瑞士"
+  ]
+ },
+ "lev-vygotsky": {
+  "qid": "Q180819",
+  "birth": 1896,
+  "death": 1934,
+  "en": "Lev Vygotsky",
+  "zh": "利维·维谷斯基",
+  "zhwiki": "https://zh.wikipedia.org/wiki/利維·維谷斯基",
+  "enwiki": "https://en.wikipedia.org/wiki/Lev_Vygotsky",
+  "country": [
+   "苏联",
+   "俄罗斯帝国"
+  ]
+ },
+ "erik-h-erikson": {
+  "qid": "Q58074",
+  "birth": 1902,
+  "death": 1994,
+  "en": "Erik Erikson",
+  "zh": "埃里克·埃里克森",
+  "zhwiki": "https://zh.wikipedia.org/wiki/爱利克·埃里克森",
+  "enwiki": "https://en.wikipedia.org/wiki/Erik_Erikson",
+  "country": [
+   "美国",
+   "德国"
+  ]
+ },
+ "john-bowlby": {
+  "qid": "Q128868",
+  "birth": 1907,
+  "death": 1990,
+  "en": "John Bowlby",
+  "zh": "约翰·鲍尔比",
+  "zhwiki": "https://zh.wikipedia.org/wiki/約翰·鮑比",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Bowlby",
+  "country": [
+   "英国"
+  ]
+ },
+ "urie-bronfenbrenner": {
+  "qid": "Q643339",
+  "birth": 1917,
+  "death": 2005,
+  "en": "Urie Bronfenbrenner",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/尤里·布朗芬布伦纳",
+  "enwiki": "https://en.wikipedia.org/wiki/Urie_Bronfenbrenner",
+  "country": [
+   "美国"
+  ]
+ },
+ "marshall-bertram-rosenberg": {
+  "qid": "Q732048",
+  "birth": 1934,
+  "death": 2015,
+  "en": "Marshall Rosenberg",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/马歇尔·罗森伯格",
+  "enwiki": "https://en.wikipedia.org/wiki/Marshall_Rosenberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "martha-c-nussbaum": {
+  "qid": "Q235470",
+  "birth": 1947,
+  "death": null,
+  "en": "Martha Nussbaum",
+  "zh": "玛莎·努斯鲍姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/玛莎·努斯鲍姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Martha_Nussbaum",
+  "country": [
+   "美国"
+  ]
+ },
+ "judith-butler": {
+  "qid": "Q219368",
+  "birth": 1956,
+  "death": null,
+  "en": "Judith Butler",
+  "zh": "朱迪丝·巴特勒",
+  "zhwiki": "https://zh.wikipedia.org/wiki/朱迪斯·巴特勒",
+  "enwiki": "https://en.wikipedia.org/wiki/Judith_Butler",
+  "country": [
+   "美国"
+  ]
+ },
+ "mary-d-salter-ainsworth": {
+  "qid": "Q242625",
+  "birth": 1913,
+  "death": 1999,
+  "en": "Mary Ainsworth",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/瑪麗·愛因斯沃斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Mary_Ainsworth",
+  "country": [
+   "加拿大",
+   "美国"
+  ]
+ },
+ "lawrence-kohlberg": {
+  "qid": "Q311745",
+  "birth": 1927,
+  "death": 1987,
+  "en": "Lawrence Kohlberg",
+  "zh": "劳伦斯·柯尔伯格",
+  "zhwiki": "https://zh.wikipedia.org/wiki/劳伦斯·柯尔伯格",
+  "enwiki": "https://en.wikipedia.org/wiki/Lawrence_Kohlberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "g-stanley-hall": {
+  "qid": "Q309675",
+  "birth": 1844,
+  "death": 1924,
+  "en": "G. Stanley Hall",
+  "zh": "斯坦利·霍尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/斯坦利·霍尔",
+  "enwiki": "https://en.wikipedia.org/wiki/G._Stanley_Hall",
+  "country": [
+   "美国"
+  ]
+ },
+ "virginia-satir": {
+  "qid": "Q237979",
+  "birth": 1916,
+  "death": 1988,
+  "en": "Virginia Satir",
+  "zh": "维琴尼亚·萨提尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/維琴尼亞·薩提爾",
+  "enwiki": "https://en.wikipedia.org/wiki/Virginia_Satir",
+  "country": [
+   "美国"
+  ]
+ },
+ "yu-de-hui": {
+  "qid": "Q10886570",
+  "birth": 1951,
+  "death": 2012,
+  "en": "Der-Huey Yee",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/余德慧",
+  "enwiki": null,
+  "country": []
+ },
+ "irvin-yalom": {
+  "qid": "Q362721",
+  "birth": 1931,
+  "death": null,
+  "en": "Irvin Yalom",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/歐文·亞隆",
+  "enwiki": "https://en.wikipedia.org/wiki/Irvin_D._Yalom",
+  "country": [
+   "美国"
+  ]
+ },
+ "sigmund-freud": {
+  "qid": "Q9215",
+  "birth": 1856,
+  "death": 1939,
+  "en": "Sigmund Freud",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/西格蒙德·弗洛伊德",
+  "enwiki": "https://en.wikipedia.org/wiki/Sigmund_Freud",
+  "country": [
+   "奥地利",
+   "纳粹德国",
+   "奥地利帝国"
+  ]
+ },
+ "b-f-skinner": {
+  "qid": "Q213195",
+  "birth": 1904,
+  "death": 1990,
+  "en": "B.F. Skinner",
+  "zh": "伯尔赫斯·弗雷德里克·斯金纳",
+  "zhwiki": "https://zh.wikipedia.org/wiki/伯尔赫斯·弗雷德里克·斯金纳",
+  "enwiki": "https://en.wikipedia.org/wiki/B._F._Skinner",
+  "country": [
+   "美国"
+  ]
+ },
+ "albert-bandura": {
+  "qid": "Q153753",
+  "birth": 1925,
+  "death": 2021,
+  "en": "Albert Bandura",
+  "zh": "阿尔波特·班杜拉",
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿尔波特·班杜拉",
+  "enwiki": "https://en.wikipedia.org/wiki/Albert_Bandura",
+  "country": [
+   "加拿大",
+   "美国"
+  ]
+ },
+ "gordon-w-allport": {
+  "qid": "Q310741",
+  "birth": 1897,
+  "death": 1967,
+  "en": "Gordon Allport",
+  "zh": "高尔顿·威拉德·奥尔波特",
+  "zhwiki": "https://zh.wikipedia.org/wiki/高尔顿·威拉德·奥尔波特",
+  "enwiki": "https://en.wikipedia.org/wiki/Gordon_Allport",
+  "country": [
+   "美国"
+  ]
+ },
+ "santiago-ramon-y-cajal": {
+  "qid": "Q150526",
+  "birth": 1852,
+  "death": 1934,
+  "en": "Santiago Ramón y Cajal",
+  "zh": "圣地亚哥·拉蒙-卡哈尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/圣地亚哥·拉蒙-卡哈尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Santiago_Ramón_y_Cajal",
+  "country": [
+   "西班牙"
+  ]
+ },
+ "eric-r-kandel": {
+  "qid": "Q155529",
+  "birth": 1929,
+  "death": null,
+  "en": "Eric Kandel",
+  "zh": "埃里克·坎德尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃里克·坎德尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Eric_Kandel",
+  "country": [
+   "美国",
+   "奥地利"
+  ]
+ },
+ "daniel-kahneman": {
+  "qid": "Q233950",
+  "birth": 1934,
+  "death": 2024,
+  "en": "Daniel Kahneman",
+  "zh": "丹尼尔·卡内曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/丹尼尔·卡尼曼",
+  "enwiki": "https://en.wikipedia.org/wiki/Daniel_Kahneman",
+  "country": [
+   "美国",
+   "以色列"
+  ]
+ },
+ "steven-pinker": {
+  "qid": "Q212730",
+  "birth": 1954,
+  "death": null,
+  "en": "Steven Pinker",
+  "zh": "史迪芬·平克",
+  "zhwiki": "https://zh.wikipedia.org/wiki/斯蒂芬·平克",
+  "enwiki": "https://en.wikipedia.org/wiki/Steven_Pinker",
+  "country": [
+   "加拿大",
+   "美国"
+  ]
+ },
+ "ferdinand-de-saussure": {
+  "qid": "Q13230",
+  "birth": 1857,
+  "death": 1913,
+  "en": "Ferdinand de Saussure",
+  "zh": "费迪南·德·索绪尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/费迪南·德·索绪尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Ferdinand_de_Saussure",
+  "country": [
+   "瑞士"
+  ]
+ },
+ "wang-li": {
+  "qid": "Q2034191",
+  "birth": 1900,
+  "death": 1986,
+  "en": "Wang Li",
+  "zh": "王力",
+  "zhwiki": "https://zh.wikipedia.org/wiki/王力_(语言学家)",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Li_(linguist)",
+  "country": [
+   "中华人民共和国",
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "michael-halliday": {
+  "qid": "Q562952",
+  "birth": 1925,
+  "death": 2018,
+  "en": "Michael Halliday",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/韓禮德",
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Halliday",
+  "country": [
+   "英国",
+   "澳大利亚"
+  ]
+ },
+ "george-zipf": {
+  "qid": "Q548244",
+  "birth": 1902,
+  "death": 1950,
+  "en": "George Kingsley Zipf",
+  "zh": "齐普夫",
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/George_Kingsley_Zipf",
+  "country": [
+   "美国"
+  ]
+ },
+ "noam-chomsky": {
+  "qid": "Q9049",
+  "birth": 1928,
+  "death": null,
+  "en": "Noam Chomsky",
+  "zh": "诺姆·乔姆斯基",
+  "zhwiki": "https://zh.wikipedia.org/wiki/诺姆·乔姆斯基",
+  "enwiki": "https://en.wikipedia.org/wiki/Noam_Chomsky",
+  "country": [
+   "美国"
+  ]
+ },
+ "george-lakoff": {
+  "qid": "Q313772",
+  "birth": 1941,
+  "death": null,
+  "en": "George Lakoff",
+  "zh": "乔治·莱考夫",
+  "zhwiki": "https://zh.wikipedia.org/wiki/喬治·萊考夫",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Lakoff",
+  "country": [
+   "美国"
+  ]
+ },
+ "miguel-de-cervantes-saavedra": {
+  "qid": "Q5682",
+  "birth": 1547,
+  "death": 1616,
+  "en": "Miguel de Cervantes",
+  "zh": "米格尔·德·塞万提斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/米格尔·德·塞万提斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes",
+  "country": [
+   "卡斯提尔王冠领地"
+  ]
+ },
+ "charles-dickens": {
+  "qid": "Q5686",
+  "birth": 1812,
+  "death": 1870,
+  "en": "Charles Dickens",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/查尔斯·狄更斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Charles_Dickens",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "lewis-carroll": {
+  "qid": "Q38082",
+  "birth": 1832,
+  "death": 1898,
+  "en": "Lewis Carroll",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/路易斯·卡羅",
+  "enwiki": "https://en.wikipedia.org/wiki/Lewis_Carroll",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "william-somerset-maugham": {
+  "qid": "Q134942",
+  "birth": 1874,
+  "death": 1965,
+  "en": "William Somerset Maugham",
+  "zh": "威廉·萨默塞特·毛姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/威廉·萨默塞特·毛姆",
+  "enwiki": "https://en.wikipedia.org/wiki/W._Somerset_Maugham",
+  "country": [
+   "法国",
+   "英国"
+  ]
+ },
+ "ernest-miller-hemingway": {
+  "qid": "Q23434",
+  "birth": 1899,
+  "death": 1961,
+  "en": "Ernest Hemingway",
+  "zh": "欧内斯特·海明威",
+  "zhwiki": "https://zh.wikipedia.org/wiki/欧内斯特·海明威",
+  "enwiki": "https://en.wikipedia.org/wiki/Ernest_Hemingway",
+  "country": [
+   "美国"
+  ]
+ },
+ "antoine-de-saint-exupery": {
+  "qid": "Q2908",
+  "birth": 1900,
+  "death": 1944,
+  "en": "Antoine de Saint-Exupéry",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/安托万·德·圣埃克苏佩里",
+  "enwiki": "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exupéry",
+  "country": [
+   "法国"
+  ]
+ },
+ "shen-cong-wen": {
+  "qid": "Q559264",
+  "birth": 1902,
+  "death": 1988,
+  "en": "Shen Congwen",
+  "zh": "沈从文",
+  "zhwiki": "https://zh.wikipedia.org/wiki/沈从文",
+  "enwiki": "https://en.wikipedia.org/wiki/Shen_Congwen",
+  "country": [
+   "中华人民共和国",
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "isaac-asimov": {
+  "qid": "Q34981",
+  "birth": 1920,
+  "death": 1992,
+  "en": "Isaac Asimov",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/艾萨克·阿西莫夫",
+  "enwiki": "https://en.wikipedia.org/wiki/Isaac_Asimov",
+  "country": [
+   "美国"
+  ]
+ },
+ "italo-calvino": {
+  "qid": "Q154756",
+  "birth": 1923,
+  "death": 1985,
+  "en": "Italo Calvino",
+  "zh": "伊塔罗·卡尔维诺",
+  "zhwiki": "https://zh.wikipedia.org/wiki/伊塔罗·卡尔维诺",
+  "enwiki": "https://en.wikipedia.org/wiki/Italo_Calvino",
+  "country": [
+   "意大利",
+   "意大利王国"
+  ]
+ },
+ "roger-zelazny": {
+  "qid": "Q295406",
+  "birth": 1937,
+  "death": 1995,
+  "en": "Roger Zelazny",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/羅傑·澤拉茲尼",
+  "enwiki": "https://en.wikipedia.org/wiki/Roger_Zelazny",
+  "country": [
+   "美国"
+  ]
+ },
+ "william-shakespeare": {
+  "qid": "Q692",
+  "birth": 1564,
+  "death": 1616,
+  "en": "William Shakespeare",
+  "zh": "威廉·莎士比亚",
+  "zhwiki": "https://zh.wikipedia.org/wiki/威廉·莎士比亚",
+  "enwiki": "https://en.wikipedia.org/wiki/William_Shakespeare",
+  "country": [
+   "英格兰王国"
+  ]
+ },
+ "cao-xue-qin": {
+  "qid": "Q182874",
+  "birth": 1724,
+  "death": null,
+  "en": "Cao Xueqin",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/曹雪芹",
+  "enwiki": "https://en.wikipedia.org/wiki/Cao_Xueqin",
+  "country": [
+   "清朝"
+  ]
+ },
+ "johann-wolfgang-von-goethe": {
+  "qid": "Q5879",
+  "birth": 1749,
+  "death": 1832,
+  "en": "Johann Wolfgang von Goethe",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/约翰·沃尔夫冈·冯·歌德",
+  "enwiki": "https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe",
+  "country": [
+   "萨克森-魏玛-艾森纳赫"
+  ]
+ },
+ "lu-xun": {
+  "qid": "Q23114",
+  "birth": 1881,
+  "death": 1936,
+  "en": "Lu Xun",
+  "zh": "鲁迅",
+  "zhwiki": "https://zh.wikipedia.org/wiki/鲁迅",
+  "enwiki": "https://en.wikipedia.org/wiki/Lu_Xun",
+  "country": [
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "franz-kafka": {
+  "qid": "Q905",
+  "birth": 1883,
+  "death": 1924,
+  "en": "Franz Kafka",
+  "zh": "弗朗茨·卡夫卡",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗朗茨·卡夫卡",
+  "enwiki": "https://en.wikipedia.org/wiki/Franz_Kafka",
+  "country": [
+   "捷克斯洛伐克"
+  ]
+ },
+ "vladimir-nabokov": {
+  "qid": "Q36591",
+  "birth": 1899,
+  "death": 1977,
+  "en": "Vladimir Nabokov",
+  "zh": "弗拉基米尔·纳博科夫",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗拉迪米爾·納博可夫",
+  "enwiki": "https://en.wikipedia.org/wiki/Vladimir_Nabokov",
+  "country": [
+   "美国",
+   "俄罗斯帝国"
+  ]
+ },
+ "george-orwell": {
+  "qid": "Q3335",
+  "birth": 1903,
+  "death": 1950,
+  "en": "George Orwell",
+  "zh": "乔治·奥威尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/乔治·奥威尔",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Orwell",
+  "country": [
+   "英国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "tai-zai-zhi": {
+  "qid": "Q317685",
+  "birth": 1909,
+  "death": 1948,
+  "en": "Osamu Dazai",
+  "zh": "太宰治",
+  "zhwiki": "https://zh.wikipedia.org/wiki/太宰治",
+  "enwiki": "https://en.wikipedia.org/wiki/Osamu_Dazai",
+  "country": [
+   "日本"
+  ]
+ },
+ "san-dao-you-ji-fu": {
+  "qid": "Q134456",
+  "birth": 1925,
+  "death": 1970,
+  "en": "Yukio Mishima",
+  "zh": "三岛由纪夫",
+  "zhwiki": "https://zh.wikipedia.org/wiki/三岛由纪夫",
+  "enwiki": "https://en.wikipedia.org/wiki/Yukio_Mishima",
+  "country": [
+   "日本"
+  ]
+ },
+ "tian-zhong-fang-shu": {
+  "qid": "Q1196609",
+  "birth": 1952,
+  "death": null,
+  "en": "Yoshiki Tanaka",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/田中芳樹",
+  "enwiki": "https://en.wikipedia.org/wiki/Yoshiki_Tanaka",
+  "country": [
+   "日本"
+  ]
+ },
+ "jane-austen": {
+  "qid": "Q36322",
+  "birth": 1775,
+  "death": 1817,
+  "en": "Jane Austen",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/简·奥斯汀",
+  "enwiki": "https://en.wikipedia.org/wiki/Jane_Austen",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "henrik-johan-ibsen": {
+  "qid": "Q36661",
+  "birth": 1828,
+  "death": 1906,
+  "en": "Henrik Ibsen",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/亨里克·易卜生",
+  "enwiki": "https://en.wikipedia.org/wiki/Henrik_Ibsen",
+  "country": [
+   "挪威"
+  ]
+ },
+ "mark-twain": {
+  "qid": "Q7245",
+  "birth": 1835,
+  "death": 1910,
+  "en": "Mark Twain",
+  "zh": "马克·吐温",
+  "zhwiki": "https://zh.wikipedia.org/wiki/马克·吐温",
+  "enwiki": "https://en.wikipedia.org/wiki/Mark_Twain",
+  "country": [
+   "美国"
+  ]
+ },
+ "anton-chekhov": {
+  "qid": "Q5685",
+  "birth": 1860,
+  "death": 1904,
+  "en": "Anton Chekhov",
+  "zh": "安东·契诃夫",
+  "zhwiki": "https://zh.wikipedia.org/wiki/安东·契诃夫",
+  "enwiki": "https://en.wikipedia.org/wiki/Anton_Chekhov",
+  "country": [
+   "俄罗斯帝国"
+  ]
+ },
+ "xia-mu-shu-shi": {
+  "qid": "Q180903",
+  "birth": 1867,
+  "death": 1916,
+  "en": "Natsume Sōseki",
+  "zh": "夏目漱石",
+  "zhwiki": "https://zh.wikipedia.org/wiki/夏目漱石",
+  "enwiki": "https://en.wikipedia.org/wiki/Natsume_Sōseki",
+  "country": [
+   "日本"
+  ]
+ },
+ "william-cuthbert-falkner": {
+  "qid": "Q38392",
+  "birth": 1897,
+  "death": 1962,
+  "en": "William Faulkner",
+  "zh": "威廉·福克纳",
+  "zhwiki": "https://zh.wikipedia.org/wiki/威廉·福克納",
+  "enwiki": "https://en.wikipedia.org/wiki/William_Faulkner",
+  "country": [
+   "美国"
+  ]
+ },
+ "jorge-luis-borges": {
+  "qid": "Q909",
+  "birth": 1899,
+  "death": 1986,
+  "en": "Jorge Luis Borges",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/豪尔赫·路易斯·博尔赫斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Jorge_Luis_Borges",
+  "country": [
+   "阿根廷"
+  ]
+ },
+ "zhang-ai-ling": {
+  "qid": "Q197155",
+  "birth": 1921,
+  "death": 1995,
+  "en": "Eileen Chang",
+  "zh": "张爱玲",
+  "zhwiki": "https://zh.wikipedia.org/wiki/張愛玲",
+  "enwiki": "https://en.wikipedia.org/wiki/Eileen_Chang",
+  "country": [
+   "美国",
+   "中华人民共和国",
+   "中华民国"
+  ]
+ },
+ "stanislaw-lem": {
+  "qid": "Q6530",
+  "birth": 1921,
+  "death": 2006,
+  "en": "Stanisław Lem",
+  "zh": "斯坦尼斯瓦夫·莱姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/史坦尼斯瓦夫·萊姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Stanisław_Lem",
+  "country": [
+   "波兰"
+  ]
+ },
+ "wang-xiao-bo": {
+  "qid": "Q709248",
+  "birth": 1952,
+  "death": 1997,
+  "en": "Wang Xiaobo",
+  "zh": "王小波",
+  "zhwiki": "https://zh.wikipedia.org/wiki/王小波",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Xiaobo",
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "tao-yuan-ming": {
+  "qid": "Q314210",
+  "birth": 365,
+  "death": 427,
+  "en": "Tao Yuanming",
+  "zh": "陶渊明",
+  "zhwiki": "https://zh.wikipedia.org/wiki/陶渊明",
+  "enwiki": "https://en.wikipedia.org/wiki/Tao_Yuanming",
+  "country": [
+   "东晋"
+  ]
+ },
+ "wang-wei": {
+  "qid": "Q313605",
+  "birth": 699,
+  "death": 761,
+  "en": "Wang Wei",
+  "zh": "王维",
+  "zhwiki": "https://zh.wikipedia.org/wiki/王维",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Wei",
+  "country": [
+   "唐朝"
+  ]
+ },
+ "li-bai": {
+  "qid": "Q7071",
+  "birth": 701,
+  "death": 762,
+  "en": "Li Bai",
+  "zh": "李白",
+  "zhwiki": "https://zh.wikipedia.org/wiki/李白",
+  "enwiki": "https://en.wikipedia.org/wiki/Li_Bai",
+  "country": [
+   "唐朝"
+  ]
+ },
+ "su-shi": {
+  "qid": "Q36020",
+  "birth": 1037,
+  "death": 1101,
+  "en": "Su Shi",
+  "zh": "苏轼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/苏轼",
+  "enwiki": "https://en.wikipedia.org/wiki/Su_Shi",
+  "country": [
+   "北宋"
+  ]
+ },
+ "xin-qi-ji": {
+  "qid": "Q1155987",
+  "birth": 1140,
+  "death": 1207,
+  "en": "Xin Qiji",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/辛棄疾",
+  "enwiki": "https://en.wikipedia.org/wiki/Xin_Qiji",
+  "country": [
+   "宋朝"
+  ]
+ },
+ "luo-fu": {
+  "qid": "Q9305475",
+  "birth": 1928,
+  "death": 2018,
+  "en": "Luo Fu",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/洛夫_(詩人)",
+  "enwiki": "https://en.wikipedia.org/wiki/Luo_Fu_(poet)",
+  "country": [
+   "中华人民共和国",
+   "中华民国"
+  ]
+ },
+ "song-wei-ba-jiao": {
+  "qid": "Q5676",
+  "birth": 1644,
+  "death": 1694,
+  "en": "Matsuo Bashō",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/松尾芭蕉",
+  "enwiki": "https://en.wikipedia.org/wiki/Matsuo_Bashō",
+  "country": [
+   "日本"
+  ]
+ },
+ "charles-baudelaire": {
+  "qid": "Q501",
+  "birth": 1821,
+  "death": 1867,
+  "en": "Charles Baudelaire",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/夏尔·波德莱尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Charles_Baudelaire",
+  "country": [
+   "法国"
+  ]
+ },
+ "emily-dickinson": {
+  "qid": "Q4441",
+  "birth": 1830,
+  "death": 1886,
+  "en": "Emily Dickinson",
+  "zh": "艾米莉·狄金森",
+  "zhwiki": "https://zh.wikipedia.org/wiki/艾蜜莉·狄金生",
+  "enwiki": "https://en.wikipedia.org/wiki/Emily_Dickinson",
+  "country": [
+   "美国"
+  ]
+ },
+ "rabindranath-tagore": {
+  "qid": "Q7241",
+  "birth": 1861,
+  "death": 1941,
+  "en": "Rabindranath Tagore",
+  "zh": "罗宾德拉纳特·泰戈尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗宾德拉纳特·泰戈尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Rabindranath_Tagore",
+  "country": [
+   "英属印度"
+  ]
+ },
+ "rainer-maria-rilke": {
+  "qid": "Q76483",
+  "birth": 1875,
+  "death": 1926,
+  "en": "Rainer Maria Rilke",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/赖内·马利亚·里尔克",
+  "enwiki": "https://en.wikipedia.org/wiki/Rainer_Maria_Rilke",
+  "country": [
+   "捷克斯洛伐克"
+  ]
+ },
+ "virginia-woolf": {
+  "qid": "Q40909",
+  "birth": 1882,
+  "death": 1941,
+  "en": "Virginia Woolf",
+  "zh": "弗吉尼亚·伍尔夫",
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗吉尼亚·伍尔夫",
+  "enwiki": "https://en.wikipedia.org/wiki/Virginia_Woolf",
+  "country": [
+   "英国"
+  ]
+ },
+ "walter-benjamin": {
+  "qid": "Q61078",
+  "birth": 1892,
+  "death": 1940,
+  "en": "Walter Benjamin",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/瓦尔特·本雅明",
+  "enwiki": "https://en.wikipedia.org/wiki/Walter_Benjamin",
+  "country": []
+ },
+ "rene-girard": {
+  "qid": "Q129228",
+  "birth": 1923,
+  "death": 2015,
+  "en": "René Girard",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/勒內·吉拉爾",
+  "enwiki": "https://en.wikipedia.org/wiki/René_Girard",
+  "country": [
+   "美国",
+   "法国"
+  ]
+ },
+ "harold-bloom": {
+  "qid": "Q345612",
+  "birth": 1930,
+  "death": 2019,
+  "en": "Harold Bloom",
+  "zh": "哈罗德·布鲁姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/哈罗德·布鲁姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Harold_Bloom",
+  "country": [
+   "美国"
+  ]
+ },
+ "xia-zhi-qing": {
+  "qid": "Q5924192",
+  "birth": 1921,
+  "death": 2013,
+  "en": "Hsia Chih-tsing",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/夏志清",
+  "enwiki": "https://en.wikipedia.org/wiki/C._T._Hsia",
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "stephen-owen": {
+  "qid": "Q7610160",
+  "birth": 1946,
+  "death": 2026,
+  "en": "Stephen Owen",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/宇文所安",
+  "enwiki": "https://en.wikipedia.org/wiki/Stephen_Owen_(sinologist)",
+  "country": [
+   "美国"
+  ]
+ },
+ "frank-h-netter": {
+  "qid": "Q224629",
+  "birth": 1906,
+  "death": 1991,
+  "en": "Frank H. Netter",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/弗蘭克·奈特",
+  "enwiki": "https://en.wikipedia.org/wiki/Frank_H._Netter",
+  "country": [
+   "美国"
+  ]
+ },
+ "francis-collins": {
+  "qid": "Q336658",
+  "birth": 1950,
+  "death": null,
+  "en": "Francis Collins",
+  "zh": "弗朗西斯·柯林斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/法蘭西斯·柯林斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Francis_Collins",
+  "country": [
+   "美国"
+  ]
+ },
+ "j-craig-venter": {
+  "qid": "Q311003",
+  "birth": 1946,
+  "death": 2026,
+  "en": "Craig Venter",
+  "zh": "克雷格·文特尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/克萊格·凡特",
+  "enwiki": "https://en.wikipedia.org/wiki/J._Craig_Venter",
+  "country": [
+   "美国"
+  ]
+ },
+ "siddhartha-mukherjee": {
+  "qid": "Q983450",
+  "birth": 1970,
+  "death": null,
+  "en": "Siddhartha Mukherjee",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/辛達塔·穆克吉",
+  "enwiki": "https://en.wikipedia.org/wiki/Siddhartha_Mukherjee",
+  "country": [
+   "美国"
+  ]
+ },
+ "albert-ellis": {
+  "qid": "Q313931",
+  "birth": 1913,
+  "death": 2007,
+  "en": "Albert Ellis",
+  "zh": "阿尔伯特·艾利斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿尔伯特·艾利斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Albert_Ellis",
+  "country": [
+   "美国"
+  ]
+ },
+ "aaron-beck": {
+  "qid": "Q302849",
+  "birth": 1921,
+  "death": 2021,
+  "en": "Aaron Beck",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/亞倫·貝克",
+  "enwiki": "https://en.wikipedia.org/wiki/Aaron_Beck",
+  "country": [
+   "美国"
+  ]
+ },
+ "sen-tian-zheng-ma": {
+  "qid": "Q3622151",
+  "birth": 1874,
+  "death": 1938,
+  "en": "Shoma Morita",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/森田正马",
+  "enwiki": "https://en.wikipedia.org/wiki/Shoma_Morita",
+  "country": [
+   "日本"
+  ]
+ },
+ "jacob-levy-moreno": {
+  "qid": "Q89404",
+  "birth": 1892,
+  "death": 1974,
+  "en": "Jacob L. Moreno",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Jacob_L._Moreno",
+  "country": [
+   "美国",
+   "奥地利"
+  ]
+ },
+ "christopher-alexander": {
+  "qid": "Q455076",
+  "birth": 1936,
+  "death": 2022,
+  "en": "Christopher Alexander",
+  "zh": "克里斯托佛·亚历山大",
+  "zhwiki": "https://zh.wikipedia.org/wiki/克里斯托弗·亚历山大",
+  "enwiki": "https://en.wikipedia.org/wiki/Christopher_Alexander",
+  "country": [
+   "美国",
+   "英国"
+  ]
+ },
+ "duan-yi-fu": {
+  "qid": "Q3279442",
+  "birth": 1930,
+  "death": 2022,
+  "en": "Yi-Fu Tuan",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/段义孚",
+  "enwiki": "https://en.wikipedia.org/wiki/Yi-Fu_Tuan",
+  "country": [
+   "美国",
+   "中华民国"
+  ]
+ },
+ "william-james": {
+  "qid": "Q125249",
+  "birth": 1842,
+  "death": 1910,
+  "en": "William James",
+  "zh": "威廉·詹姆斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/威廉·詹姆士",
+  "enwiki": "https://en.wikipedia.org/wiki/William_James",
+  "country": [
+   "美国"
+  ]
+ },
+ "jonathan-haidt": {
+  "qid": "Q845573",
+  "birth": 1963,
+  "death": null,
+  "en": "Jonathan Haidt",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/乔纳森·海特",
+  "enwiki": "https://en.wikipedia.org/wiki/Jonathan_Haidt",
+  "country": [
+   "美国"
+  ]
+ },
+ "meng-zi": {
+  "qid": "Q188903",
+  "birth": -371,
+  "death": -288,
+  "en": "Mencius",
+  "zh": "孟子",
+  "zhwiki": "https://zh.wikipedia.org/wiki/孟子",
+  "enwiki": "https://en.wikipedia.org/wiki/Mencius",
+  "country": []
+ },
+ "han-yu": {
+  "qid": "Q318998",
+  "birth": 768,
+  "death": 824,
+  "en": "Han Yu",
+  "zh": "韩愈",
+  "zhwiki": "https://zh.wikipedia.org/wiki/韩愈",
+  "enwiki": "https://en.wikipedia.org/wiki/Han_Yu",
+  "country": [
+   "唐朝"
+  ]
+ },
+ "zhang-zai": {
+  "qid": "Q197338",
+  "birth": 1020,
+  "death": 1077,
+  "en": "Zhang Zai",
+  "zh": "张载",
+  "zhwiki": "https://zh.wikipedia.org/wiki/張載_(北宋)",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhang_Zai",
+  "country": [
+   "宋朝",
+   "北宋"
+  ]
+ },
+ "zhu-xi": {
+  "qid": "Q9397",
+  "birth": 1130,
+  "death": 1200,
+  "en": "Zhu Xi",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/朱熹",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhu_Xi",
+  "country": [
+   "宋朝"
+  ]
+ },
+ "hui-neng": {
+  "qid": "Q345012",
+  "birth": 638,
+  "death": 713,
+  "en": "Huineng",
+  "zh": "惠能",
+  "zhwiki": "https://zh.wikipedia.org/wiki/惠能",
+  "enwiki": "https://en.wikipedia.org/wiki/Huineng",
+  "country": [
+   "唐朝"
+  ]
+ },
+ "chen-ying-ning": {
+  "qid": "Q15904207",
+  "birth": 1880,
+  "death": 1969,
+  "en": "Chen Yingning",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/陈撄宁",
+  "enwiki": null,
+  "country": [
+   "中华人民共和国"
+  ]
+ },
+ "hong-yi": {
+  "qid": "Q5895726",
+  "birth": 1880,
+  "death": 1942,
+  "en": "Hong Yi",
+  "zh": "李叔同",
+  "zhwiki": "https://zh.wikipedia.org/wiki/李叔同",
+  "enwiki": "https://en.wikipedia.org/wiki/Hong_Yi",
+  "country": [
+   "清朝",
+   "中华民国"
+  ]
+ },
+ "fang-dong-mei": {
+  "qid": "Q7795921",
+  "birth": 1899,
+  "death": 1977,
+  "en": "Thomé H. Fang",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/方東美",
+  "enwiki": "https://en.wikipedia.org/wiki/Thomé_H._Fang",
+  "country": []
+ },
+ "friedrich-max-muller": {
+  "qid": "Q60074",
+  "birth": 1823,
+  "death": 1900,
+  "en": "Friedrich Max Müller",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/馬克斯·繆勒",
+  "enwiki": "https://en.wikipedia.org/wiki/Max_Müller",
+  "country": [
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "james-george-frazer": {
+  "qid": "Q151936",
+  "birth": 1854,
+  "death": 1941,
+  "en": "James George Frazer",
+  "zh": "詹姆斯·弗雷泽",
+  "zhwiki": "https://zh.wikipedia.org/wiki/詹姆斯·弗雷澤",
+  "enwiki": "https://en.wikipedia.org/wiki/James_George_Frazer",
+  "country": [
+   "英国"
+  ]
+ },
+ "carl-gustav-jung": {
+  "qid": "Q41532",
+  "birth": 1875,
+  "death": 1961,
+  "en": "Carl Jung",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/卡尔·荣格",
+  "enwiki": "https://en.wikipedia.org/wiki/Carl_Jung",
+  "country": [
+   "瑞士"
+  ]
+ },
+ "paul-johannes-tillich": {
+  "qid": "Q60104",
+  "birth": 1886,
+  "death": 1965,
+  "en": "Paul Tillich",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/保羅·田立克",
+  "enwiki": "https://en.wikipedia.org/wiki/Paul_Tillich",
+  "country": [
+   "美国"
+  ]
+ },
+ "john-harwood-hick": {
+  "qid": "Q531931",
+  "birth": 1922,
+  "death": 2012,
+  "en": "John Hick",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/John_Hick",
+  "country": [
+   "英国"
+  ]
+ },
+ "hans-kung": {
+  "qid": "Q123010",
+  "birth": 1928,
+  "death": 2021,
+  "en": "Hans Küng",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/汉斯·昆",
+  "enwiki": "https://en.wikipedia.org/wiki/Hans_Küng",
+  "country": [
+   "瑞士"
+  ]
+ },
+ "li-yi-yuan": {
+  "qid": "Q8993741",
+  "birth": 1931,
+  "death": 2017,
+  "en": "Li Yih-yuan",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/李亦園",
+  "enwiki": "https://en.wikipedia.org/wiki/Li_Yih-yuan",
+  "country": [
+   "中华民国"
+  ]
+ },
+ "yang-guo-shu": {
+  "qid": "Q9298773",
+  "birth": 1932,
+  "death": 2018,
+  "en": "Yang Kuo-shu",
+  "zh": "杨国枢",
+  "zhwiki": "https://zh.wikipedia.org/wiki/楊國樞",
+  "enwiki": "https://en.wikipedia.org/wiki/Yang_Kuo-shu",
+  "country": [
+   "中华民国"
+  ]
+ },
+ "huang-guang-guo": {
+  "qid": "Q40042467",
+  "birth": 1945,
+  "death": 2023,
+  "en": "Kwang-kuo Hwang",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/黃光國",
+  "enwiki": null,
+  "country": [
+   "中华民国"
+  ]
+ },
+ "stephen-e-toulmin": {
+  "qid": "Q472676",
+  "birth": 1922,
+  "death": 2009,
+  "en": "Stephen Toulmin",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/史蒂芬·托尔明",
+  "enwiki": "https://en.wikipedia.org/wiki/Stephen_Toulmin",
+  "country": [
+   "英国"
+  ]
+ },
+ "derek-john-de-solla-price": {
+  "qid": "Q764747",
+  "birth": 1922,
+  "death": 1983,
+  "en": "Derek J. de Solla Price",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/德瑞克·約翰·德索拉·普萊斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Derek_J._de_Solla_Price",
+  "country": [
+   "英国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "robert-j-marzano": {
+  "qid": "Q16732091",
+  "birth": 1946,
+  "death": null,
+  "en": "Robert J. Marzano",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_J._Marzano",
+  "country": []
+ },
+ "john-hattie": {
+  "qid": "Q1700398",
+  "birth": 1950,
+  "death": null,
+  "en": "John Hattie",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/John_Hattie",
+  "country": [
+   "新西兰"
+  ]
+ },
+ "wenger-etienne": {
+  "qid": "Q124162",
+  "birth": 1952,
+  "death": null,
+  "en": "Étienne Wenger",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Étienne_Wenger",
+  "country": [
+   "瑞士"
+  ]
+ },
+ "gerald-prince": {
+  "qid": "Q22265309",
+  "birth": 1942,
+  "death": null,
+  "en": "Gerald Prince",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Gerald_Prince",
+  "country": [
+   "美国"
+  ]
+ },
+ "paul-watzlawick": {
+  "qid": "Q93781",
+  "birth": 1921,
+  "death": 2007,
+  "en": "Paul Watzlawick",
+  "zh": "保罗·瓦兹拉威克",
+  "zhwiki": "https://zh.wikipedia.org/wiki/保罗·瓦兹拉威克",
+  "enwiki": "https://en.wikipedia.org/wiki/Paul_Watzlawick",
+  "country": [
+   "美国",
+   "奥地利"
+  ]
+ },
+ "chris-argyris": {
+  "qid": "Q1076951",
+  "birth": 1923,
+  "death": 2013,
+  "en": "Chris Argyris",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Chris_Argyris",
+  "country": [
+   "美国"
+  ]
+ },
+ "donald-a-schon": {
+  "qid": "Q3036094",
+  "birth": 1930,
+  "death": 1997,
+  "en": "Donald Schön",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Donald_Schön",
+  "country": [
+   "美国"
+  ]
+ },
+ "mihaly-csikszentmihalyi": {
+  "qid": "Q316147",
+  "birth": 1934,
+  "death": 2021,
+  "en": "Mihaly Csikszentmihalyi",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/奇克森特米哈伊·米哈伊",
+  "enwiki": "https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi",
+  "country": [
+   "匈牙利",
+   "美国"
+  ]
+ },
+ "donald-a-norman": {
+  "qid": "Q92804",
+  "birth": 1935,
+  "death": null,
+  "en": "Donald Norman",
+  "zh": "唐·诺曼",
+  "zhwiki": "https://zh.wikipedia.org/wiki/唐·諾曼",
+  "enwiki": "https://en.wikipedia.org/wiki/Don_Norman",
+  "country": [
+   "美国"
+  ]
+ },
+ "everett-m-rogers": {
+  "qid": "Q3061477",
+  "birth": 1931,
+  "death": 2004,
+  "en": "Everett Rogers",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃弗里特·M·羅傑斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Everett_Rogers",
+  "country": [
+   "美国"
+  ]
+ },
+ "richard-dewitt": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "john-tooby": {
+  "qid": "Q1701956",
+  "birth": 1952,
+  "death": 2023,
+  "en": "John Tooby",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/約翰·托比",
+  "enwiki": "https://en.wikipedia.org/wiki/John_Tooby",
+  "country": [
+   "美国"
+  ]
+ },
+ "duncan-j-watts": {
+  "qid": "Q1265475",
+  "birth": 1971,
+  "death": null,
+  "en": "Duncan J. Watts",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Duncan_J._Watts",
+  "country": [
+   "澳大利亚"
+  ]
+ },
+ "matthew-o-jackson": {
+  "qid": "Q6006480",
+  "birth": 1962,
+  "death": null,
+  "en": "Matthew Jackson",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Matthew_O._Jackson",
+  "country": [
+   "美国"
+  ]
+ },
+ "albert-laszlo-barabasi": {
+  "qid": "Q725467",
+  "birth": 1967,
+  "death": null,
+  "en": "Albert-László Barabási",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Albert-László_Barabási",
+  "country": [
+   "匈牙利",
+   "美国",
+   "罗马尼亚"
+  ]
+ },
+ "andrew-h-knoll": {
+  "qid": "Q505705",
+  "birth": 1951,
+  "death": null,
+  "en": "Andrew H. Knoll",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/安德鲁·H·诺尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Andrew_H._Knoll",
+  "country": [
+   "美国"
+  ]
+ },
+ "horace-freeland-judson": {
+  "qid": "Q942019",
+  "birth": 1931,
+  "death": 2011,
+  "en": "Horace Freeland Judson",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/霍勒斯·弗里兰·贾德森",
+  "enwiki": "https://en.wikipedia.org/wiki/Horace_Freeland_Judson",
+  "country": [
+   "美国"
+  ]
+ },
+ "eugene-odum": {
+  "qid": "Q936568",
+  "birth": 1913,
+  "death": 2002,
+  "en": "Eugene Odum",
+  "zh": "尤金·奥德姆",
+  "zhwiki": "https://zh.wikipedia.org/wiki/尤金·P·奥德姆",
+  "enwiki": "https://en.wikipedia.org/wiki/Eugene_Odum",
+  "country": [
+   "美国"
+  ]
+ },
+ "leften-stavros-stavrianos": {
+  "qid": "Q6329652",
+  "birth": 1913,
+  "death": 2004,
+  "en": "L. S. Stavrianos",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/L·S·斯塔夫里阿诺斯",
+  "enwiki": "https://en.wikipedia.org/wiki/L._S._Stavrianos",
+  "country": [
+   "加拿大"
+  ]
+ },
+ "william-h-mcneill": {
+  "qid": "Q1765863",
+  "birth": 1917,
+  "death": 2016,
+  "en": "William Hardy McNeill",
+  "zh": "威廉·麦克尼尔",
+  "zhwiki": "https://zh.wikipedia.org/wiki/威廉·H·麦克尼尔",
+  "enwiki": "https://en.wikipedia.org/wiki/William_H._McNeill",
+  "country": [
+   "美国"
+  ]
+ },
+ "david-christian": {
+  "qid": "Q1909499",
+  "birth": 1946,
+  "death": null,
+  "en": "David Christian",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/大衛·克里斯欽",
+  "enwiki": "https://en.wikipedia.org/wiki/David_Christian_(historian)",
+  "country": [
+   "美国"
+  ]
+ },
+ "emmanuel-le-roy-ladurie": {
+  "qid": "Q314148",
+  "birth": 1929,
+  "death": 2023,
+  "en": null,
+  "zh": "埃马纽埃尔·勒鲁瓦·拉迪里",
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃马纽埃尔·勒鲁瓦·拉迪里",
+  "enwiki": "https://en.wikipedia.org/wiki/Emmanuel_Le_Roy_Ladurie",
+  "country": [
+   "法国"
+  ]
+ },
+ "peter-burke": {
+  "qid": "Q504484",
+  "birth": 1937,
+  "death": null,
+  "en": "Peter Burke",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/彼得·柏克",
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_Burke_(historian)",
+  "country": [
+   "英国"
+  ]
+ },
+ "william-lendrum-mitchell": {
+  "qid": "Q863201",
+  "birth": 1879,
+  "death": 1936,
+  "en": "Billy Mitchell",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/威廉·米切尔",
+  "enwiki": "https://en.wikipedia.org/wiki/Billy_Mitchell",
+  "country": [
+   "美国"
+  ]
+ },
+ "richards-j-heuer-jr": {
+  "qid": "Q7330291",
+  "birth": 1927,
+  "death": 2018,
+  "en": "Richards Heuer",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Richards_Heuer",
+  "country": [
+   "美国"
+  ]
+ },
+ "michael-apple": {
+  "qid": "Q2894504",
+  "birth": 1942,
+  "death": null,
+  "en": "Michael W. Apple",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Apple",
+  "country": [
+   "美国"
+  ]
+ },
+ "basil-bernstein": {
+  "qid": "Q714816",
+  "birth": 1924,
+  "death": 2000,
+  "en": "Basil Bernstein",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Basil_Bernstein",
+  "country": [
+   "英国",
+   "大不列颠及爱尔兰联合王国"
+  ]
+ },
+ "annette-lareau": {
+  "qid": "Q4769093",
+  "birth": 1952,
+  "death": null,
+  "en": "Annette Lareau",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Annette_Lareau",
+  "country": [
+   "美国"
+  ]
+ },
+ "viviana-a-zelizer": {
+  "qid": "Q1974473",
+  "birth": 1946,
+  "death": null,
+  "en": "Viviana Zelizer",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Viviana_Zelizer",
+  "country": [
+   "美国"
+  ]
+ },
+ "viktor-e-frankl": {
+  "qid": "Q154723",
+  "birth": 1905,
+  "death": 1997,
+  "en": "Viktor Frankl",
+  "zh": "维克多·弗兰克",
+  "zhwiki": "https://zh.wikipedia.org/wiki/维克多·弗兰克",
+  "enwiki": "https://en.wikipedia.org/wiki/Viktor_Frankl",
+  "country": [
+   "奥地利"
+  ]
+ },
+ "serge-moscovici": {
+  "qid": "Q527522",
+  "birth": 1926,
+  "death": 2014,
+  "en": "Serge Moscovici",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Serge_Moscovici",
+  "country": [
+   "法国",
+   "罗马尼亚"
+  ]
+ },
+ "david-a-kenny": {
+  "qid": "Q91914129",
+  "birth": 1946,
+  "death": null,
+  "en": "David A. Kenny",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/David_A._Kenny",
+  "country": [
+   "美国"
+  ]
+ },
+ "susan-t-fiske": {
+  "qid": "Q7647829",
+  "birth": 1952,
+  "death": null,
+  "en": "Susan T. Fiske",
+  "zh": "苏珊·菲斯克",
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Susan_Fiske",
+  "country": [
+   "美国"
+  ]
+ },
+ "claude-levi-strauss": {
+  "qid": "Q128126",
+  "birth": 1908,
+  "death": 2009,
+  "en": "Claude Lévi-Strauss",
+  "zh": "克洛德·列维-斯特劳斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/克勞德·李維-史陀",
+  "enwiki": "https://en.wikipedia.org/wiki/Claude_Lévi-Strauss",
+  "country": [
+   "比利时",
+   "法国"
+  ]
+ },
+ "harold-d-koontz": {
+  "qid": "Q16010961",
+  "birth": 1909,
+  "death": 1984,
+  "en": "Harold Koontz",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Harold_Koontz",
+  "country": [
+   "美国"
+  ]
+ },
+ "david-mcclelland": {
+  "qid": "Q28876",
+  "birth": 1917,
+  "death": 1998,
+  "en": "David McClelland",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/大卫·麦克利兰",
+  "enwiki": "https://en.wikipedia.org/wiki/David_McClelland",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-hogan": {
+  "qid": "Q7345550",
+  "birth": 1937,
+  "death": null,
+  "en": "Robert Hogan",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_Hogan_(psychologist)",
+  "country": [
+   "美国"
+  ]
+ },
+ "elaine-biech": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "robert-s-kaplan": {
+  "qid": "Q631376",
+  "birth": 1940,
+  "death": null,
+  "en": "Robert S. Kaplan",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/罗伯特·S·卡普兰",
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_S._Kaplan",
+  "country": [
+   "美国"
+  ]
+ },
+ "edgar-h-schein": {
+  "qid": "Q116375",
+  "birth": 1928,
+  "death": 2023,
+  "en": "Edgar Schein",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃德加·亨利·席恩",
+  "enwiki": "https://en.wikipedia.org/wiki/Edgar_Schein",
+  "country": [
+   "美国",
+   "瑞士"
+  ]
+ },
+ "christina-maslach": {
+  "qid": "Q1839473",
+  "birth": 1946,
+  "death": null,
+  "en": "Christina Maslach",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Christina_Maslach",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-hiester-montgomery": {
+  "qid": "Q15485927",
+  "birth": 1872,
+  "death": 1953,
+  "en": "Robert Hiester Montgomery",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_Hiester_Montgomery",
+  "country": []
+ },
+ "robert-n-anthony": {
+  "qid": "Q16017550",
+  "birth": 1916,
+  "death": 2006,
+  "en": "Robert N. Anthony",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_N._Anthony",
+  "country": [
+   "美国",
+   "英国"
+  ]
+ },
+ "charles-t-horngren": {
+  "qid": "Q13583393",
+  "birth": 1926,
+  "death": 2011,
+  "en": "Charles Thomas Horngren",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Charles_Thomas_Horngren",
+  "country": [
+   "美国"
+  ]
+ },
+ "stephen-a-ross": {
+  "qid": "Q531857",
+  "birth": 1944,
+  "death": 2017,
+  "en": "Stephen Ross",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/斯蒂芬·罗斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Stephen_Ross_(economist)",
+  "country": [
+   "美国"
+  ]
+ },
+ "paul-wilmott": {
+  "qid": "Q7154412",
+  "birth": 1959,
+  "death": null,
+  "en": "Paul Wilmott",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Paul_Wilmott",
+  "country": [
+   "英国"
+  ]
+ },
+ "adrian-j-slywotzky": {
+  "qid": "Q374227",
+  "birth": 1951,
+  "death": null,
+  "en": "Adrian Slywotzky",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/阿德里安·史萊渥斯基",
+  "enwiki": "https://en.wikipedia.org/wiki/Adrian_Slywotzky",
+  "country": [
+   "美国"
+  ]
+ },
+ "j-scott-armstrong": {
+  "qid": "Q6107078",
+  "birth": 1937,
+  "death": 2023,
+  "en": "J. Scott Armstrong",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/J._Scott_Armstrong",
+  "country": [
+   "美国"
+  ]
+ },
+ "steve-blank": {
+  "qid": "Q390829",
+  "birth": 1953,
+  "death": null,
+  "en": "Steve Blank",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/史蒂夫·布兰克",
+  "enwiki": "https://en.wikipedia.org/wiki/Steve_Blank",
+  "country": [
+   "美国"
+  ]
+ },
+ "gerald-m-weinberg": {
+  "qid": "Q93132",
+  "birth": 1933,
+  "death": 2018,
+  "en": "Gerald Weinberg",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/傑拉爾德·溫伯格",
+  "enwiki": "https://en.wikipedia.org/wiki/Gerald_Weinberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "david-h-maister": {
+  "qid": "Q4275157",
+  "birth": 1947,
+  "death": null,
+  "en": "David Maister",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/David_Maister",
+  "country": [
+   "美国"
+  ]
+ },
+ "marvin-bower": {
+  "qid": "Q1906048",
+  "birth": 1903,
+  "death": 2003,
+  "en": "Marvin Bower",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Marvin_Bower",
+  "country": [
+   "美国"
+  ]
+ },
+ "murray-bowen": {
+  "qid": "Q1953827",
+  "birth": 1913,
+  "death": 1990,
+  "en": "Murray Bowen",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Murray_Bowen",
+  "country": [
+   "美国"
+  ]
+ },
+ "david-buss": {
+  "qid": "Q1173874",
+  "birth": 1953,
+  "death": null,
+  "en": "David Buss",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/戴维·巴斯",
+  "enwiki": "https://en.wikipedia.org/wiki/David_Buss",
+  "country": [
+   "美国"
+  ]
+ },
+ "david-h-olson": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "john-m-gottman": {
+  "qid": "Q776341",
+  "birth": 1942,
+  "death": null,
+  "en": "John Gottman",
+  "zh": "约翰·高特曼",
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/John_Gottman",
+  "country": [
+   "美国"
+  ]
+ },
+ "arlie-russell-hochschild": {
+  "qid": "Q531128",
+  "birth": 1940,
+  "death": null,
+  "en": "Arlie Russell Hochschild",
+  "zh": "阿莉·罗塞尔·霍克希尔德",
+  "zhwiki": "https://zh.wikipedia.org/wiki/亞莉·霍奇查爾德",
+  "enwiki": "https://en.wikipedia.org/wiki/Arlie_Russell_Hochschild",
+  "country": [
+   "美国"
+  ]
+ },
+ "john-h-flavell": {
+  "qid": "Q6236825",
+  "birth": 1928,
+  "death": 2025,
+  "en": "John H. Flavell",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/John_H._Flavell",
+  "country": [
+   "美国"
+  ]
+ },
+ "henry-m-wellman": {
+  "qid": "Q94460688",
+  "birth": null,
+  "death": null,
+  "en": "Henry M. Wellman",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Henry_Wellman",
+  "country": [
+   "美国"
+  ]
+ },
+ "alison-gopnik": {
+  "qid": "Q2647225",
+  "birth": 1955,
+  "death": null,
+  "en": "Alison Gopnik",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/艾莉森·高普尼克",
+  "enwiki": "https://en.wikipedia.org/wiki/Alison_Gopnik",
+  "country": [
+   "美国"
+  ]
+ },
+ "michael-tomasello": {
+  "qid": "Q714346",
+  "birth": 1950,
+  "death": null,
+  "en": "Michael Tomasello",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Tomasello",
+  "country": [
+   "美国"
+  ]
+ },
+ "usha-goswami": {
+  "qid": "Q18009220",
+  "birth": 1960,
+  "death": null,
+  "en": "Usha Goswami",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Usha_Goswami",
+  "country": []
+ },
+ "laurence-steinberg": {
+  "qid": "Q1287405",
+  "birth": 1952,
+  "death": null,
+  "en": "Laurence Steinberg",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Laurence_Steinberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "daniel-j-levinson": {
+  "qid": "Q5217925",
+  "birth": 1920,
+  "death": 1994,
+  "en": "Daniel Levinson",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Daniel_Levinson",
+  "country": [
+   "美国"
+  ]
+ },
+ "salvador-minuchin": {
+  "qid": "Q1368664",
+  "birth": 1921,
+  "death": 2017,
+  "en": "Salvador Minuchin",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/薩爾瓦多·米紐慶",
+  "enwiki": "https://en.wikipedia.org/wiki/Salvador_Minuchin",
+  "country": [
+   "阿根廷"
+  ]
+ },
+ "mara-selvini-palazzoli": {
+  "qid": "Q448115",
+  "birth": 1916,
+  "death": 1999,
+  "en": "Mara Selvini Palazzoli",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Mara_Selvini_Palazzoli",
+  "country": [
+   "意大利",
+   "意大利王国"
+  ]
+ },
+ "steve-de-shazer": {
+  "qid": "Q326619",
+  "birth": 1940,
+  "death": 2005,
+  "en": "Steve de Shazer",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Steve_de_Shazer",
+  "country": [
+   "美国"
+  ]
+ },
+ "sue-johnson": {
+  "qid": "Q7634155",
+  "birth": 1947,
+  "death": 2024,
+  "en": "Sue Johnson",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Sue_Johnson",
+  "country": [
+   "加拿大"
+  ]
+ },
+ "michael-white": {
+  "qid": "Q786213",
+  "birth": 1948,
+  "death": 2008,
+  "en": "Michael White",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/麥克·懷特",
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_White_(psychotherapist)",
+  "country": [
+   "澳大利亚"
+  ]
+ },
+ "tom-kirkwood": {
+  "qid": "Q452640",
+  "birth": 1951,
+  "death": null,
+  "en": "Tom Kirkwood",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/汤姆·柯科伍德",
+  "enwiki": "https://en.wikipedia.org/wiki/Tom_Kirkwood",
+  "country": [
+   "英国"
+  ]
+ },
+ "howard-s-friedman": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "james-birren": {
+  "qid": "Q6129806",
+  "birth": 1918,
+  "death": 2016,
+  "en": "James E. Birren",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/James_Birren",
+  "country": [
+   "美国"
+  ]
+ },
+ "victor-a-regnier": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "rose-anne-kenny": {
+  "qid": "Q33304929",
+  "birth": null,
+  "death": null,
+  "en": "Rose Anne Kenny",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Rose_Anne_Kenny",
+  "country": []
+ },
+ "george-kelly": {
+  "qid": "Q935436",
+  "birth": 1905,
+  "death": 1967,
+  "en": "George Kelly",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/喬治·亞歷山大·凱利",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Kelly_(psychologist)",
+  "country": [
+   "美国"
+  ]
+ },
+ "james-j-gibson": {
+  "qid": "Q737823",
+  "birth": 1904,
+  "death": 1979,
+  "en": "James J. Gibson",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/詹姆斯·吉布森",
+  "enwiki": "https://en.wikipedia.org/wiki/James_J._Gibson",
+  "country": [
+   "美国"
+  ]
+ },
+ "michael-merzenich": {
+  "qid": "Q6832811",
+  "birth": 1942,
+  "death": null,
+  "en": "Michael Merzenich",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Merzenich",
+  "country": [
+   "美国"
+  ]
+ },
+ "michael-i-posner": {
+  "qid": "Q962506",
+  "birth": 1936,
+  "death": null,
+  "en": "Michael Posner",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Michael_Posner_(psychologist)",
+  "country": [
+   "美国"
+  ]
+ },
+ "chris-frith": {
+  "qid": "Q1077217",
+  "birth": 1942,
+  "death": null,
+  "en": "Chris D. Frith",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Chris_Frith",
+  "country": [
+   "英国"
+  ]
+ },
+ "joseph-e-ledoux": {
+  "qid": "Q707263",
+  "birth": 1949,
+  "death": null,
+  "en": "Joseph E. LeDoux",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/約瑟夫·勒杜克斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Joseph_E._LeDoux",
+  "country": [
+   "美国"
+  ]
+ },
+ "karl-j-friston": {
+  "qid": "Q6371926",
+  "birth": 1959,
+  "death": null,
+  "en": "Karl J. Friston",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Karl_J._Friston",
+  "country": [
+   "英国"
+  ]
+ },
+ "gerd-gigerenzer": {
+  "qid": "Q108184",
+  "birth": 1947,
+  "death": null,
+  "en": "Gerd Gigerenzer",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Gerd_Gigerenzer",
+  "country": [
+   "德国"
+  ]
+ },
+ "keith-e-stanovich": {
+  "qid": "Q6385058",
+  "birth": 1950,
+  "death": null,
+  "en": "Keith Stanovich",
+  "zh": "基思·斯塔诺威克",
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Keith_Stanovich",
+  "country": [
+   "美国"
+  ]
+ },
+ "lisa-feldman-barrett": {
+  "qid": "Q6557970",
+  "birth": 1963,
+  "death": null,
+  "en": "Lisa Feldman Barrett",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Lisa_Feldman_Barrett",
+  "country": [
+   "加拿大",
+   "美国"
+  ]
+ },
+ "edward-l-deci": {
+  "qid": "Q5344000",
+  "birth": 1942,
+  "death": 2026,
+  "en": "Edward L. Deci",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Edward_L._Deci",
+  "country": [
+   "美国"
+  ]
+ },
+ "peter-m-gollwitzer": {
+  "qid": "Q106159",
+  "birth": 1950,
+  "death": null,
+  "en": "Peter Gollwitzer",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_Gollwitzer",
+  "country": [
+   "德国"
+  ]
+ },
+ "edith-sodergran": {
+  "qid": "Q466595",
+  "birth": 1892,
+  "death": 1923,
+  "en": "Edith Södergran",
+  "zh": "埃迪特·索德格朗",
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃迪特·索德格朗",
+  "enwiki": "https://en.wikipedia.org/wiki/Edith_Södergran",
+  "country": [
+   "芬兰",
+   "俄罗斯帝国"
+  ]
+ },
+ "konstantin-paustovsky": {
+  "qid": "Q368812",
+  "birth": 1892,
+  "death": 1968,
+  "en": "Konstantin Paustovsky",
+  "zh": "康斯坦丁·格奥尔基耶维奇·帕乌斯托夫斯基",
+  "zhwiki": "https://zh.wikipedia.org/wiki/康斯坦丁·帕乌斯托夫斯基",
+  "enwiki": "https://en.wikipedia.org/wiki/Konstantin_Paustovsky",
+  "country": [
+   "苏联",
+   "俄罗斯帝国",
+   "乌克兰苏维埃社会主义共和国",
+   "乌克兰人民共和国"
+  ]
+ },
+ "ernst-robert-curtius": {
+  "qid": "Q561089",
+  "birth": 1886,
+  "death": 1956,
+  "en": "Ernst Robert Curtius",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Ernst_Robert_Curtius",
+  "country": [
+   "德国"
+  ]
+ },
+ "erich-auerbach": {
+  "qid": "Q57603",
+  "birth": 1892,
+  "death": 1957,
+  "en": "Erich Auerbach",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/埃里希·奥尔巴赫",
+  "enwiki": "https://en.wikipedia.org/wiki/Erich_Auerbach",
+  "country": [
+   "德国"
+  ]
+ },
+ "peter-abrahams": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "george-c-williams": {
+  "qid": "Q552019",
+  "birth": 1926,
+  "death": 2010,
+  "en": "George Christopher Williams",
+  "zh": "乔治·C ·威廉斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/佐治·基斯杜化·威廉士",
+  "enwiki": "https://en.wikipedia.org/wiki/George_Christopher_Williams",
+  "country": [
+   "美国"
+  ]
+ },
+ "robert-plomin": {
+  "qid": "Q3401334",
+  "birth": 1948,
+  "death": null,
+  "en": "Robert Plomin",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Robert_Plomin",
+  "country": [
+   "美国"
+  ]
+ },
+ "john-yudkin": {
+  "qid": "Q1265477",
+  "birth": 1910,
+  "death": 1995,
+  "en": "John Yudkin",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/John_Yudkin",
+  "country": [
+   "英国"
+  ]
+ },
+ "walter-c-willett": {
+  "qid": "Q1133904",
+  "birth": 1945,
+  "death": null,
+  "en": "Walter C. Willett",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Walter_Willett",
+  "country": [
+   "美国"
+  ]
+ },
+ "mark-p-mattson": {
+  "qid": "Q6768760",
+  "birth": 1957,
+  "death": null,
+  "en": "Mark Mattson",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Mark_Mattson",
+  "country": [
+   "美国"
+  ]
+ },
+ "tim-d-spector": {
+  "qid": "Q32439146",
+  "birth": 1958,
+  "death": null,
+  "en": "Tim Spector",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Tim_Spector",
+  "country": [
+   "英国"
+  ]
+ },
+ "charles-b-corbin": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "thomas-roth": {
+  "missing": true,
+  "note": "维基链接指向同名他人或无条目"
+ },
+ "wendy-wood": {
+  "qid": "Q17152850",
+  "birth": 1954,
+  "death": null,
+  "en": "Wendy Wood",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Wendy_Wood_(psychologist)",
+  "country": [
+   "美国"
+  ]
+ },
+ "steven-c-hayes": {
+  "qid": "Q3906227",
+  "birth": 1948,
+  "death": null,
+  "en": "Steven C. Hayes",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Steven_C._Hayes",
+  "country": [
+   "美国"
+  ]
+ },
+ "lester-luborsky": {
+  "qid": "Q1820958",
+  "birth": 1920,
+  "death": 2009,
+  "en": "Lester Luborsky",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Lester_Luborsky",
+  "country": [
+   "美国"
+  ]
+ },
+ "peter-fonagy": {
+  "qid": "Q329295",
+  "birth": 1952,
+  "death": null,
+  "en": "Peter Fonagy",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Peter_Fonagy",
+  "country": [
+   "匈牙利"
+  ]
+ },
+ "sarah-williams-goldhagen": {
+  "qid": "Q73328343",
+  "birth": 1959,
+  "death": null,
+  "en": "Sarah Williams Goldhagen",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Sarah_Williams_Goldhagen",
+  "country": [
+   "美国"
+  ]
+ },
+ "martin-j-blaser": {
+  "qid": "Q6775770",
+  "birth": 1948,
+  "death": null,
+  "en": "Martin J. Blaser",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/马丁·J·布莱泽",
+  "enwiki": "https://en.wikipedia.org/wiki/Martin_J._Blaser",
+  "country": [
+   "美国"
+  ]
+ },
+ "florence-williams": {
+  "qid": "Q18195778",
+  "birth": 1967,
+  "death": null,
+  "en": "Florence Williams",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Florence_Williams",
+  "country": [
+   "美国"
+  ]
+ },
+ "esther-m-sternberg": {
+  "qid": "Q30011704",
+  "birth": 1951,
+  "death": null,
+  "en": "Esther Sternberg",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Esther_Sternberg",
+  "country": [
+   "美国"
+  ]
+ },
+ "roy-porter": {
+  "qid": "Q354728",
+  "birth": 1946,
+  "death": 2002,
+  "en": "Roy Porter",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/羅伊·波特",
+  "enwiki": "https://en.wikipedia.org/wiki/Roy_Porter",
+  "country": [
+   "英国"
+  ]
+ },
+ "lewis-thomas": {
+  "qid": "Q3124100",
+  "birth": 1913,
+  "death": 1993,
+  "en": "Lewis Thomas",
+  "zh": "刘易斯·托马斯",
+  "zhwiki": "https://zh.wikipedia.org/wiki/刘易斯·托马斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Lewis_Thomas",
+  "country": [
+   "美国"
+  ]
+ },
+ "sherwin-b-nuland": {
+  "qid": "Q2278468",
+  "birth": 1930,
+  "death": 2014,
+  "en": "Sherwin B. Nuland",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/舍温·B·努兰",
+  "enwiki": "https://en.wikipedia.org/wiki/Sherwin_B._Nuland",
+  "country": [
+   "美国"
+  ]
+ },
+ "oliver-sacks": {
+  "qid": "Q258662",
+  "birth": 1933,
+  "death": 2015,
+  "en": "Oliver Sacks",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/奧利佛·薩克斯",
+  "enwiki": "https://en.wikipedia.org/wiki/Oliver_Sacks",
+  "country": [
+   "英国"
+  ]
+ },
+ "jimmie-c-holland": {
+  "qid": "Q4499091",
+  "birth": 1928,
+  "death": 2017,
+  "en": "Jimmie C. Holland",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Jimmie_C._Holland",
+  "country": [
+   "美国"
+  ]
+ },
+ "arthur-kleinman": {
+  "qid": "Q4799376",
+  "birth": 1941,
+  "death": null,
+  "en": "Arthur Kleinman",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/凱博文",
+  "enwiki": "https://en.wikipedia.org/wiki/Arthur_Kleinman",
+  "country": [
+   "美国"
+  ]
+ },
+ "richard-swinburne": {
+  "qid": "Q712709",
+  "birth": 1934,
+  "death": null,
+  "en": "Richard Swinburne",
+  "zh": null,
+  "zhwiki": "https://zh.wikipedia.org/wiki/理察·斯溫伯恩",
+  "enwiki": "https://en.wikipedia.org/wiki/Richard_Swinburne",
+  "country": [
+   "英国"
+  ]
+ },
+ "andy-clark": {
+  "qid": "Q4760523",
+  "birth": 1957,
+  "death": null,
+  "en": "Andy Clark",
+  "zh": null,
+  "zhwiki": null,
+  "enwiki": "https://en.wikipedia.org/wiki/Andy_Clark",
+  "country": [
+   "美国"
+  ]
+ }
+}

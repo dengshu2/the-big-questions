@@ -3,6 +3,9 @@ dist
 .git
 .claude
 .agent
-*.md
+README.md
+audit-2026-09-20
+scripts/migrate
+src/data/catalog.json
 .gitignore
 .dockerignore

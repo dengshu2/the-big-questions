@@ -1,0 +1,40 @@
+/* 大问题：Quiet UI 之上的应用样式（只覆盖强调色，其余都是应用独有的部分） */
+
+:root {
+  --q-accent: #34508f;
+  --q-accent-soft: #e8edf7;
+  --q-mark: #34508f;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --q-accent: #9db4e8; --q-accent-soft: rgba(157, 180, 232, 0.14); }
+}
+:root[data-theme="dark"] { --q-accent: #9db4e8; --q-accent-soft: rgba(157, 180, 232, 0.14); }
+
+.top-title { display: inline-flex; align-items: center; gap: 6px; max-width: 52vw; }
+.q-status b, .q-status span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 52vw; }
+
+/* 正文段落：书单说明、问题导语、思想家简介 */
+.prose { display: grid; gap: 12px; }
+.prose p, .prose-p { margin: 0; font-size: 16.5px; line-height: 1.75; text-wrap: pretty; }
+.prose p.q-meta { font-size: 13px; line-height: 1.6; }
+
+.search-link { display: flex; align-items: center; gap: 8px; color: var(--q-faint); text-decoration: none; }
+
+.q-rows a.q-row { color: inherit; text-decoration: none; }
+.q-no { width: 22px; flex: none; font-size: 13px; font-weight: 600; color: var(--q-sub); }
+.book-author { font-size: 13px !important; }
+.pick-tag { flex: none; font-size: 12.5px; font-weight: 600; color: var(--q-accent); background: var(--q-accent-soft); border-radius: var(--q-r-pill); padding: 2px 9px; }
+
+.progress { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px; }
+
+/* 问题页的章节 */
+.section { gap: 12px; }
+.section-head h2 { margin: 0; font-size: 20px; font-weight: 650; letter-spacing: -0.02em; display: flex; gap: 10px; align-items: baseline; }
+.section-head h2 .q-num { font-size: 14px; font-weight: 600; color: var(--q-sub); }
+.section-head p { margin: 4px 0 0; color: var(--q-sub); font-size: 15px; }
+.group { display: grid; gap: 8px; }
+.section { scroll-margin-top: 80px; }
+
+.orig { font-style: italic; }
+.ext-link { display: inline-flex; align-items: center; gap: 4px; justify-self: start; text-decoration: none; }
+.sec-link { color: inherit; text-decoration: none; }

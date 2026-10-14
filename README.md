@@ -1,56 +1,60 @@
-# 大问题 · 纸上星图
+# 大问题 · 经典书单
 
-**The Big Questions — A Paper Star Atlas**
+**The Big Questions — a reading list organized by questions**
 
-一份可以点亮的经典阅读星图：11 个大问题是 11 个星座，420 位思想家是星，920 部经典是他们留下的光。思想之间的呼应与反驳化作星与星之间的弧线，你读过的书会把星星点亮成金色。
+一份按问题组织的经典书单：十一个大问题（元典、知识、世界、历史、时代、社会、组织、家庭、人性、身体、信仰），419 位思想家，893 本书。每个问题分五节，每节标出一本「首选」，47 本首选连起来是最短的阅读路径。可以给每本书标记想读、在读、读完。
 
-灵感来自 [Histography](https://histography.io/)、[History of Philosophy Visualized](https://www.denizcemonduygu.com/philo/)、[Open Syllabus Galaxy](https://galaxy.opensyllabus.org/) 与古典天文图集。
+书单整理自阳志平《聪明的阅读者》。思想家与书的介绍由 AI 撰写，生卒年等事实对照 Wikidata 核对过。
 
 ## 数据
 
-书单数据整理自[《聪明的阅读者》](https://book.douban.com/subject/36359767/)。手工维护的数据只有三份，其余一切由构建脚本生成：
+所有数据都在 `data/`，手工维护，构建时校验：
 
 | 文件 | 内容 |
 |------|------|
-| `data/canon.csv` | 919 条著作记录：11 大问题 → 章节 → 学科 → 思想家 → 著作（含 slug 主键、数字年份） |
-| `data/dialogues.csv` | 思想对话关系：谁呼应了谁、谁反驳了谁（星座页的绿弧与红弧） |
-| `data/thinkers/*.md` | 思想家星志（深度介绍），frontmatter 以 slug 关联 |
+| `about.md` | 首页的书单说明，空行分段 |
+| `questions.csv` | 11 个问题：名称、一句话、导语 |
+| `sections.csv` | 51 节：所属问题、名称、一句话说明 |
+| `thinkers.csv` | 思想家：中英文名、生卒年、国籍、Wikidata、维基百科、一句话定位、简介 |
+| `books.csv` | 书：书名、原名、作者（多位用 `\|` 分隔）、一句话、归属说明（作者其实是编者或研究对象时） |
+| `placements.csv` | 书在书单中的位置：章节、学科、是否首选。文件顺序就是页面顺序 |
 
-`npm run dev / build` 会先执行 `scripts/build-data.mjs`：校验三份数据的完整性（slug 唯一、关联存在、年份可解析），再生成聚合 JSON 与星图布局（星座座形、星位避让、时间轴泳道、弧线几何）。**任何数据错误都会让构建失败并指出行号。**
+`npm run data` 运行 `scripts/build-data.mjs`：检查主键唯一、引用存在、字数范围、每节最多一本首选等，生成 `src/data/catalog.json`。出错时会指出文件和行号，构建失败。
+
+`scripts/migrate/` 是 2026-10 从 v2 总表（`canon-v2.csv`）一次性迁移的脚本和 Wikidata 快照，仅作来源记录，不要再运行。
 
 ## 页面
 
-| 路由 | 说明 |
+| 路由 | 内容 |
 |------|------|
-| `/` | 天球总图：可缩放巡天，拉近浮现星名，双星带朱砂环 |
-| `/constellation/:id` | 星座页：时间横轴上的思想家 + 呼应/反驳对话弧线 |
-| `/thinker/:slug` | 恒星页：著作、思想对话、星志；可点亮（读过）或标记想读 |
-| `/minimum` | 一等星表：47 位必读思想家与点亮进度 |
-| `/library` | 观测手册：全量检索 + 观测记录（阅读进度）导入导出 |
+| `/` | 书单说明、首选入口、十一个问题 |
+| `/q/:id` | 问题：导语，按节和学科列出书 |
+| `/b/:id` | 书：一句话、阅读状态、作者、在书单中的位置 |
+| `/t/:slug` | 思想家：简介与书单中的书 |
+| `/picks` | 47 本首选 |
+| `/search` | 搜索书名和思想家 |
+| `/shelf` | 我的书架，可导出、导入 |
 
-阅读进度保存在 localStorage，纯前端，无账号。
+旧版链接（`/constellation/:id`、`/thinker/:slug`、`/minimum`、`/library`）会跳转到对应的新页面。阅读状态保存在浏览器 localStorage（`tbq-shelf`），没有账号。
 
 ## 技术栈
 
-- **Vite 7** + **React 19** + **TypeScript**，Vanilla CSS 设计系统（明亮纸面图集主题）
-- 星图渲染为原生 SVG，布局全部在构建期预计算，运行时零布局开销
-- **Docker** + **Nginx** 生产部署
-
-## 本地开发
+React 19 + Vite 8 + TypeScript，界面用 [Quiet UI](../quiet-ui)（`src/quiet.css` 是复制进来的，应用样式在 `src/app.css`）。生产环境是 Nginx 静态站。
 
 ```bash
 npm install
-npm run dev     # 会先运行数据管线
-npm run data    # 仅运行数据管线
+npm run dev     # 先生成数据，再启动开发服务器
+npm test        # 数据校验测试 + 前端测试
+npm run build
 ```
 
-## Docker 部署
+## 部署
 
 ```bash
 docker compose up -d --build
 ```
 
-容器加入 `proxy-network`，由 Caddy 统一转发（upstream `the-big-questions:80`）。
+容器加入 `proxy-network`，由 Caddy 转发（upstream `the-big-questions:80`）。
 
 ## License
 

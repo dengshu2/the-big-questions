@@ -27,6 +27,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# 构建期生成的数据产物
-src/data/generated/
-public/thinkers/
+
+# 构建期生成的数据
+src/data/catalog.json
